@@ -15,7 +15,7 @@ cd dbtracks-site
 
 Make sure you have [Node.js and npm](https://nodejs.org/en/download) installed on your system.
 
-Install dependencies and run the site locally:
+To install dependencies and run the site locally:
 ```bash
 npm install
 npm start
@@ -27,7 +27,7 @@ The site can now be accessed at http://localhost:8080
 
 Make sure you have [Docker](https://www.docker.com/products/docker-desktop/) installed on your system.
 
-Install dependencies and run the site locally:
+To build and run the docker image locally:
 ```bash
 docker build -t dbtracks-site:latest .
 docker run -p 8080:8080 dbtracks-site:latest
