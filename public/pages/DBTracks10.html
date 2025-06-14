@@ -1,0 +1,686 @@
+<html><head><title>DBTracks v1.0</title>
+<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name=”description” content="DBTracks are a new track system for MSTS and Open Rails, developed by Norbert Rieger with the specific details of German rails and switches." />
+<meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
+<meta name=”robots” content="index,follow" />
+<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
+<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+nD=new Date(2025,1,15); dlM=nD.toLocaleDateString(); //-->
+</script></head>
+<body scroll="NO" onload="init()">
+
+<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
+
+<table id="mtab" cellspacing="0" cellpadding="0">
+	<tr><td><h4 class="hl" style="margin:0"><span style="float:right;color:#999999;font:8pt normal Arial"><span id="t010" onclick="tShw(this.id,1)" style="position:relative;top:-1px;padding-left:2px"></span></span><span id="t01" style="margin-left:4px"></span></h4></td></tr>
+	<tr><td style="padding:0 12px 2px 12px;font-size:.75em"><div id="t011" style="margin-bottom:3px"></div></td></tr>
+	<tr><td style="padding:0 12px 12px 12px" id="nLst"></td></tr>
+	<tr style="background-image:none"><td style="padding:4px 0;border:none;color:#dddddd"></td></tr>
+	<tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd">
+	  <table id="tLst" cellspacing="0" cellpadding="0" style="width:900px"><colgroup><col width="16%"><col width="4%"><col width="4%"><col width="8%"><col width="1%"><col width="55%"><col width="12%"></colgroup><tbody>
+		<tr class="bH"><th colspan=7 style="border-right-width:0;border-bottom-width:0;padding-bottom:0" ondblclick="expAll()">DBtracks Downloads</th></tr>
+		<tr class="nb" id="label"><th style="border-left:1px solid #999999"></th><th id="t06"></th><th id="t07"></th><th id="t08" style="text-align:center"></th><th></th><th id="t09" style="text-align:left"></th><th id="t10" style="text-align:left;padding-left:10px"></th></tr>
+
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t110',1)"><span id="t110"></span></th></tr>
+	  </tbody><tbody id="ft110">
+		<tr><td id="dbt">DB1.rar			</td><td>	15.9 MB</td><td>  218	</td><td>13.06.2013</td><td class="pJ"></td><td id="t120"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB1_textures.rar	</td><td>	18.4 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t121"></td><td></td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t111"></span></td></tr>
+	  </tbody><tbody id="ft111" style="display:none">
+		<tr><td id="dbt">DB1f.rar			</td><td>	18.9 MB</td><td>  222	</td><td>22.06.2013</td><td class="p0"></td><td id="t122"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB1b.rar			</td><td>	 5.2 MB</td><td>   94	</td><td>22.05.2012</td><td class="p0"></td><td id="t123"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB1_Pnts.rar   	</td><td>	23.3 MB</td><td>  214	</td><td>13.06.2013</td><td class="p0"></td><td id="t124"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB1f_Pnts.rar   	</td><td>	29.5 MB</td><td>  235	</td><td>22.06.2013</td><td class="p0"></td><td id="t125"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB1_Tun_n0.rar		</td><td>	 4.6 MB</td><td>  148	</td><td>22.05.2012</td><td class="p0"></td><td id="t126"></td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7></td></tr>
+		<tr><td id="dbt">DB1z.rar			</td><td>	19.1 MB</td><td>  223	</td><td>10.06.2013</td><td class="pJ"></td><td id="t130"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB1z_textures.rar	</td><td>	18.1 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t131"></td><td></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t112"></span></td></tr>
+	  </tbody><tbody id="ft112" style="display:none">
+		<tr><td id="dbt">DB10.rar			</td><td>	15.9 MB</td><td>  218	</td><td>13.06.2013</td><td class="pJ"></td><td id="t140"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB10f.rar			</td><td>	18.9 MB</td><td>  222	</td><td>22.06.2013</td><td class="p0"></td><td id="t141"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB10b.rar			</td><td>	 5.2 MB</td><td>   94	</td><td>31.05.2012</td><td class="p0"></td><td id="t142"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB10_Pnts.rar   	</td><td>	 4.4 MB</td><td>   48	</td><td>10.06.2013</td><td class="p0"></td><td id="t143"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB10f_Pnts.rar   	</td><td>	 8.7 MB</td><td>   79	</td><td>22.06.2013</td><td class="p0"></td><td id="t144"></td><td id="l7"></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t113"></span></td></tr>
+	  </tbody><tbody id="ft113" style="display:none">
+		<tr><td id="dbt">DB11.rar			</td><td>	 6.1 MB</td><td>  102	</td><td>18.05.2013</td><td class="pJ"></td><td id="t150"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB11f.rar			</td><td>	 7.7 MB</td><td>  102	</td><td>18.05.2013</td><td class="p0"></td><td id="t151"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB11b.rar			</td><td>	 4.9 MB</td><td>   94	</td><td>18.05.2013</td><td class="p0"></td><td id="t152"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB11_textures.rar 	</td><td>	 3.7 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t153"></td><td></td></tr>
+		<tr class="empty"><td colspan=7></td></tr>
+
+	  </tbody><tbody>
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t210',1)"><span id="t210"></span></th></tr>
+	  </tbody><tbody id="ft210">
+		<tr><td id="dbt">DB2.rar			</td><td>	16.1 MB</td><td>  218	</td><td>13.06.2013</td><td class="pJ"></td><td id="t220"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2_textures.rar	</td><td>	17.2 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t221"></td><td></td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t211"></span></td></tr>
+	  </tbody><tbody id="ft211" style="display:none">
+		<tr><td id="dbt">DB2f.rar			</td><td>	18.9 MB</td><td>  222	</td><td>22.06.2013</td><td class="p0"></td><td id="t222"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2b.rar			</td><td>	 5.2 MB</td><td>   90	</td><td>22.05.2012</td><td class="p0"></td><td id="t223"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2_Pnts.rar   	</td><td>	23.3 MB</td><td>  207	</td><td>13.06.2013</td><td class="p0"></td><td id="t224"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2f_Pnts.rar      </td><td>	29.5 MB</td><td>  240	</td><td>22.06.2013</td><td class="p0"></td><td id="t225"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2_Tun_n0.rar		</td><td>	 4.6 MB</td><td>  148	</td><td>22.05.2012</td><td class="p0"></td><td id="t226"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2_Bridge.rar		</td><td>	 7.5 MB</td><td>   94	</td><td>09.04.2013</td><td class="p0"></td><td id="t227"></td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7></td></tr>
+		<tr><td id="dbt">DB2z.rar			</td><td>	19.1 MB</td><td>  223	</td><td>13.10.2013</td><td class="pJ"></td><td id="t230"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2z_textures.rar  </td><td>	20.4 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t231"></td><td></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t212"></span></td></tr>
+	  </tbody><tbody id="ft212" style="display:none">
+		<tr><td id="dbt">DB20.rar			</td><td>	15.9 MB</td><td>  218	</td><td>13.06.2013</td><td class="pJ"></td><td id="t240"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB20f.rar			</td><td>	18.9 MB</td><td>  222	</td><td>22.06.2013</td><td class="p0"></td><td id="t241"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB20b.rar			</td><td>	 5.2 MB</td><td>   94	</td><td>31.05.2012</td><td class="p0"></td><td id="t242"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB20z.rar			</td><td>	16.2 MB</td><td>  203	</td><td>13.10.2013</td><td class="p0"></td><td id="t245"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB20_Pnts.rar   	</td><td>	 4.4 MB</td><td>   41	</td><td>13.06.2013</td><td class="p0"></td><td id="t243"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB20f_Pnts.rar   	</td><td>	 8.7 MB</td><td>   72	</td><td>22.06.2013</td><td class="p0"></td><td id="t244"></td><td id="l7"></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t213"></span></td></tr>
+	  </tbody><tbody id="ft213" style="display:none">
+		<tr><td id="dbt">DB21.rar			</td><td>	 6.1 MB</td><td>  102	</td><td>18.05.2013</td><td class="pJ"></td><td id="t250"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB21f.rar			</td><td>	 7.7 MB</td><td>  102	</td><td>18.05.2013</td><td class="p0"></td><td id="t251"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB21b.rar			</td><td>	 4.9 MB</td><td>   94	</td><td>18.05.2013</td><td class="p0"></td><td id="t252"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB21_textures.rar 	</td><td>	 3.9 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t253"></td><td></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t214"></span></td></tr>
+	  </tbody><tbody id="ft214" style="display:none">
+		<tr><td id="dbt">DB22.rar			</td><td>	12.0 MB</td><td>  154	</td><td>13.06.2013</td><td class="pJ"></td><td id="t260"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB22_textures.rar	</td><td>	12.5 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t261"></td><td></td></tr>
+		<tr><td id="dbt">DB22f.rar			</td><td>	26.7 MB</td><td>  154	</td><td>22.06.2013</td><td class="p0"></td><td id="t262"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB22b.rar			</td><td>	 5.2 MB</td><td>   94	</td><td>10.06.2013</td><td class="p0"></td><td id="t263"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB22_Pnts.rar   	</td><td>	23.3 MB</td><td>  207	</td><td>13.06.2013</td><td class="p0"></td><td id="t264"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB22f_Pnts.rar   	</td><td>	29.5 MB</td><td>  240	</td><td>22.06.2013</td><td class="p0"></td><td id="t265"></td><td id="l7"></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t215"></span></td></tr>
+	  </tbody><tbody id="ft215" style="display:none">
+		<tr><td id="dbt">DB23.rar			</td><td>	14.7 MB</td><td>  218	</td><td>10.06.2013</td><td class="pJ"></td><td id="t270"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB23_textures.rar	</td><td>	11.4 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t271"></td><td></td></tr>
+		<tr><td id="dbt">DB23f.rar			</td><td>	17.7 MB</td><td>  222	</td><td>22.06.2013</td><td class="p0"></td><td id="t272"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB23b.rar			</td><td>	 4.5 MB</td><td>   94	</td><td>22.05.2012</td><td class="p0"></td><td id="t273"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB23_Pnts.rar   	</td><td>	23.3 MB</td><td>  207	</td><td>10.06.2013</td><td class="p0"></td><td id="t274"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB23f_Pnts.rar   	</td><td>	29.5 MB</td><td>  240	</td><td>22.06.2013</td><td class="p0"></td><td id="t275"></td><td id="l7"></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t218"></span></td></tr>
+	  </tbody><tbody id="ft218" style="display:none">
+		<tr><td id="dbt">DR2.rar			</td><td>	13.2 MB</td><td>  208	</td><td>13.06.2013</td><td class="pJ"></td><td id="t280"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR2_textures.rar	</td><td>	20.3 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t281"></td><td></td></tr>
+		<tr><td id="dbt">DR2f.rar			</td><td>	16.2 MB</td><td>  212	</td><td>22.06.2013</td><td class="p0"></td><td id="t282"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR2b.rar			</td><td>	 4.8 MB</td><td>   94	</td><td>18.05.2013</td><td class="p0"></td><td id="t283"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR2_Pnts.rar   	</td><td>	26.7 MB</td><td>  239	</td><td>13.06.2013</td><td class="p0"></td><td id="t284"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR2f_Pnts.rar      </td><td>	29.5 MB</td><td>  242	</td><td>22.06.2013</td><td class="p0"></td><td id="t285"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR2_Tun_n0.rar		</td><td>	 3.8 MB</td><td>  128	</td><td>23.06.2012</td><td class="p0"></td><td id="t286"></td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7></td></tr>
+		<tr><td id="dbt">DR20.rar			</td><td>	13.2 MB</td><td>  213	</td><td>13.06.2013</td><td class="pJ"></td><td id="t290"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR20f.rar			</td><td>	16.1 MB</td><td>  215	</td><td>22.06.2013</td><td class="p0"></td><td id="t291"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR20_Pnts.rar   	</td><td>	 4.5 MB</td><td>   41	</td><td>13.06.2013</td><td class="p0"></td><td id="t292"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DR20f_Pnts.rar     </td><td>	 9.0 MB</td><td>   74	</td><td>22.06.2013</td><td class="p0"></td><td id="t293"></td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7></td></tr>
+
+	  </tbody><tbody>
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t310',1)"><span id="t310"></span></th></tr>
+	  </tbody><tbody id="ft310">
+		<tr><td id="dbt">DB3.rar			</td><td>	14.7 MB</td><td>  218	</td><td>13.06.2013</td><td class="pJ"></td><td id="t320"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3_textures.rar	</td><td>	12.5 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t321"></td><td></td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t311"></span></td></tr>
+	  </tbody><tbody id="ft311" style="display:none">
+		<tr><td id="dbt">DB3f.rar			</td><td>	17.7 MB</td><td>  222	</td><td>22.06.2013</td><td class="p0"></td><td id="t322"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3b.rar			</td><td>	 4.5 MB</td><td>   90	</td><td>22.05.2012</td><td class="p0"></td><td id="t323"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3_Pnts.rar   	</td><td>	36.7 MB</td><td>  315	</td><td>13.06.2013</td><td class="p0"></td><td id="t324"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3f_Pnts.rar   	</td><td>	53.0 MB</td><td>  422	</td><td>22.06.2013</td><td class="p0"></td><td id="t325"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3_Tun_n0.rar		</td><td>	 3.8 MB</td><td>  148	</td><td>22.05.2012</td><td class="p0"></td><td id="t326"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3_Bridge.rar		</td><td>	 9.8 MB</td><td>   94	</td><td>08.04.2013</td><td class="p0"></td><td id="t327"></td><td id="l7"></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t312"></span></td></tr>
+	  </tbody><tbody id="ft312" style="display:none">
+		<tr><td id="dbt">DB30.rar			</td><td>	14.7 MB</td><td>  211	</td><td>13.06.2013</td><td class="pJ"></td><td id="t330"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB30f.rar			</td><td>	17.7 MB</td><td>  212	</td><td>22.06.2013</td><td class="p0"></td><td id="t331"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB30b.rar			</td><td>	 4.5 MB</td><td>   90	</td><td>22.05.2012</td><td class="p0"></td><td id="t332"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB30_Pnts.rar   	</td><td>	 8.8 MB</td><td>   77	</td><td>13.06.2013</td><td class="p0"></td><td id="t333"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB30f_Pnts.rar   	</td><td>	18.3 MB</td><td>  146	</td><td>22.06.2013</td><td class="p0"></td><td id="t334"></td><td id="l7"></td></tr>
+
+	  </tbody><tbody>
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t410',1)"><span id="t410"></span></th></tr>
+	  </tbody><tbody id="ft410">
+		<tr><td id="dbt">DB4.rar			</td><td>	13.6 MB</td><td>  208	</td><td>13.06.2013</td><td class="pJ"></td><td id="t420"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB4_textures.rar	</td><td>	14.1 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t421"></td><td></td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t411"></span></td></tr>
+	  </tbody><tbody id="ft411" style="display:none">
+		<tr><td id="dbt">DB4f.rar			</td><td>	17.0 MB</td><td>  212	</td><td>22.06.2013</td><td class="p0"></td><td id="t422"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB4b.rar			</td><td>	 4.5 MB</td><td>   45	</td><td>22.05.2012</td><td class="p0"></td><td id="t423"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB4_Pnts.rar   	</td><td>	35.4 MB</td><td>  312	</td><td>13.06.2013</td><td class="p0"></td><td id="t424"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB4f_Pnts.rar   	</td><td>	52.2 MB</td><td>  405	</td><td>22.06.2013</td><td class="p0"></td><td id="t425"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB4_Tun_n0.rar		</td><td>	 3.8 MB</td><td>  148	</td><td>22.05.2012</td><td class="p0"></td><td id="t426"></td><td id="l7"></td></tr>
+	  </tbody><tbody class="tsub">
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t412"></span></td></tr>
+	  </tbody><tbody id="ft412" style="display:none">
+		<tr><td id="dbt">DB40.rar			</td><td>	13.6 MB</td><td>  208	</td><td>13.06.2013</td><td class="pJ"></td><td id="t430"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB40f.rar			</td><td>	16.6 MB</td><td>  212	</td><td>22.06.2013</td><td class="p0"></td><td id="t431"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB40b.rar			</td><td>	 4.5 MB</td><td>   90	</td><td>22.05.2012</td><td class="p0"></td><td id="t432"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB40_Pnts.rar   	</td><td>	 8.7 MB</td><td>   82	</td><td>13.06.2013</td><td class="p0"></td><td id="t433"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB40f_Pnts.rar   	</td><td>	18.3 MB</td><td>  153	</td><td>22.06.2013</td><td class="p0"></td><td id="t434"></td><td id="l7"></td></tr>
+
+	  </tbody><tbody>
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t510',1)"><span id="t510"></span></th></tr>
+	  </tbody><tbody id="ft510">
+		<tr><td id="dbt">DB5.rar			</td><td>	14.4 MB</td><td>  216  </td><td>04.04.2012</td><td class="pJ"></td><td id="t520"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB50.rar			</td><td>	14.4 MB</td><td>  216  </td><td>04.04.2012</td><td class="pJ"></td><td id="t521"></td><td id="l7"></td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t511"></span></td></tr>
+	  </tbody><tbody id="ft511" style="display:none">
+		<tr><td id="dbt">DB51.rar			</td><td>	14.2 MB</td><td>  216  </td><td>15.04.2012</td><td class="pJ"></td><td id="t540"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB501.rar			</td><td>	14.2 MB</td><td>  216  </td><td>15.04.2012</td><td class="pJ"></td><td id="t541"></td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7></td></tr>
+		<tr><td id="dbt">DB52.rar			</td><td>	14.1 MB</td><td>  216  </td><td>15.04.2012</td><td class="pJ"></td><td id="t560"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB502.rar			</td><td>	14.2 MB</td><td>  216  </td><td>15.04.2012</td><td class="pJ"></td><td id="t561"></td><td id="l7"></td></tr>
+
+	  </tbody><tbody>
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t800',1)"><span id="t800"></span></th></tr>
+	  </tbody><tbody id="ft800">
+		<tr><td id="dbt">DS1_Roads.rar		</td><td>	10.6 MB</td><td>  342	</td><td>27.04.2012</td><td class="p0"></td><td id="t820"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">BAB_Standard.rar	</td><td>	30.7 MB</td><td>  825	</td><td>04.09.2011</td><td class="p0"></td><td id="t830"></td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7></td></tr>
+
+	  </tbody><tbody>
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t900',1)"><span id="t900"></span></th></tr>
+	  </tbody><tbody id="ft900">
+		<tr><td id="dbt">DB_Update_1306.rar	</td><td>	 4.0 MB</td><td>	 	</td><td>10.06.2013</td><td class="p0"></td><td id="t922"></td><td></td></tr>
+		<tr><td id="dbt">DB_textures.rar	</td><td>	63.5 MB</td><td>	 	</td><td>01.09.2013</td><td class="p0"></td><td id="t921"></td><td></td></tr>
+		<tr><td id="zub">DB_Oberleitung.rar	</td><td>	13.2 MB</td><td>  278	</td><td>23.11.2013</td><td class="p0"></td><td id="t920"></td><td id="l7"></td></tr>
+		<tr><td id="zub">NR_Freileitung.rar	</td><td>	 0.7 MB</td><td>	4	</td><td>09.02.2011</td><td class="p0"></td><td id="t925"></td><td id="l2"></td></tr>
+		<tr><td id="zub">NR_Greenery.rar	</td><td>	 5.3 MB</td><td>   57	</td><td>26.12.2011</td><td class="p0"></td><td id="t930"></td><td id="l1"></td></tr>
+		<tr><td id="stf">DB_STFProfiles_107.zip	</td><td>	 3.7 MB</td><td>   	</td><td>15.02.2025</td><td class="p0"></td><td id="t940"></td><td></td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t970"></span></td></tr>
+	  </tbody><tbody id="ft970" style="display:none">
+		<tr><th colspan=4 class="sH">S-Bahn Hamburg</th><td class="p0"></td><td colspan=2 id="t971"></td></tr>
+		<tr><td id="dbt">DB1sh.rar			</td><td>	14.2 MB</td><td>  136	</td><td>02.04.2013</td><td class="pJ"></td><td id="t972"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2sh.rar			</td><td>	14.1 MB</td><td>  136	</td><td>02.04.2013</td><td class="pJ"></td><td id="t973"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3sh.rar			</td><td>	13.1 MB</td><td>  136	</td><td>02.04.2013</td><td class="pJ"></td><td id="t974"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB23sh.rar			</td><td>	13.1 MB</td><td>  136	</td><td>02.04.2013</td><td class="pJ"></td><td id="t975"></td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB_sh_textures.rar	</td><td>	 0.3 MB</td><td>	 	</td><td>27.01.2012</td><td class="p0"></td><td id="t976"></td><td></td></tr>
+
+	  </tbody><tbody>
+		<tr class="empty"><td colspan=7></td></tr>
+		<tr><td colspan=7 style="padding:0 4px 4px 8px;"><div id="tinfo"></div></td></td></tr>
+	  </tbody></table></td></tr>
+	<tr style="background-image:none"><td style="padding:4px 0;border:none;color:#dddddd"></td></tr>
+	<tr class="dth"><th id="t1000"></th></tr>
+	<tr><td style="cursor:default"><ul>
+		<li class="lnk"><a href="pages/Manual_I.html" id="t1001"></a></li>
+		<li class="lnk"><a href="pages/Manual_D.html" id="t1002"></a></li>
+<!--
+		<li id="t1001" class="lnk" onclick="lPg(9)"></li>
+		<li id="t1002" class="lnk" onclick="lPg(8)"></li>
+-->
+		</ul></td></tr>
+	<tr style="background-image:none"><td style="padding:4px 2px;border:none;color:#dddddd" id="cpr"></td></tr>
+</table><div id="lPic"></div><div id="t0x"></div>
+
+<div id="de" style="display:none">
+[t00]DBTracks v1.0
+[t01]Aktuelle Hinweise
+[t010] Historie
+[t011] <span class="up3">Das Texturen-Update "1306" ist erforderlich <i class="bl">f&uuml;r alle Streckenordner</i>, die DBTracks-<b>Weichen</b> neuer als Mai 2013 verwenden (4.0 MB): </span>
+		<span class="lnk" onclick="drDl('dbt/DB_Update_1306.rar')"><span class="up3">&#160;DB_Update_1306.rar</span></span>
+
+[t06] Gr&ouml;&szlig;e
+[t07] Teile
+[t08] Stand
+[t09] Bemerkungen
+[t10] Einbaumethode
+
+[t110]<span class="sH">DB1</span>&#160;&#160;Gleis-Set: "Betonschwellen neu"
+[t111]weitere DB1 Varianten ...
+[t112]DB10 Gleise - rostige Schienen (z.B. f&uuml;r noch unbenutzte, neue Gleise)
+[t113]DB11 Gleise - neue, kurze Betonschwellen (2300mm)
+
+[t120] DB1::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleis-Set: "Betonschwellen neu"</span>
+[t121] DB1 Gleis-Texturen
+[t122] DB1f, mit Fahrdraht
+[t123] DB1b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t124] Weichen-Varianten, u.a. f&uuml;r den &Uuml;bergang von DB1 auf DB10:: (keine _S1-Weichen)::
+[t125] Weichen-Varianten m. Fahrdraht, u.a. f&uuml;r den &Uuml;bergang von DB1f auf DB10 und DB10f
+[t126] Austausch-Set: Runde Tunnel ohne Rettungsnischen
+
+[t130] DB1z, mit Fahrdraht und LZB-Kabel::, <i>nicht vollst&auml;ndige</i> Auswahl an Streckengleisen. Inkl. Weichen::
+[t131] DB1z Gleis-Texturen
+
+[t140] DB10::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleise - rostige Schienen (z.B. f&uuml;r noch unbenutzte, neue Gleise)</span>
+[t141] DB10f, mit Fahrdraht
+[t142] DB10b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t143] Weichen-Varianten DB10, z.B. f&uuml;r Gleisbaustellen:: (keine _S1-Weichen)::
+[t144] Weichen-Varianten m. Fahrdraht
+
+[t150] DB11::, Auswahl A-Gleise (Streckengleise), keine Weichen (DB1 verwenden):: <span class="dn">Gleise - neue, kurze Betonschwellen (2300mm)</span>
+[t151] DB11f, mit Fahrdraht
+[t152] DB11 mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t153] DB11 Gleis-Texturen
+
+[t210]<span class="sH">DB2</span>&#160;&#160;Gleis-Set: "Betonschwellen alt"
+[t211]weitere DB2 Varianten ...
+[t212]DB20 Gleise - rostige Schienen
+[t213]DB21 Gleise - benutzte, kurze Betonschwellen (2300mm)
+[t214]DB22 Gleise - Betonschwellen auf grauem Schotter
+[t215]DB23 Gleise - Holzschwellen auf grauem Schotter
+[t218]DR2  Gleise - DDR Betonschwellen
+
+[t220] DB2::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleis-Set: "Betonschwellen alt"</span>
+[t221] DB2 Gleis-Texturen, brauner Schotter wie DB3::, inkl. Variante mit grauem Schotter::
+[t222] DB2f, mit Fahrdraht
+[t223] DB2b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t224] Weichen-Varianten, u.a. f&uuml;r den &Uuml;bergang von DB2 auf DB20
+[t225] Weichen-Varianten m. Fahrdraht, u.a. f&uuml;r den &Uuml;bergang von DB2f auf DB20 und DB20f
+[t226] Austausch-Set: Runde Tunnel ohne Rettungsnischen
+[t227] Br&uuml;ckengleise ohne Schwellen::, inkl.Anfangs- und Endst&uuml;cke::
+
+[t230] DB2z, mit Fahrdraht und LZB-Kabel::, <i>nicht vollst&auml;ndige</i> Auswahl an Streckengleisen::
+[t231] DB2z Gleis-Texturen
+
+[t240] DB20::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleise - rostige Schienen</span>
+[t241] DB20f, mit Fahrdraht
+[t242] DB20b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t243] Weichen-Varianten DB20:: (keine _S1-Weichen)::
+[t244] Weichen-Varianten m. Fahrdraht
+[t245] DB20z, mit Fahrdraht und LZB-Kabel::, <i>nicht vollst&auml;ndige</i> Auswahl an Streckengleisen::
+
+[t250] DB21::, Auswahl A-Gleise (Streckengleise), keine Weichen (DB2 verwenden):: <span class="dn">Gleise - benutzte, kurze Betonschwellen (2300mm)</span>
+[t251] DB21f, mit Fahrdraht
+[t252] DB21b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t253] DB21 Gleis-Texturen
+
+[t260] DB22::, alle A-Gleise, inkl. Weichen _Sx und _M2, keine Tunnel (DB2 verwenden):: <span class="dn">Gleise - Betonschwellen auf grauem Schotter</span>
+[t261] DB22 Gleis-Texturen
+[t262] DB22f, mit Fahrdraht
+[t263] DB22b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t264] Weichen-Varianten, u.a. f&uuml;r den &Uuml;bergang von DB22 auf DB20
+[t265] Weichen-Varianten m. Fahrdraht, u.a. f&uuml;r den &Uuml;bergang von DB22f auf DB20 und DB20f
+
+[t270] DB23::, alle A-Gleise, inkl. Weichen _Sx und _M2:: <span class="dn">Gleise - Holzschwellen auf grauem Schotter</span>
+[t271] DB23 Gleis-Texturen
+[t272] DB23f, mit Fahrdraht
+[t273] DB23b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t274] Weichen-Varianten, u.a. f&uuml;r den &Uuml;bergang von DB23 auf DB30
+[t275] Weichen-Varianten m. Fahrdraht, u.a. f&uuml;r den &Uuml;bergang von DB23f auf DB30 und DB30f
+
+[t280] DR2::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2, Weichen mit Holzschwellen.:: <span class="dn">Gleise - DDR Betonschwellen</span>
+[t281] DR2 Gleis-Texturen
+[t282] DR2f, mit Fahrdraht
+[t283] DR2b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t284] Weichen-Varianten, u.a. f&uuml;r den &Uuml;bergang von DR2 auf DR20
+[t285] Weichen-Varianten m. Fahrdraht, u.a. f&uuml;r den &Uuml;bergang von DR2f auf DR20 und DR20f
+[t286] Austausch-Set: Runde Tunnel ohne Rettungsnischen
+
+[t290] DR20, rostige Schienen, inkl. Weichen-Varianten _Sx und _M2
+[t291] DR20f, mit Fahrdraht
+[t292] Weichen-Varianten DR20
+[t293] Weichen-Varianten m. Fahrdraht
+
+[t310]<span class="sH">DB3</span>&#160;&#160;Gleis-Set: "Holzschwellen"
+[t311]weitere DB3 Varianten ...
+[t312]DB30 Gleise - rostige Schienen
+
+[t320] DB3::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleis-Set: "Holzschwellen"</span>
+[t321] DB3 Gleis-Texturen
+[t322] DB3f, mit Fahrdraht
+[t323] DB3b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t324] Weichen-Varianten, u.a. f&uuml;r den &Uuml;bergang von DB3 auf DB30
+[t325] Weichen-Varianten m. Fahrdraht, u.a. f&uuml;r den &Uuml;bergang von DB3f auf DB30 und DB30f
+[t326] Austausch-Set: Runde Tunnel ohne Rettungsnischen
+[t327] Br&uuml;ckengleise, Holzschwellen ohne Schotter::, inkl.Anfangs- und Endst&uuml;cke::
+
+[t330] DB30::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleise - rostige Schienen</span>
+[t331] DB30 mit Fahrdraht
+[t332] DB30b, rostige Schienen, mit Banketten::, inkl. Version mit Fahrdraht::
+[t333] Weichen-Varianten DB30
+[t334] Weichen-Varianten m. Fahrdraht
+
+[t410]<span class="sH">DB4</span>&#160;&#160;Gleis-Set: "Stahlschwellen"
+[t411]weitere DB4 Varianten ...
+[t412]DB40 Gleise - rostige Schienen
+
+[t420] DB4::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleis-Set: "Stahlschwellen"</span>
+[t421] DB4 Gleis-Texturen
+[t422] DB4f, mit Fahrdraht
+[t423] DB4b, mit Banketten:: - inkl. Version mit Fahrdraht.::
+[t424] Weichen-Varianten, u.a. f&uuml;r den &Uuml;bergang von DB4 auf DB40
+[t425] Weichen-Varianten m. Fahrdraht, u.a. f&uuml;r den &Uuml;bergang von DB4f auf DB40 und DB40f
+[t426] Austausch-Set: Runde Tunnel ohne Rettungsnischen
+
+[t430] DB40::, alle A-Gleise, inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Gleise - rostige Schienen</span>
+[t431] DB40 mit Fahrdraht
+[t432] DB40b, rostige Schienen, mit Banketten::, inkl. Version mit Fahrdraht::
+[t433] Weichen-Varianten DB40
+[t434] Weichen-Varianten m. Fahrdraht	
+
+[t510]<span class="sH">DB5</span>&#160;&#160;Gleis-Set: "Y-Stahlschwellen"
+[t511]weitere DB5 Varianten ...
+
+[t520] DB5::, nur Streckengleise, inkl. DB5b, DB5f, DB5fb und <!t522,DB5 Gleis-Texturen> Gleis-Texturen:: <span class="dn">Gleis-Set: "Y-Stahlschwellen"</span>
+[t521] DB50, rostige Schienen
+[t540] DB51, mit DB1 Schotter
+[t541] DB501, rostige Schienen
+[t560] DB52, mit grauem DB2 Schotter
+[t561] DB502, rostige Schienen
+
+[t800] DS1 Stra&szlig;en-Pakete
+[t820] DS1 Stra&szlig;enpaket, Ersatz f&uuml;r die Stra&szlig;en der MSTS-Standardauswahl
+[t830] Autobahn Stra&szlig;enpaket, Ersatz als Richtungsfahrbahn f&uuml;r Stra&szlig;en der MSTS-Standardauswahl
+
+[t900]Optionale Dateipakete, Zubeh&ouml;r
+[t922] <span class="hl">Universal-UPDATE</span> &#160;- neue Texturen f&uuml;r DBTracks-Weichen ver&ouml;ffentlicht seit Juni 2013
+[t921] <i class="bl">alle</i> Gleis-Texturen DB1-4
+[t920] Oberleitungsmasten f&uuml;r DBtracks
+[t925] NR Freileitungsmasten
+[t930] NR Greenery - Gras und B&uuml;sche zum Einbau zwischen oder neben den Gleisen.
+[t940] STF-Profile Version 1.0.7 zur Erm&ouml;glichung der &Uuml;berh&ouml;hung in Open Rails mit DBTracks
+
+[t970]Gleis-Sets f&uuml;r S-Bahn Hamburg ...
+[t971] ::Alle Gleis-Sets haben eine identische, nicht vollst&auml;ndige Gleisauswahl, inkl. ::Tunnel <span class="dn">f&uuml;r S-Bahn Hamburg</span>
+[t972] DB1 S-Bahn HH, neuer Schotter
+[t973] DB2 S-Bahn HH, alter Schotter
+[t974] DB3 S-Bahn HH, Holzschwellen
+[t975] DB23 S-Bahn HH, grauer Schotter mit Holzschwellen
+[t976] spezielle Texturen f&uuml;r die S-Bahn HH. Erg&auml;nzung zu allen anderen Gleis-Texturen.
+
+[t1000]Anleitungen
+[t1001]<b>Anleitung zum Einbau</b>
+[t1002]<b>Anleitung f&uuml;r Dynatrax</b>
+
+</div><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="en" style="display:none">
+[t00]DBTracks v1.0
+[t01]Latest News
+[t010] History
+[t011] <span class="up3">The textures update '1306' is required <i class="bl">for all route folders</i> which utilize DBTracks switches released since June 2013 (4.0 MB): </span>
+       <span class="lnk" onclick="drDl('dbt/DB_Update_1306.rar')"><span class="up3">DB_Update_1306.rar</span></span>
+
+[t06] Size
+[t07] Pcs
+[t08] Created
+[t09] Remarks
+[t10] Inst.method
+
+[t110]<span class="sH">DB1</span>&#160;&#160;Track Set: New Concrete Ties
+[t111]more DB1 downloads ...
+[t112]DB10, rusty rails (e.g. for unused new track)
+[t113]DB11, new short concrete ties (2300mm)
+
+[t120] DB1::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn">Track Set: New Concrete Ties</span>
+[t121] DB1 track textures
+[t122] DB1f, with catenary
+[t123] DB1b, with hard shoulder:: - incl. version with catenary::
+[t124] Switch variants, incl. connections between DB1 and DB10:: (no _S1 lanterns)::
+[t125] Switch variants with catenary, incl. connections between DB1f, DB10 and DB10f:: (no _S1 lanterns)::
+[t126] Replacement for round tunnel, versions without emergency niches
+
+[t130] DB1z, with catenary and LZB cable (cab signalling system)::, main tracks only::
+[t131] DB1z track textures
+
+[t140] DB10, ::all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn">rusty rails (e.g. for unused new track)</span>
+[t141] DB10f, with catenary
+[t142] DB10b, with hard shoulder:: - incl. version with catenary::
+[t143] Switch variants DB10, e.g. for railway construction sites:: (no _S1 lanterns)::
+[t144] Switch variants with catenary
+
+[t150] DB11, ::selected 'A' tracks (main track), no switches (use DB1):: <span class="dn">new short concrete ties (2300mm)</span>
+[t151] DB11f, with catenary
+[t152] DB11b, with hard shoulder:: - incl. version with catenary::
+[t153] DB11 track textures
+
+[t210]<span class="sH">DB2</span>&#160;&#160;Track Set: Old Concrete Ties
+[t211]more DB2 downloads ...
+[t212]DB20 - rusty rails
+[t213]DB21 - used state, short concrete ties (2300mm)
+[t214]DB22 - concrete ties on gray ballast
+[t215]DB23 - wooden ties on gray ballast
+[t218]DR2  - old concrete ties in former GDR style
+
+[t220] DB2::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn">Track Set: Old Concrete Ties</span>
+[t221] DB2 track textures, brown ballast::, plus version with gray ballast::
+[t222] DB2f, with catenary
+[t223] DB2b, with hard shoulder:: - incl. version with catenary::
+[t224] Switch variants, incl. connections between DB2 and rusty DB20
+[t225] Switch variants with catenary, incl. connections between DB2f, DB20 and DB20f
+[t226] Replacement for round tunnel, versions without emergency niches
+[t227] Bridge tracks without ties::, incl. start and end sections::
+
+[t230] DB2z, with catenary and LZB cable (cab signalling system)::, main tracks only::
+[t231] DB2z track textures
+
+[t240] DB20::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn"> - rusty rails</span>
+[t241] DB20f, with catenary
+[t242] DB20b, with hard shoulder:: - incl. version with catenary::
+[t243] Switch variants DB20:: (no _S1 lanterns)::
+[t244] Switch variants with catenary
+[t245] DB20z, with catenary and LZB cable (cab signalling system)::, main tracks only::
+
+[t250] DB21, ::selected 'A' tracks (main track), no switches (use DB2):: <span class="dn">used state, short concrete ties (2300mm)</span>
+[t251] DB21f, with catenary
+[t252] DB21b, with hard shoulder:: - incl. version with catenary::
+[t253] DB21 track textures
+
+[t260] DB22::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn"> - concrete ties on gray ballast</span>
+[t261] DB22 track textures, gray ballast
+[t262] DB22f, with catenary
+[t263] DB22b, with hard shoulder:: - incl. version with catenary::
+[t264] Switch variants, incl. connections between DB22 and rusty DB20
+[t265] Switch variants with catenary, incl. connections between DB22f, DB20 and DB20f
+
+[t270] DB23::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn"> - wooden ties on gray ballast</span>
+[t271] DB23 track textures, gray ballast
+[t272] DB23f, with catenary
+[t273] DB23b, with hard shoulder:: - incl. version with catenary::
+[t274] Switch variants, incl. connections between DB23 and rusty DB30
+[t275] Switch variants with catenary, incl. connections between DB23f, DB30 and DB30f
+
+[t280] DR2::, all 'A' tracks, switches with wooden ties:: <span class="dn"> - old concrete ties in former GDR style</span>
+[t281] DR2 track textures, brown ballast
+[t282] DR2 with catenary
+[t283] DR2b, with hard shoulder:: - incl. version with catenary::
+[t284] Switch variants, incl. connections between DR2 and rusty DR20
+[t285] Switch variants with catenary, incl. connections between DR2f, DR20 and DR20f
+[t286] Replacement for round tunnel, versions without emergency niches
+
+[t290] DR20, rusty rails
+[t291] DR20f, with catenary
+[t292] Switch variants DR20
+[t293] Switch variants with catenary
+
+[t310]<span class="sH">DB3</span>&#160;&#160;Track Set: Wooden Ties
+[t311]more DB3 downloads ...
+[t312]DB30 - rusty rails
+
+[t320] DB3::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn">Track Set: Wooden Ties</span>
+[t321] DB3 track textures
+[t322] DB3f, with catenary
+[t323] DB3b, with hard shoulder:: - incl. version with catenary::
+[t324] Switch variants, incl. connections between DB3 and rusty DB30
+[t325] Switch variants with catenary, incl. connections between DB3f, DB30 and DB30f
+[t326] Replacement for round tunnel, versions without emergency niches
+[t327] Bridge tracks, wooden ties without ballast::, incl. start and end sections::
+
+[t330] DB30::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn"> - rusty rails</span>
+[t331] DB30f, with catenary
+[t332] DB30b, rusty rails, with hard shoulder, incl. version with catenary
+[t333] Switch variants DB30
+[t334] Switch variants with catenary
+
+[t410]<span class="sH">DB4</span>&#160;&#160;Track Set: Steel Ties
+[t411]more DB4 downloads ...
+[t412]DB40 - rusty rails
+
+[t420] DB4::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn">Track Set: Steel Ties</span>
+[t421] DB4 track textures
+[t422] DB4f, with catenary
+[t423] DB4b, with hard shoulder:: - incl. version with catenary::
+[t424] Switch variants, incl. connections between DB4 and rusty DB40
+[t425] Switch variants with catenary, incl. connections between DB4f, DB40 and DB40f
+[t426] Replacement for round tunnel, versions without emergency niches
+
+[t430] DB40::, all 'A' tracks, incl. switch versions _Sx and _M2:: <span class="dn"> - rusty rails</span>
+[t431] DB40f, with catenary
+[t432] DB40b, rusty rails, with hard shoulder, incl. version with catenary
+[t433] Switch variants DB40
+[t434] Switch variants with catenary
+
+[t510]<span class="sH">DB5</span>&#160;&#160;Track Set: Y-Steel Ties
+[t511]more DB5 downloads ...
+
+[t520] DB5::, main tracks only, incl. DB5b, DB5f, DB5fb and <!t522,DB5 track textures> track textures:: <span class="dn">Track Set: Y-Steel Ties</span>
+[t521] DB50, rusty rails
+[t540] DB51, with DB1 ballast
+[t541] DB501, rusty rails
+[t560] DB52, with gray DB2 ballast
+[t561] DB502, rusty rails
+
+[t800]DS1 Roads Packages
+[t820] DS1 Roads package, replacement for MSTS standard roads
+[t830] Autobahn package, replacement for MSTS standard road sections as directional roadway
+
+[t900]Catenary, Optional Downloads, Accessories
+[t922] <span class="hl">universal UPDATE</span> &#160;- new textures for DBTracks switches released since June 2013
+[t921] <i class="bl">all</i> track textures DB1-4
+[t920] DBTracks catenary masts
+[t925] Overhead power line masts
+[t930] NR Greenery - grass and bushes to overgrow tracks
+[t940] STF profiles version 1.0.7 to enable super-elevation in Open Rails with DBTracks
+
+[t970]Track Sets for S-Bahn Hamburg ...
+[t971] ::All track sets consist of identical, not complete assortment. Tunnel are included. ::<span class="dn">Tunnel for S-Bahn Hamburg</span>
+[t972] DB1 S-Bahn Hamburg, concrete ties, light ballast
+[t973] DB2 S-Bahn Hamburg, concrete ties, old ballast
+[t974] DB3 S-Bahn Hamburg, wooden ties, old ballast
+[t975] DB23 S-Bahn Hamburg, wooden ties w. gray ballast
+[t976] special textures for S-Bahn Hamburg, supplemental to all other track textures.
+
+[t1000]Installation Manuals
+[t1001]<b>Installation Instructions</b>
+[t1002]<b>Dynatrax Manual</b>
+
+</div><!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[t990]Updates f&uuml;r kommerzielle Produkte <small>(kostenlos)</small>
+[t991] Eisenbahn Einsteigerpaket Update v1.3
+[t992] Eisenbahn Einsteigerpaket Update v1.4
+
+[t990]Updates for commercial products <small>(for free)</small>
+[t991] Eisenbahn Einsteigerpaket Update v1.3
+[t992] Eisenbahn Einsteigerpaket Update v1.4
+
+-->
+<div id="news_de" style="display:none">
+
+[23.11.2013]<li><i class="bl">DB_Oberleitung.rar</i> - wurde um einige Masten erg&auml;nzt.</li>
+[13.10.2013]<li><i class="bl">DB2z Weichen:</i> Texturzuweisung korrigiert.</li>
+[01.09.2013]<li>Texturpakete <i class="bl">DB1-4_textures, DB1z-2z_textures, DB21-23_textures, DR2_textures, DB_textures</i>: Schneetexturen korrigiert
+				<br><span class="lnk" onclick="drDl('dbt/130901_Update.rar')"><span class="up3">Download nur ge&auml;nderte Dateien (2.0 MB)</span></span></li>
+[26.08.2013]<li>Texturpakete <i class="bl">DB1-4_textures, DB1z-2z_textures, DB22-23_textures, DB_textures</i> vervollst&auml;ndigt (fehlende <b>DB_WL*b.ace</b> erg&auml;nzt)
+				<br><span class="lnk" onclick="drDl('dbt/130826_Update.rar')"><span class="up3">Download nur hinzugef&uuml;gte Dateien (0.6 MB)</span></span></li>
+[08.07.2013]<li>Gro&szlig;es Texturpaket DB1-4 (<span class="hl2">DB_textures</span>) bereitgestellt f&uuml;r einfacheren Download (nichts neues enthalten).</li>
+[22.06.2013]<li>Korrekturen an allen YPnt10d-Weichen mit Fahrdraht.<br><span class="lnk" onclick="drDl('dbt/130622_Update.rar')"><span class="up3">Download nur der neuen Dateien (51.0 MB)</span></span></li>
+[13.06.2013]<li>Erneuerung aller Standardweichen, Vervollst&auml;ndigung der Varianten (5.592 neu Objekte)</li>
+			<li><i class="bl">Achtung</i>: Alle Weichen ben&ouml;tigen neue Texturen. (neu herunterladen und in alle Streckenordner kopieren)</li>
+			<li>Verschiedene Neuerungen und Erg&auml;nzungen. <span class="lnk" onclick="tShx('s120528',1)"><b style="font-style:italic;color:#666666">Details...</b></span>
+			<ul id="s120528" style="list-style-type:square;display:none">
+			<li>Diverse Korrekturen, bei allen Handweichen wurden die zus&auml;tzlichen Motork&auml;sten entfernt.
+			<li>Varianten wurden vervollst&auml;ndigt und vereinheitlicht. Neue Handweichen mit gelbem Hebelgewicht.
+			<li>Der Aufbau der Konstruktionsdateien wurde vereinheitlicht und vereinfacht, um Reproduktionen zu beschleunigen
+			<li>Die Oberleitung wurde einheitlich in einem Subobjekt definiert, das in der H&ouml;he anpassbar ist auf die Fahrdrahth&ouml;hen f&uuml;r z.B. die Niederlande und Frankreich (5.8m) sowie Schweiz und &Ouml;sterreich (6.0m)
+			</ul></li>
+[18.05.2013]<li>Korrekturen und Erg&auml;nzungen an Prellb&auml;cken von DB11, DB21 und DR2<br><span class="lnk" onclick="drDl('dbt/130518_Update.rar')"><span class="up3">Download nur der neuen Dateien (3.0 MB)</span></span></li>
+[09.04.2013]<li><!news>Neu: DB2br (DB2_Bridge) - Br&uuml;ckengleise ohne Schwellen</li>
+[08.04.2013]<li>Korrekturen an Br&uuml;cken-Shapes DB3br (DB3_Bridge)</li>
+[06.04.2013]<li>Korrekturen an Tunnel-Shapes und .SD-Dateien von DB30</li>
+[02.04.2013]<li>Korrekturen an Tunnel-Shapes und .SD-Dateien von DB10, DB20, DB40, DR2, DR20, DB1sh, DB2sh, DB3sh, DB23sh</li>
+[27.01.2013]<li>Korrekturen an der Textur DB_Rails2w.ace.</li>
+[13.01.2013]<li>Neue Gleis-Sets DB11 und DB21: Kurze Betonschwellen (2300mm)</li><li>Neues Dynatrax-Profil auf der <span class="lnk" onclick="lPg(8)" style="color:#808080"><b>Dynatrax-Seite</b></span></li>
+			<li><span class="hl2">NR_Freileitung</span>: Die Hochspannungsmasten sind jetzt verf&uuml;gbar (es ist noch nichts neues enthalten)</li>
+[23.06.2012]<li>Anpassung der DR2-Tunnel an neuen Standard</li><li>Anpassung der DB*sh-Tunnel an neuen Standard</li>
+[21.06.2012]<li>Korrekturen an Pnt10dRgt-Weichen (Laterne)</li><li>Texturzuweisung bei einigen DB40-Weichen</li><li>&Auml;nderungen an 'DB_Rails'-Weichentexturen</li>
+[28.05.2012]<li>3.820 Shape-Dateien z.T. erneuert, Sortimente erg&auml;nzt, 122 Texturen erneuert oder erg&auml;nzt. <span class="lnk" onclick="tShx('s120528',1)"><b style="font-style:italic;color:#666666">Details...</b></span>
+			<ul id="s120528" style="list-style-type:square;display:none">
+			<li>Bei allen Oberbauarten wurde das <b>Sortiment angeglichen</b> bzw. erg&auml;nzt.</li>
+			<li>Die Standard-<b>Prellb&auml;cke</b> wurden &uuml;berarbeitet und um Varianten mit Bankettstreifen erg&auml;nzt.</li>
+			<li>Die "<b>USBuffer</b>" sind nun endlich eigenst&auml;ndige Modelle. Wie beim Ur-Vorbild handelt es sich um Bauarten mit Scherend&auml;mpfer. Die Abmessungen (inkl. BoundingBox) des Ur-Modells wurden exakt &uuml;bernommen, um einen Austausch zu erleichtern.</li>
+			<li><b>Texturen</b> sind jeweils f&uuml;r jede Baugruppe komplett verf&uuml;gbar. Es gibt keine allgemeine Download-Kategorie f&uuml;r Texturen mehr.</li>
+			<li>Alle <b>Tunnel</b> wurden technisch erneuert und sollten in den MSTS-Ordnern ersetzt werden. Bisher wurden Nacht-Texturen verwendet. Nun hat sich herausgestellt, dass es damit beim Tag-/Nachtwechsel zu Fehlermeldungen kommt.
+				Jetzt haben die Tunnelw&auml;nde eine unver&auml;nderliche Belichtungseinstellung und k&ouml;nnen auf die Nacht-Texturen verzichten.</li>
+			<li><b>DB23</b> (Holzschwellen auf grauem Schotter) wird als komplette Variante unter DB3 angeboten. Die passende DB2-Texturen mit grauem Schotter sind enthalten.</li>
+			<li>DB3 <b>Br&uuml;ckengleise</b> sind jetzt komplett verf&uuml;gbar. Inkl. Anfangs- und Endst&uuml;cke. Das Sortiment ist beschr&auml;nkt auf Streckengleise.</li>
+			<li><b>Weichen-Texturen</b> wurden optimiert. Alle Weichen mit rostigen Schienen haben nun auch rostige Antriebselemente.</li>
+			</ul></li>
+[27.04.2012]<li>Korrekturen an den DS1_Roads (betrifft alle Shapes mit Leitpfosten - bitte neu herunterladen)</li>
+[15.04.2012]<li>Korrekturen und Erg&auml;nzungen zu einigen Weichenmodellen</li>
+			<li>&Auml;nderungen bei der Texturzuweisung bei den DB51, DB501, DB52, DB502 Gleis-Sets (bitte neu herunterladen)</li>
+[09.04.2012]<li>DB30b, DB40b: rostige Gleise mit Banketten.</li>
+[05.04.2012]<li>Neue Tunnel f&uuml;r die Hamburger S-Bahn.</li>
+[04.04.2012]<li>Ver&ouml;ffentlichung des neuen DB5 Gleis-Set mit Y-Stahlschwellen.<br><li>Korrekturen an allen DB_Rail*-Texturen: Neuer Alpha f&uuml;r den Seitenstreifen.</li>
+[20.03.2012]<li>Gleis-Set DR2 hinzugef&uuml;gt unter "DB2"</li>
+[19.03.2012]<li>Korrekturen an den Texturen der Weichen mit LZB (DB1z,DB2z).</li>
+[26.12.2011]<li>NR_Greenery Update. Gras-Textur noch unregelm&auml;&szlig;iger, NR_Gras_60x20 erneuert.</li>
+[14.11.2011]<li>DB_Oberleitung aktualisiert, NR_Greenery hinzugef&uuml;gt.</li>
+[08.11.2011]<li>Neues DB4 Gleis-Set, neue DB20, DB30, DB40 rostige Gleise, DB_Textures wurde aktualisiert.</li>
+[03.09.2011]<li>Neue Stra&szlig;en und Autobahnen sind verf&uuml;gbar. Die Stra&szlig;en haben Leitpfosten und Schutzplanken</li>
+			<li>Die Autobahn-Fahrbahnen sind als <span style="font-style:italic">Richtungsfahrbahnen</span> konzipiert und k&ouml;nnen 2L- und 4L-Stra&szlig;enst&uuml;cke aus der MSTS-Standardauswahl ersetzen.</li>
+
+</div><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="news_en" style="display:none">
+
+[23.11.2013]<li><i class="bl">DB_Oberleitung.rar</i> - supplemented by some new catenary masts</li>
+[13.10.2013]<li><i class="bl">DB2z switches:</i> texture assignment fixed</li>
+[01.09.2013]<li>Texture packages <i class="bl">DB1-4_textures, DB1z-2z_textures, DB21-23_textures, DR2_textures</i>: snow textures fixed
+                <br><span class="lnk" onclick="drDl('dbt/130901_Update.rar')"><span class="up3">Download only updated files (2.0 MB)</span></span></li>
+[26.08.2013]<li>Texture packages <i class="bl">DB1-4_textures, DB1z-2z_textures, DB22-23_textures, DB_textures</i> completed (missing DB_WL*b.ace added)
+                <br><span class="lnk" onclick="drDl('dbt/130826_Update.rar')"><span class="up3">Download only added files (0.6 MB)</span></span></li>
+[08.07.2013]<li>Big texture package DB1-4 (<span class="hl2">DB_textures</span>) provided for easier download (contains nothing new)</li>
+[22.06.2013]<li>Corrections on all YPnt10d switches with OHW <br><span class="lnk" onclick="drDl('dbt/130518_Update.rar')"><span class="up3">Download new files only (51.0 MB)</span></span></li>
+[13.06.2013]<li>Renewal of all standard switches, completion of variants (5,592 new objects)</li>
+            <li><i class="bl">Note</i>: All switches need new textures. (Download the new textures and copy it to all route folders)</li>
+            <li>Various additions and some new items. <span class="lnk" onclick="tShx('s120528',1)"><b style="font-style:italic;color:#666666">Details...</b></span>
+			<ul id="s120528" style="list-style-type:square;display:none">
+			<li>Various adjustments. Additional machine boxes removed from manual switches.
+			<li>Variants have been completed and standardized. New manual switches with yellow lever weight.
+			<li>The structure of the project files has been unified and simplified to ease reproduction
+			<li>The catenary has been uniformly defined in a sub-object, which is adaptable to the height of the contact wire heights for example, the Netherlands and France (5.8m) as well as Switzerland and Austria (6.0m)
+			</ul></li>
+[18.05.2013]<li>Corrections and additions to buffer stops of DB11, DB21 and DR2<br><span class="lnk" onclick="drDl('dbt/130518_Update.rar')"><span class="up3">Download new files only (3.0 MB)</span></span></li>
+[09.04.2013]<li><!news>New: DB2br (DB2_Bridge) - bridge tracks without ties</li>
+[08.04.2013]<li>Corrections on bridge shapes DB3br (DB3_Bridge)</li>
+[06.04.2013]<li>Corrections on tunnel shapes and .SD files of DB30</li>
+[02.04.2013]<li>Corrections on tunnel shapes and .SD files of DB10, DB20, DB40, DR2, DR20, DB1sh, DB2sh, DB3sh, DB23sh</li>
+[27.01.2013]<li>Corrections on textur file DB_Rails2w.ace.</li>
+[13.01.2013]<li>New track sets DB11 and DB21: short concrete ties (2300mm)</li><li>New Dynatrax profile on the <span class="lnk" onclick="lPg(8)" style="color:#808080"><b>Dynatrax page</b></span></li>
+			<li><span class="hl2">NR_Freileitung</span>: Overhead power line mast set is available now (contains nothing new)</li>
+[23.06.2012]<li>Update for DR2 tunnel</li><li>Update for DB*sh tunnel</li>
+[21.06.2012]<li>Corrections to Pnt10dRgt switches (lantern)</li><li>textur assignment of some DB40 switches</li><li>improvement of 'DB_Rails' switch textures</li>
+[28.05.2012]<li>3.820 shape files rebuilt, assortments completed, 122 textures improved or completed.<span class="lnk" onclick="tShx('s120528',1)"><b style="font-style:italic;color:#666666">read more</b></span>
+			<ul id="s120528" style="list-style-type:square;display:none">
+			<li>For all types of ballast there is now <b>nearly the same assortment</b> available</li>
+			<li>The standard-<b>buffer stops</b> are reworked and supplemented with variants with hard shoulder</li>
+			<li>The "<b>USBuffer</b>" are finally separate models. Like the original model it has scissor dampers. The dimensions match with the base model (incl. BoundingBox), so it can be exchanged easily</li>
+			<li>All <b>textures</b> are now available for each group of downloads. The is no common package anymore</li>
+			<li>All <b>tunnel shapes</b> needed a rework, because the night texture assignment caused loading errors when the daytime changes to night mode. In order to provide at least dimly lit tunnel walls during night time
+				the material's lighting configuration is now set to constant level, independent of ambient light</li>
+			<li><b>DB23</b> (wooden ties on gray ballast) is now available with full assortment (subsequent to DB3). Alternative textures for DB2 concrete ties with gray ballast are included,</li>
+			<li>DB3 <b>bridge tracks</b> are now available. incl. static start- and end pieces. The assortment of sections is limited to main tracks</li>
+			<li><b>Switch textures</b> have been revised and improved. All switches with rusty rails have now rusty levers, rods and switch stands</li>
+			</ul></li>
+[27.04.2012]<li>Corrections to DS1_Roads (for all shapes with reflector posts - please download again)</li>
+[15.04.2012]<li>Corrections and additions to some switches.</li>
+			<li>Changes in the texture assignment of DB51, DB501, DB52, DB502 track sets (please download again)</li>
+[09.04.2012]<li>DB30b, DB40b - rusty tracks with hard shoulder</li>
+[05.04.2012]<li>New tunnels for S-Bahn Hamburg.</li>
+[04.04.2012]<li>Release of the new DB5 track set with Y shaped ties<br><li>Corrections of all DB_Rail* textures' alpha channel of embankment area</li>
+[20.03.2012]<li>New track set DR2 (GDR concrete ties) added under "DB2"</li>
+[19.03.2012]<li>Corrections of textures on switches with LZB (DB1z,DB2z).</li>
+[26.12.2011]<li>NR_Greenery update. New grass texture added. NR_Gras_60x20 updated.</li>
+[14.11.2011]<li>Catenary masts package updated, NR_Greenery added</li>
+[08.11.2011]<li>New DB4 track set, new DB20, DB30, DB40 rusty version, DB_Textures updated.</li>
+[03.09.2011]<li>New roads and Autobahn sections are available. Roads and highways have delineators and traffic barriers according to German standards</li>
+			<li>The highway lanes are designed as <span style="font-style:italic">single carriageways</span> for one direction to replace 2L and 4L road sections from the MSTS basic selection.</li>
+
+</div><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</div></body></html>

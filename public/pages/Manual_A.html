@@ -1,0 +1,201 @@
+<html><head><title>DBTracks - Manual for Track Shape Substitution</title>
+<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name=”description” content="Manual for substituting default tracks with DBTracks or USTracks by Norbert Rieger." />
+<meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
+<meta name=”robots” content="index,follow" />
+<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
+<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+ var pics=[];
+ pics['de']=['mnl2_ma0','mnl2_ma1d','mnl1_mp2','mnl2_ma3','mnl1_mp4d','mnl1_mp5'];
+ pics['en']=[pics['de'][0],'mnl2_ma1e',pics['de'][2],pics['de'][3],'mnl1_mp4e',pics['de'][5]];
+ pics['fr']=pics['en'];
+ nD=new Date(2012,4,26); dlM=nD.toLocaleDateString(); //-->
+</script></head>
+<body scroll="NO" onload="init()">
+
+<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
+
+<table cellspacing="0" cellpadding="0" id="mtab" class="mnl">
+<tr><td style="padding:14px 10px"><div id="t01"></div><br><div id="t02"></div></td></tr>
+<tr><th><h4 id="t03"></h4></th></tr>
+<tr><td><img class="rt" id="p0" src="">
+	<div class="lst">1.1</div><ul class="mnl"><li id="t04"></li></ul>
+	</td>
+</tr>
+<tr><td><img class="rt" id="p1" src="">
+	<div class="lst">1.2</div><ul class="mnl"><li id="t05"></li></ul>
+	<div class="lst">1.3</div><ul class="mnl"><li id="t06"></li></ul>
+	</td>
+</tr>
+<tr><th><h4 id="t07"></h4></th></tr>
+<tr><td><img class="rt" id="p2" src="">
+	<div class="lst">2.1</div><ul class="mnl"><li id="t08"></li></ul>
+	<div class="lst">2.2</div><ul class="mnl"><li id="t09"></li></ul>
+	</td>
+</tr>
+<tr><td><img class="rt" id="p3" src="">
+	<div class="lst">2.3</div><ul class="mnl"><li id="t10"></li></ul>
+	<div class="lst">2.4</div><ul class="mnl"><li id="t11"></li></ul>
+	<div class="lst">2.5</div><ul class="mnl"><li id="t12"></li></ul>
+	<div class="lst">2.6</div><ul class="mnl"><li id="t13"></li></ul>
+	</td>
+</tr>
+<tr><th><h4 id="t14"></h4></th></tr>
+<tr><td><img class="rt" id="p4" src="">
+	<div class="lst">3.1</div><ul class="mnl"><li id="t15"></li></ul>
+	</td>
+</tr>
+<tr><td><img class="rt" id="p5" src="">
+	<div class="lst">3.2</div><ul class="mnl"><li id="t16"></li></ul>
+	</td>
+</tr>
+<tr><td><br>&nbsp;</td></tr>
+<tr><th><h4 id="t17"></h4></th></tr>
+<tr><td><br>
+	<h4 class="hl" id="t18" style="font-size:1.05em"></h4><ul class="nm">
+		<li id="t19"></li>
+	</ul>
+	<h4 class="hl" id="t20" style="font-size:1.05em"></h4><ul class="nm">
+		<li id="t21"></li>
+	</ul>
+	<h4 class="hl" id="t22" style="font-size:1.05em"></h4><ul class="nm">
+		<li id="t23"></li>
+	</ul>
+	</td></tr>
+    <tr style="background-image:none"><td style="padding:4px 2px;border:none;color:#dddddd" id="cpr">&nbsp;</td></tr>
+</table>
+<!----------------------------------------------------------------------------------------------------------------------->
+<div id="de" style="display:none">
+[t00]Gleisobjekt-Austausch im MSTS-Streckeneditor
+[t01]In dieser Anleitung soll erkl&auml;rt werden, wie Gleisobjekte durch andere (Gleis-)Objekte ausgetauscht werden k&ouml;nnen.
+	Dies k&ouml;nnen Gleisobjekte mit modifizierter Texturzuweisung sein oder aber auch Gleiselemente mit direkt integrierten Kunstbauten wie Bahnd&auml;mmen oder St&uuml;tzmauern.
+[t02]Das nachfolgende Beispiel zeigt den Einbau eines Bahndamms aus dem Paket <a href="pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
+	Das Paket enth&auml;lt verschiedene Arten von Kunstbauten f&uuml;r Bahntrassen (Bahnd&auml;mme, Rampen und St&uuml;tzmauern) inklusive der Gleisk&ouml;rper f&uuml;r ein- bis viergleisige Strecke,
+	die in Abmessung und Namensgebung leicht den jeweiligen ("A"-)Gleist&uuml;cken aus <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a> zugeordnet werden k&ouml;nnen.
+[t03]Teil 1 - im Streckeneditor:
+[t04]Die Strecke, die einen B&ouml;schungs&shy;k&ouml;rper erhalten soll, wird ganz normal aufgebaut.
+[t05]Alle Gleisst&uuml;cke, die einen B&ouml;schungsk&ouml;rper erhalten sollen, werden angeklickt bzw. ausgew&auml;hlt und &uuml;ber das Eigenschaftsfenster (F6) der <i>Detailstufe 1</i> zuge&shy;ordnet.
+[t06]Nun wird die Strecke gespeichert. Es gen&uuml;gt, <i>&Auml;nderungen an der Au&szlig;enwelt&shy;platzierung</i> zu speichern.
+	<div style="margin-top:4px">Es ist hilfreich, sich die Planquadrat-Kennzahlen aus dem <i>Kamera</i>-fenster zu merken (Planq. x und Planq. z)</div>
+[t07]Teil 2 - im Texteditor:
+[t08]In einem Text&shy;editor (z.B. <a href="http://www.notetab.com/" target="_blank">Notetab Light</a>) wird die .W-datei des be&shy;arbei&shy;te&shy;ten Planquadrats ge&ouml;ffnet (sie befindet sich im WORLD-Ordner der Strecke).
+	<div style="margin-top:4px">Der Dateiname enth&auml;lt die Planquadrat-Kennzahlen, die Datei hat ein sehr aktuelles &Auml;nderungsdatum.</div>
+[t09]Nun wird der erste Eintrag mit <i>StaticDetailLevel ( 1 )</i> gesucht: (alle Eintr&auml;ge eines Detail Levels stehen untereinander.)
+[t10]In der Beschreibung des Gleis&shy;st&uuml;cks (TrackObj) soll nun der Ver&shy;weis auf die verbundene Shape-Datei ge&auml;ndert werden.
+	<div style="margin:4px 0">Dazu wird der f&uuml;r alle weiteren Objekte gleich bleibende Teil des <i>FileName</i>-Eintrags markiert.</div>
+	Anschlie&szlig;end wird der "Suchen + Ersetzen"-Dialog aufgerufen (Men&uuml;: <i>Search - Replace...</i> oder einfach: Strg+R)
+[t11]Im Dialogfeld <i>Replace with</i> wird das Suchmuster (blau) mit dem relati&shy;ven Pfad zum Austauschobjekt er&shy;g&auml;nzt (orange).
+	<div style="margin:4px 0">Dabei muss be&shy;dacht werden, dass ein <i>TrackObj</i> immer im Ordner <i>Global/Shapes</i> erwartet wird.</div>
+	Um zur Order&shy;struktur der bear&shy;bei&shy;teten Strecke zu gelangen, muss man also zu&shy;n&auml;chst zwei Ebenen zur&uuml;ck (..\\..\\),
+	um dann in den <i>Routes</i>-Ordner, die be&shy;ar&shy;beitete Strecke und den darin enthaltenen 'Shapes'-Ordner zu verweisen.
+	<div style="margin:4px 0">Der Ordnername der bearbeiteten Strecke (hellgr&uuml;n) muss nat&uuml;rlich dem richtigen Namen angepasst werden.</div>
+	<b>Achtung!</b><br>
+	Der Name des Streckenordners darf keine Leerzeichen enthalten. Sonst muss der in Klammern stehende Eintrag nach <i>FileName ( ".. von Anf&uuml;hrungszeichen umschlossen werden" )</i>.
+	Ich em&shy;pfehle, bei Datei- oder Ordnerna&shy;men generell auf Leerzeichen zu verzichten!
+[t12]Anschlie&szlig;end werden die Zeilen mit <i>StaticDetailLevel ( 1 )</i> gel&ouml;scht, damit ersichtlich ist, dass dieser Eintrag nicht mehr barbeitet werden muss.
+[t13]Nun kann die .W-Datei im Texteditor gespeichert werden.<br><br>
+[t14]Teil 3 - im Streckeneditor:
+[t15]Um das Ergebnis im Streckeneditor betrachten zu k&ouml;nnen, muss die Strecke <b><i>nicht</i></b> neu geladen werden.<br>Es reicht aus, im Kamerafenster <i>einen weiten Sprung</i> zu unternehmen - z.B. um 1000 Quadrate.
+	Anschlie&szlig;end springt man wieder zur&uuml;ck - und die .W-Datei wurde neu geladen.
+[t16]Nun sind die Standardgleise er&shy;setzt durch Gleise mit Bahndamm.
+	<div style="margin:4px 0">In diesem Zustand lassen sie sich im Streckeneditor behandeln wie jedes andere Gleisst&uuml;ck auch. D.h. sie k&ouml;nnen anderswo platziert, geneigt oder gespiegelt werden.</div>
+[t17]Anmerkungen und Hinweise:
+[t18]Warum gibt es in diesem Paket keine Eintr&auml;ge f&uuml;r die REF-Datei der Strecke ("addREF.txt")?
+[t19]Austauschobjekte sind nicht daf&uuml;r vorgesehen, als statische Objekte im Streckeneditor platziert zu werden. Sie werden ausschlie&szlig;lich durch Umadressierung in den World-Dateien in die Strecke eingef&uuml;gt.
+[t20]Warum sollten Br&uuml;cken nicht auf diese Art und Weise als Gleisobjekte integriert werden?
+[t21]Gleisobjekte k&ouml;nnen keine <i>dynamischen Schatten</i> anzeigen. Das ist nur statischen Objekten m&ouml;glich. Daher ist diese Bauart z.B. f&uuml;r Br&uuml;cken die bessere Variante.
+[t22]Wo kann ich weitere Unterst&uuml;tzung erhalten?
+[t23]F&uuml;r weitergehende Fragen stehe ich gern im <a href="http://www.tssf.eu/forum/index.php?topic=1931.0" target="_blank">TSSF-Forum</a> zur Verf&uuml;gung (Anmeldung erforderlich).	
+</div>
+<!----------------------------------------------------------------------------------------------------------------------->
+<div id="en" style="display:none">
+[t00]Track Shape Substitution in MSTS Route Editor
+[t01]This manual is intended to explain how track sections can be replaced with other shape objects (including track).
+    This can be a modification of an original track shape with another texture assignment or a track shape combined with a path element like an embankment or retaining wall.
+[t02]The following example shows the the substitution of standard track with a track piece attached on an embankment, available from the archive <a href="pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
+    The package provides track sections combined with various types of path elements (embankments, ramps and retaining walls), exactly matching the dimensions of <i>A1t*-A4t*</i> tracks available in <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>.
+[t03]Part 1 - Route Editor:
+[t04]Place an embankment object with a file name indicating identical dimensions for each track section somewhere nearby. Make sure that you drop it in the same tile as the track section (check the borders by pressing F7).
+[t05]Mark all embankment objects as <i>Detail level 1</i> and define it as <i>Terrain object</i>. These settings are available in the <i>Properties</i> dialog window (F6) of a <i>selected</i> item.
+    All tracks sections that have been designated for getting an embankment, should be marked as <i>Detail level 1</i>, too.
+[t06]Save the route now (it may be sufficient to save <i>world placement changes</i>). Remember the tile identification (tile x) and (tile z) out of the <i>Camera</i> window.
+[t07]Part 2 - Text Editor:
+[t08]Open the tile&#39;s world file in a text editor (e.g. <a href="http://www.notetab.com/" target="_blank">Notetab Light</a>).
+    It is located in the route&#39;s world folder, the file name contains the tile identification numbers and the time stamp should be most up-to-date.
+[t09]Search for the first entry containing the string <i>StaticDetailLevel ( 1 )</i> (all other entries on this level can be found subsequently)
+[t10]The next step is to change the <i>FileName</i> entry in the <i>TrackObj</i> description.
+    <div style="margin:4px 0">At first, mark the <i>FileName</i> row from the start to the last char that remains unchanged for all subsequent entries.</div>
+    Open the "Find and replace" dialog window (Menu: <i>Search - Replace...</i> or shortcut key: Ctrl+R)
+[t11]Copy the search string from the <i>Find what</i> to the <i>Replace with</i> field (blue). Insert the <i>relative path</i> to the substitution file (orange).
+    Be sure to utilize double backslashs.
+    <div style="margin:4px 0">Remember that the standard location of a <i>TrackObj</i> is always the folder <i>Global/Shapes</i>.</div>
+    To get to your route in process, you have to step up two levels first (..\\..\\), enter the <i>Routes</i> folder, your route and the <i>Shapes</i> subfolder.
+    <div style="margin:4px 0">The name of the route&#39;s folder (light green) has to match your route&#39;s folder name.</div>
+    <b>Please note:</b><br>
+    The name of your route&#39;s folder should not contain whitespaces. Otherwise the whole path has to be put in <i>"quotation marks"</i>.
+    My hint: Never use whitespaces in file names or folder names.
+[t12]Delete the row <i>StaticDetailLevel (1)</i> in each processed description. This will help you to identify the remain&shy;ing entries.
+[t13]Save the *.w file in text editor.
+[t14]Part 3 - Route Editor:
+[t15]To see the changes in Route Editor it is <b><i>not</i></b> necessary to reload the route.<br>Simply do a <i>broad jump</i> - e.g. decrease one of the tile&#39;s numbers by 1000 and click on <i>jump</i>.
+    Then increase the number to the original value and click on <i>jump</i> again. Now you will find the world file reloaded.
+[t16]Now the standard tracks are replaced by embankment tracks.
+    <div style="margin:4px 0">These objects can be moved, sloped or aligned just like standard track.</div>
+[t17]Hints and Comments:
+[t18]Why are there no REF file entries included in this archive?
+[t19]These objects are intended for substitution of existing track objects, not for placing as static objects in Route Editor.
+[t20]Why are there no bridge objects combined with track as a track section?
+[t21]Objects defined as track sections cannot cast <i>dynamic shadows</i> which is a property of static objects only. Therefore it is the best choice to use static objects as described here, at least for bridges.
+[t22]Where can I get more assistance?
+[t23]If you have questions, comments or suggestions, please send me an email &nbsp; <a href="mailto:info%40DBTracks.com?subject=Track%20Substitution"><img src="pages/images/mad/ml30.png" style="position:relative;top:3px"></a>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------->
+<div id="fr" style="display:none">
+[t00]Substitution des formes de voies dans les routes MSTS
+[t01]Ce manuel d&eacute;crit comment les sections de voie peuvent &ecirc;tre remplac&eacute;es par d&#39;autres objets de forme (y compris des objets de voie).
+	A une voie, on pourra ainsi en substituer une autre portant une texture diff&eacute;rente, ou encore combin&eacute;e &agrave; &eacute;l&eacute;ment de d&eacute;cor, tel un talus ou un mur de sout&eacute;nement.
+[t02]L&#39;exemple suivant illustre le remplacement d&#39;&eacute;l&eacute;ments de voie standard par des &eacute;l&eacute;ments similaires associ&eacute;s avec un talus. Cet &eacute;l&eacute;ment est disponible dans l&#39;archive <a href="pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
+	Ce pack propose des sections de voie combin&eacute;es avec divers type de plateformes (talus, rampes, murs de sout&eacute;nement), correspondant exactement aux dimensions des voies <I>A1t*-A4t*</I> disponibles dans <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>.
+[t03]Part 1 - &Eacute;diteur de route:
+[t04]Pour chaque objet de voie &agrave; modifier, placez un objet de talus portant un nom de fichier indiquant les m&ecirc;mes dimensions que l&#39;objet d&#39;origine. Assurez vous que vous l&#39;ins&eacute;rez bien dans la m&ecirc;me tuile (Tiles) que la section de voie d&#39;origine (v&eacute;rifiez les bords en pressant F7).
+[t05]Marquez tous les objets de talus comme appartenant au niveau de <I>d&eacute;tail 1</I> (Detail level 1) et comme &eacute;tant des <I>objets de terrain</I> (Terrain object).
+	Ces param&egrave;tres sont disponibles dans le panneau de dialogue <I>Propri&eacute;t&eacute;s</I> (Properties) de chaque <I>objet s&eacute;lectionn&eacute;</I>, que l&#39;on affiche avec la touche F6.
+	Toutes les sections de voies d&eacute;sign&eacute;es pour recevoir un talus doivent &eacute;galement &ecirc;tre marqu&eacute;es comme appartenant au niveau de <I>d&eacute;tail 1</I> (Detail level 1).
+[t06]Sauvegardez la route (en fait, il est suffisant de sauvegarder les modifications <I>de placement du monde</I> (world placement changes). Notez l&#39;identifiant de la tuile (Tile X) et (Tile Z) visibles dans la fen&ecirc;tre <I>Cam&eacute;ra</I>.
+[t07]Part 2 - &Eacute;diteur de texte:
+[t08]Ouvrir le ficher world de la parcelle avec un &eacute;diteur de texte (par exemple <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a> ou <a href="http://www.notetab.com/" target="_blank">Notetab Light</a>). Ce fichier se trouve dans le r&eacute;pertoire World de la route. Son nom comporte le num&eacute;ro d&#39;identification de la parcelle, et la date doit &ecirc;tre &agrave; jour.
+[t09]Recherchez la premi&egrave;re occurrence du mot clef <i>StaticDetailLevel ( 1 )</i> (les occurrences suivantes peuvent &ecirc;tre recherch&eacute;es par la suite).
+[t10]L&#39;&eacute;tape suivante consiste &agrave; modifier le <I>nom du fichier</I> (FileName) dans la section <I>TrackObj</I>.
+	En premier lieu, s&eacute;lectionnez la ligne <I>FileName</I> depuis le d&eacute;but jusqu&#39;au dernier caract&egrave;re qui doit restez inchang&eacute; pour toutes les occurrences suivantes.
+	Ensuite, ouvrez le menu <I>Chercher et remplacer</I> de l&#39;&eacute;diteur de texte, afin de rechercher le texte s&eacute;lectionn&eacute; &agrave; l&#39;&eacute;tape pr&eacute;c&eacute;dente dans le fichier.
+[t11]Recopier le contenu du champ <I>Rechercher</I> (Find What) vers le champ <I>Remplacer avec</I> (Replace with). Sur la figure ci-contre, ce contenu est surlign&eacute; en bleu.
+	Ins&eacute;rer le <I>chemin relatif</I> vers le fichier, surlign&eacute; en orange. Assurez vous de bien utiliser les doubles backslashs entre chacun des niveaux du chemin.
+	Souvenez vous aussi que l&#39;emplacement standard d&#39;un <I>objet de voie</I> (TrackObj) est toujours le r&eacute;pertoire <I>Global/Shapes</I>.
+	Ainsi, le chemin vers la route &agrave; traiter doit contenir:
+	<ol><li>tout d&#39;abord, la remont&eacute;e de deux niveaux (..\\..\\),</li>
+		<li>ensuite le <I>r&eacute;pertoire de la route</I>,</li>
+		<li>enfin le sous-r&eacute;pertoire <I>Shapes</I> de la route.</li></ol>
+	<div style="margin:4px 0">Bien entendu, le nom du r&eacute;pertoire My_Routes (surlign&eacute; en vert) doit &ecirc;tre adapt&eacute; en fonction du nom de votre route!</div>
+	<b>Remarque importante:</b><br>
+	Si le nom du r&eacute;pertoire de votre route contient des espaces, alors le chemin enter doit &ecirc;tre encadr&eacute; par des <I>"doubles guillemets"</I>. Cela dit, id&eacute;alement, les noms de r&eacute;pertoires ou de fichiers ne devraient pas contenir d&#39;espaces!
+[t12]Supprimer la ligne <I>StaticDetailLevel (1)</I> dans chaque description &agrave; traiter. Cela aidera &agrave; identifier les entr&eacute;es restant &agrave; traiter.
+[t13]Sauvegarder le fichier *.w depuis l&#39;&eacute;diteur de texte utilis&eacute;.
+[t14]Part 3 - &Eacute;diteur de route:
+[t15]Afin de v&eacute;rifier le r&eacute;sultat des manipulations pr&eacute;c&eacute;dentes sous l&#39;&eacute;diteur de mode, <b>il n&#39;est pas n&eacute;cessaire de recharger la route</b>. Il suffit:
+	<ol><li>d&#39;effectuer un saut important - par exemple, en r&eacute;duisant de 1000 le num&eacute;ro de parcelle, et en cliquant Sauter <I>(Jump)</I>.</li>
+		<li>de revenir ensuite &agrave; la parcelle initiale en restaurant son identifiant en ajoutant 1000, puis en cliquant &agrave; nouveau sur Sauter <I>(Jump)</I>.</li></ol>
+	L&#39;environnement complet est alors recharg&eacute;.
+[t16]La voie standard a bien &eacute;t&eacute; remplac&eacute;e par la voie sur talus.
+	<div style="margin:4px 0">Ces objets peuvent &ecirc;tre d&eacute;plac&eacute;s, inclin&eacute;s, ou align&eacute;s exactement comme une voie normale.</div>
+[t17]Conseils et commentaires:
+[t18]Pourquoi il n&#39;ya pas les entr&eacute;es du fichier REF inclus dans cette archive?
+[t19]Ces objets ont vocation &agrave; remplacer des voies existantes, et non pas &agrave; &ecirc;tre plac&eacute;s comme objets statiques dans l&#39;&eacute;diteur de route!.
+[t20]Pourquoi il n&#39;ya pas d&#39;objets de pont combin&eacute; avec piste comme une section de voie?
+[t21]Les objets d&eacute;finis comme sections de voies ne supportent pas les <I>ombres dynamiques</I>, qui ne s&#39;appliquent qu&#39;aux objets statiques. Il est donc plus judicieux d&#39;utiliser de tels objets statiques, du moins pour ce qui concerne les ponts.
+[t22]O&ugrave; puis-je obtenir plus d&#39;aide?
+[t23]En cas de question, il est possible de contacter l&#39;auteur de ces objets: &nbsp; <a href="mailto:info%40DBTracks.com?subject=Track%20Substitution"><img src="pages/images/mad/ml30.png" style="position:relative;top:3px"></a>	
+</div>
+<!----------------------------------------------------------------------------------------------------------------------->
+</body></html>

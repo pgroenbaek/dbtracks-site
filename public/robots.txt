@@ -1,0 +1,12 @@
+# robots.txt for http://dbtracks.com/
+
+User-agent: *
+Disallow: /dl_files/
+Disallow: /docs/
+Disallow: /forum/
+Disallow: /images/
+Disallow: /logs/
+Disallow: /pages/images/
+Disallow: /pages/scripts/
+Disallow: /specials/
+Sitemap: https://dbtracks.com/sitemap.xml

@@ -1,0 +1,372 @@
+<html><head><title>DBTracks v2.0 Beta</title>
+<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name=”description” content="DBTracks are a new track system for MSTS and Open Rails, developed by Norbert Rieger with the specific details of German rails and switches." />
+<meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
+<meta name=”robots” content="index,follow" />
+<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
+<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+ //nD=new Date(2012,7,17); dlM=nD.toLocaleDateString(); //-->
+</script></head>
+<body scroll="NO" onload="init()">
+
+<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
+
+<table id="mtab" cellspacing="0" cellpadding="0" style="width:900px">
+    <!--<tr><td style="width:898px;padding-bottom:0"><span id="th0" style="float:right;font-size:8pt"></span><h4 class="hl" id="t01" style="margin:0"></h4></td></tr>-->
+	<tr><td id="t02">&#160;</td></tr>
+    <tr><td><h4 class="hl" style="margin:0"><span style="float:right;color:#999999;font:8pt normal Arial"><span id="t010" onclick="tShw(this.id,1)" style="position:relative;top:-1px;padding-left:2px"></span></span><span id="t03" style="margin-left:4px"></span></h4></td></tr>
+	<tr><td style="padding:0 12px 12px 12px" id="nLst"></td></tr>
+    <tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd">&#160;</td></tr>
+    <tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd">
+	  <table id="tLst" cellspacing="0" cellpadding="0"><colgroup><col width="17%"><col width="4%"><col width="4%"><col width="8%"><col width="1%"><col width="53%"><col width="12%"></colgroup><tbody>
+		<tr class="bH"><th colspan=7 style="border-right-width:0;border-bottom-width:0;padding-bottom:0" ondblclick="expAll()">DBtracks Downloads - <span id="t05"></span></th></tr>
+		<tr class="nb" id="label"><th style="border-left:1px solid #999999">&#160;</th><th id="t06">&#160;</th><th id="t07">&#160;</th><th id="t08" style="text-align:center">&#160;</th><th></th><th id="t09" style="text-align:left">&#160;</th><th id="t10" style="text-align:left;padding-left:10px">&#160;</th></tr>
+
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t110',1)"><span id="t110">&#160;</span></th></tr>
+	  </tbody><tbody id="ft110">
+		<tr><td id="dbx">DB1x.rar        		</td><td>	28.2 MB</td><td>  604	</td><td>16.06.2013</td><td class="pJ"></td><td id="t120">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB1_textures.rar  		</td><td>	18.8 MB</td><td>     	</td><td>08.06.2013</td><td class="p0"></td><td id="t121">&#160;</td><td>&#160;</td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t111">&#160;</span></td></tr>
+	  </tbody><tbody id="ft111" style="display:none">
+		<tr><td id="dbx">DB1fx.rar        		</td><td>	35.9 MB</td><td>  634	</td><td>16.06.2013</td><td class="p0"></td><td id="t130">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB1zx.rar        		</td><td>	17.7 MB</td><td>  482	</td><td>23.10.2013</td><td class="pJ"></td><td id="t133">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB1x_Pnts.rar     		</td><td>	 3.9 MB</td><td>   43	</td><td>04.12.2013</td><td class="p0"></td><td id="t131">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB1fx_Pnts.rar    		</td><td>	 6.0 MB</td><td>   62	</td><td>04.12.2013</td><td class="p0"></td><td id="t132">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB10x.rar       		</td><td>	28.2 MB</td><td>  604	</td><td>16.06.2013</td><td class="pJ"></td><td id="t140">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB10fx.rar      		</td><td>	35.9 MB</td><td>  634	</td><td>16.06.2013</td><td class="p0"></td><td id="t141">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB10x_Pnts.rar    		</td><td>	 2.8 MB</td><td>   31	</td><td>04.12.2013</td><td class="p0"></td><td id="t142">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB10fx_Pnts.rar   		</td><td>	 3.7 MB</td><td>   38	</td><td>04.12.2013</td><td class="p0"></td><td id="t143">&#160;</td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7>&#160;</td></tr>
+	  </tbody><tbody>
+
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t210',1)"><span id="t210">&#160;</span></th></tr>
+	  </tbody><tbody id="ft210">
+		<tr><td id="dbx">DB2x.rar        		</td><td>	27.8 MB</td><td>  604	</td><td>13.06.2013</td><td class="pJ"></td><td id="t220">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB2_textures.rar  		</td><td>	21.8 MB</td><td>     	</td><td>10.06.2013</td><td class="p0"></td><td id="t221">&#160;</td><td>&#160;</td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t211">&#160;</span></td></tr>
+	  </tbody><tbody id="ft211" style="display:none">
+		<tr><td id="dbx">DB2fx.rar        		</td><td>	35.9 MB</td><td>  634	</td><td>16.06.2013</td><td class="p0"></td><td id="t230">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB2zx.rar        		</td><td>	17.7 MB</td><td>  482	</td><td>23.10.2013</td><td class="pJ"></td><td id="t233">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB2x_Pnts.rar     		</td><td>	 3.9 MB</td><td>   43	</td><td>04.12.2013</td><td class="p0"></td><td id="t231">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB2fx_Pnts.rar    		</td><td>	 6.2 MB</td><td>   62	</td><td>04.12.2013</td><td class="p0"></td><td id="t232">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB20x.rar       		</td><td>	27.8 MB</td><td>  604	</td><td>13.06.2013</td><td class="pJ"></td><td id="t240">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB20fx.rar      		</td><td>	35.9 MB</td><td>  634	</td><td>16.06.2013</td><td class="p0"></td><td id="t241">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB20x_Pnts.rar    		</td><td>	 2.8 MB</td><td>   31	</td><td>04.12.2013</td><td class="p0"></td><td id="t242">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB20fx_Pnts.rar   		</td><td>	 3.7 MB</td><td>   38	</td><td>04.12.2013</td><td class="p0"></td><td id="t243">&#160;</td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7>&#160;</td></tr>
+	  </tbody><tbody>
+
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t310',1)"><span id="t310">&#160;</span></th></tr>
+	  </tbody><tbody id="ft310">
+		<tr><td id="dbx">DB3x.rar        		</td><td>	24.2 MB</td><td>  604	</td><td>16.06.2013</td><td class="pJ"></td><td id="t320">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB3_textures.rar  		</td><td>	12.3 MB</td><td>     	</td><td>10.06.2013</td><td class="p0"></td><td id="t321">&#160;</td><td>&#160;</td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t311">&#160;</span></td></tr>
+	  </tbody><tbody id="ft311" style="display:none">
+		<tr><td id="dbx">DB3fx.rar        		</td><td>	31.7 MB</td><td>  634	</td><td>16.06.2013</td><td class="p0"></td><td id="t330">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB3x_Pnts.rar     		</td><td>	 5.2 MB</td><td>   55	</td><td>04.12.2013</td><td class="p0"></td><td id="t331">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB3fx_Pnts.rar    		</td><td>	 7.7 MB</td><td>   78	</td><td>04.12.2013</td><td class="p0"></td><td id="t332">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB30x.rar       		</td><td>	24.1 MB</td><td>  604	</td><td>16.06.2013</td><td class="pJ"></td><td id="t350">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB30fx.rar      		</td><td>	31.7 MB</td><td>  634	</td><td>16.06.2013</td><td class="p0"></td><td id="t351">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB30x_Pnts.rar    		</td><td>	 4.0 MB</td><td>   43	</td><td>04.12.2013</td><td class="p0"></td><td id="t352">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB30fx_Pnts.rar   		</td><td>	 5.4 MB</td><td>   54	</td><td>04.12.2013</td><td class="p0"></td><td id="t353">&#160;</td><td id="l7"></td></tr>
+		<tr class="empty"><td colspan=7>&#160;</td></tr>
+	  </tbody><tbody>
+
+		<tr class="bH"><th colspan=7 class="sH" onclick="tShw('t410',1)"><span id="t410">&#160;</span></th></tr>
+	  </tbody><tbody id="ft410">
+		<tr><td id="dbx">DB4x.rar        		</td><td>	23.1 MB</td><td>  600	</td><td>13.06.2013</td><td class="pJ"></td><td id="t420">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbt">DB4_textures.rar  		</td><td>	13.9 MB</td><td>     	</td><td>10.06.2013</td><td class="p0"></td><td id="t421">&#160;</td><td>&#160;</td></tr>
+		<tr class="bT"><td colspan=7 style="padding-left:6px"><span class="lnk" onclick="tShw(this.id,1)" id="t411">&#160;</span></td></tr>
+	  </tbody><tbody id="ft411" style="display:none">
+		<tr><td id="dbx">DB4fx.rar        		</td><td>	30.9 MB</td><td>  630	</td><td>16.06.2013</td><td class="p0"></td><td id="t430">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB4x_Pnts.rar     		</td><td>	 5.2 MB</td><td>   55	</td><td>04.12.2013</td><td class="p0"></td><td id="t431">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB4fx_Pnts.rar    		</td><td>	 7.7 MB</td><td>   78	</td><td>04.12.2013</td><td class="p0"></td><td id="t432">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB40x.rar       		</td><td>	23.1 MB</td><td>  600	</td><td>13.06.2013</td><td class="pJ"></td><td id="t450">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB40fx.rar      		</td><td>	30.9 MB</td><td>  630	</td><td>16.06.2013</td><td class="p0"></td><td id="t451">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB40x_Pnts.rar    		</td><td>	 4.0 MB</td><td>   43	</td><td>04.12.2013</td><td class="p0"></td><td id="t452">&#160;</td><td id="l7"></td></tr>
+		<tr><td id="dbx">DB40fx_Pnts.rar   		</td><td>	 5.4 MB</td><td>   54	</td><td>04.12.2013</td><td class="p0"></td><td id="t453">&#160;</td><td id="l7"></td></tr>
+	  </tbody><tbody>
+		<tr class="empty"><td colspan=7></td></tr>
+		<tr><td colspan=7 style="padding:0 4px 4px 8px;"><div id="tinfo"></div></td></td></tr>
+	  </tbody></table></td></tr>
+    <tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd">&#160;</td></tr>
+	<tr><td style="padding:2px 12px 0 12px"><h4 class="hl" style="margin:6px 0 0 0"><span id="t90"></span></h4></td></tr>
+	<tr><td style="padding:0 12px 6px 12px">
+		<table cellspacing="0" cellpadding="0" id="pStats" style="width:100%"><colgroup><col width="77%"><col width="18%"><col width="5%"></colgroup>
+			<tr><td rowspan="3" style="border:none;font-size:10pt;padding:6px 0" id="t91"></td>
+				<td class="yellow nw" id="t911"></td><td class="gray" id="v911" style="text-align:right">&#160;</td></tr>
+			<tr><td class="yellow nw" id="t912"></td><td class="norm" id="v912" style="text-align:right">&#160;</td></tr>
+			<tr><td class="green nw"  id="t913"></td><td class="norm" id="v913" style="text-align:right">&#160;</td></tr>
+			<tr><td rowspan="2" style="border:none;font-size:10pt;padding:0"><span class="lnk" id="t92" onclick="tShw(this.id,2)"></span></td>
+				<td class="green nw"  id="t914"></td><td class="norm" id="v914" style="text-align:right">&#160;</td></tr>
+			<tr><td class="green2 nw" id="t915"></td><td class="norm" id="v915" style="text-align:right">&#160;</td></tr>
+		</table></td></tr>
+	<tr><td style="padding:0 10px"><div id="ft92" style="display:none;text-align:center;padding-bottom:2px"><div style="text-align:right;font-size:9pt;padding:0;vertical-align:bottom"><div id="t93" style="text-align:left;font-size:1.1em;margin:0 2px;position:relative;top:-15px"></div>
+		<table cellspacing="0" cellpadding="0" class="prj"><colgroup><col width="22%"><col width="13%"><col width="13%"><col width="13%"><col width="13%"><col width="13%"><col width="13%"></colgroup>
+			<tr><td colspan=2 id="t94" style="text-align:right;border:none"></td><td class="green2" id="t940"></td><td class="green" id="t941"></td><td class="orange" id="t942"></td><td class="yellow" id="t943"></td><td class="norm" id="t944"></td><td class="gray" id="t945"></td></tr>
+		</table></div><div id="wLst" style="background-color:#ff0000"></div></div></td></tr>
+	<tr><td style="padding:4px;line-height:1pt;font-size:1pt">&#160;</td></tr>
+	<tr style="background-image:none"><td style="padding:4px 2px;border:none;color:#dddddd" id="cpr">&#160;</td></tr>
+</table><div id="lPic"></div>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<div id="aLst1" class="tData" style="display:none">
+a1t0_3mStrt;a1t0_3mStrtTun;a1t0_44mStrt;a1t0_8mStrt;a1t1mStrt;a1t1mStrtTun;a1t1_2mStrt;a1t1_29mStrt;a1t1_5mStrt;a1t2_14mStrt;a1t2_4mStrt;a1t2_46mStrt;a1t2_5mStrt;a1t2_6mStrt;a1t3mStrt;a1t4_985mStrt;a1t5mStrt;a1t5mStrtTun;a1t5_4mStrt;a1t5_5mStrt;a1t5_99mStrt;a1t7mStrt;a1t10mSkew;a1t10mStrt;a1t10mStrtRndTun;a1t10mStrtRndTun6m;a1t10mStrtTun;a1t10mStrtwtr;a1t11_59mStrt;a1t12_86mStrt;a1t13_2mStrt;a1t15mStrt;a1t15_2mStrt;a1t15_56mStrt;a1t16_6mStrt;a1t17_41mStrt;a1t20mStrt;a1t20mStrtRndTun6m;a1t20mStrtTun;a1t20_5mStrt;a1t23_6mStrt;a1t24mStrt;a1t24_01mStrt;a1t25mStrt;a1t25_8mStrt;a1t27_4mStrt;a1t28_3mStrt;a1t28_54mStrt;a1t28_7mStrt;a1t30mStrt;a1t30_95mStrt;a1t35mStrt;a1t35_2mStrt;a1t37_86mStrt;a1t38_2mStrt;a1t38_54mStrt;a1t40mStrt;a1t44_46mStrt;a1t45mStrt;a1t50mStrt;a1t50mStrtRndTun;a1t50mStrtRndTun6m;a1t50mStrtTun;a1t50mStrtwtr;a1t52_5mStrt;a1t56_6mStrt;a1t60mStrt;a1t75mStrt;a1t90mStrt;a1t100mStrt;a1t100mStrtRndTun;a1t100mStrtRndTun6m;a1t100mStrtTun;a1t100mStrtwtr;a1t150mStrt;a1t200mStrt;a1t250mStrt;a1t500mStrt;a1t45dyardcrvLft;a1t45dyardcrvRgt;a1t60r1d;a1t60r5d;a1t60r10d;a1t60r20d;a1t90r1d;a1t90r5d;a1t90r10d;a1t90r20d;a1t120r1d;a1t120r5d;a1t120r5dTun;a1t120r10d;a1t120r10dTun;a1t120r20d;a1t120r20dTun;a1t150r1d;a1t150r5d;a1t150r10d;a1t150r20d;a1t164r10d;a1t190r1d;a1t190r2_5d;a1t190r5d;a1t190r10d;a1t190r20d;a1t250r1d;a1t250r5d;a1t250r5dRndTun;a1t250r5dRndTun6m;a1t250r5dTun;a1t250r10d;a1t250r10dRndTun;a1t250r10dRndTun6m;a1t250r10dTun;a1t250r20d;a1t250r20dTun;a1t300r1d;a1t300r2d;a1t300r2_5d;a1t300r5d;a1t300r10d;a1t300r20d;a1t365r12d;a1t375r1d;a1t375r5d;a1t375r10d;a1t375r20d;a1t500r0_25d;a1t500r1d;a1t500r2d;a1t500r5d;a1t500r5dRndTun;a1t500r5dRndTun6m;a1t500r5dTun;a1t500r10d;a1t500r10dRndTun;a1t500r10dRndTun6m;a1t500r10dTun;a1t500r20d;a1t700r8d;a1t750r1d;a1t750r5d;a1t750r10d;a1t750r20d;a1t865r12d;a1t1000r1d;a1t1000r5d;a1t1000r5dRndTun;a1t1000r5dRndTun6m;a1t1000r5dTun;a1t1000r10d;a1t1000r10dRndTun;a1t1000r10dRndTun6m;a1t1000r10dTun;a1t1000r20d;a1t1034r7d;a1t1200r8d;a1t1500r1d;a1t1500r5d;a1t1500r5dRndTun;a1t1500r5dRndTun6m;a1t1500r5dTun;a1t1500r10d;a1t1500r10dRndTun;a1t1500r10dRndTun6m;a1t1500r10dTun;a1t1500r20d;a1t1534r7d;a1t2000r1d;a1t2000r5d;a1t2000r5dRndTun;a1t2000r5dRndTun6m;a1t2000r5dTun;a1t2000r10d;a1t2000r10dTun;a1t2000r20d;a1t2000r20dTun;a1t2588r3d;a1t3000r1d;a1t3000r5d;a1t3000r10d;a1t3088r3d;a1t4000r1d;a1t4000r5d;a1t4000r10d;a1t6000r0_5d;a1t6000r1d;a1t6000r5d;a1t8000r0_5d;a1t8000r1d;a1t8000r5d;a1t15000r0_5d;a1t15000r2_5d;a1tbuffer;a1tukbuffer;a1tusbuffer;a1tDerailLftMnl;a1tDerailRgtMnl;a1tEndPnt2_5dLft;a1tEndPnt2_5dRgt;a1tEndPnt3dBto10d;a1tEndPnt3dx2;a1tEndPnt3d;a1tEndPnt3to10d;a1tEndPnt3_0d;a1tEndPnt4_7d;a1tEndPnt5dLft;a1tEndPnt5dLftRndTun;a1tEndPnt5dLftRndTun6m;a1tEndPnt5dLftTun;a1tEndPnt5dRgt;a1tEndPnt5dRgtRndTun;a1tEndPnt5dRgtRndTun6m;a1tEndPnt5dRgtTun;a1tEndPnt6dBto15d;a1tEndPnt6dx2;a1tEndPnt6d;a1tEndPnt6to10d;a1tEndPnt7_5d;a1tEndPnt10dLft;a1tEndPnt10dLftRndTun;a1tEndPnt10dLftRndTun6m;a1tEndPnt10dLftTun;a1tEndPnt10dRgt;a1tEndPnt10dRgtRndTun;a1tEndPnt10dRgtRndTun6m;a1tEndPnt10dRgtTun;a1tFrog3d15mLft;a1tFrog3d15mRgt;a1tFrog3d20m3dBto10dLft;a1tFrog3d20m3dBto10dRgt;a1tFrog3d45mLft;a1tFrog3d45mRgt;a1tFrog3dCmpdLft;a1tFrog3dCmpdRgt;a1tFrog3dLft;a1tFrog3dLft_to_M2t;a1tFrog3dLft_to_MLadder;a1tFrog3dRgt;a1tFrog3dRgt_to_M2t;a1tFrog3dRgt_to_MLadder;a1tFrog3_0dLft;a1tFrog3_0dRgt;a1tFrog4_7dDbl;a1tFrog4_7dLft;a1tFrog4_7dRgt;a1tFrog4_7dTo2tLft;a1tFrog4_7dTo2tRgt;a1tFrog4_7to6_3dLft;a1tFrog4_7to6_3dRgt;a1tFrog5dLft;a1tFrog5dRgt;a1tFrog6d5mLft;a1tFrog6d5mRgt;a1tFrog6d10m6dBto15dLft;a1tFrog6d10m6dBto15dRgt;a1tFrog6d25mLft;a1tFrog6d25mRgt;a1tFrog6dCmpdLft;a1tFrog6dCmpdRgt;a1tFrog6dLft;a1tFrog6dRgt;a1tFrog7_5dDbl;a1tFrog7_5dLft;a1tFrog7_5dRgt;a1tFrog7_5dTo2tLft;a1tFrog7_5dTo2tRgt;a1tFrog7_5to10dLft;a1tFrog7_5to10dRgt;a1tFrog15d;a1tLvlCrsNoGate;a1tPedesCrs;a1tPnt0dLftMnl;a1tPnt0dRgtMnl;a1tPnt2_5dLft;a1tPnt2_5dLftMnl;a1tPnt2_5dRgt;a1tPnt2_5dRgtMnl;a1tPnt3dLft;a1tPnt3dLftMnl;a1tPnt3dRgt;a1tPnt3dRgtMnl;a1tPnt3dBCmpdLftMnl;a1tPnt3dBCmpdLftMnlDiv;a1tPnt3dBCmpdRgtMnl;a1tPnt3dBCmpdRgtMnlDiv;a1tPnt3dBLft;a1tPnt3dBLftDiv;a1tPnt3dBLftMnl;a1tPnt3dBLftMnlDiv;a1tPnt3dBRgt;a1tPnt3dBRgtDiv;a1tPnt3dBRgtMnl;a1tPnt3dBRgtMnlDiv;a1tPnt3dS190rLft;a1tPnt3dS190rLftMnl;a1tPnt3dS190rRgt;a1tPnt3dS190rRgtMnl;a1tPnt3w10d150rLftRgtMnl1;a1tPnt3w10d150rLftRgtMnl2;a1tPnt3w10d150rRgtLftMnl1;a1tPnt3w10d150rRgtLftMnl2;a1tPnt3_0dLft;a1tPnt3_0dRgt;a1tPnt4_7dLft;a1tPnt4_7dLftMnl;a1tPnt4_7dRgt;a1tPnt4_7dRgtMnl;a1tPnt5dLft;a1tPnt5dLftMnl;a1tPnt5dRgt;a1tPnt5dRgtMnl;a1tPnt5dSLft;a1tPnt5dSLftMnl;a1tPnt5dSRgt;a1tPnt5dSRgtMnl;a1tPnt6dLft;a1tPnt6dLftMnl;a1tPnt6dRgt;a1tPnt6dRgtMnl;a1tPnt6dBCmpdLftMnl;a1tPnt6dBCmpdLftMnlDiv;a1tPnt6dBCmpdRgtMnl;a1tPnt6dBCmpdRgtMnlDiv;a1tPnt6dBLft;a1tPnt6dBLftMnl;a1tPnt6dBLftMnlDiv;a1tPnt6dBRgt;a1tPnt6dBRgtMnl;a1tPnt6dBRgtMnlDiv;a1tPnt6_3dLftSlip;a1tPnt6_3dLftSlipMnl;a1tPnt6_3dRgtSlip;a1tPnt6_3dRgtSlipMnl;a1tPnt7_5dLft;a1tPnt7_5dLftMnl;a1tPnt7_5dRgt;a1tPnt7_5dRgtMnl;a1tPnt7_5dLftSlip;a1tPnt7_5dLftSlipMnl;a1tPnt7_5dRgtSlip;a1tPnt7_5dRgtSlipMnl;a1tPnt10d150rLftMnl;a1tPnt10d150rLftMnl_Div;a1tPnt10d150rLftSlipMnl;a1tPnt10d150rRgtMnl;a1tPnt10d150rRgtMnl_Div;a1tPnt10d150rRgtSlipMnl;a1tPnt10dLft;a1tPnt10dLftMnl;a1tPnt10dLftMnlTun;a1tPnt10dLftTun;a1tPnt10dRgt;a1tPnt10dRgtMnl;a1tPnt10dRgtMnlTun;a1tPnt10dRgtTun;a1tPnt500r8dLft;a1tPnt500r8dLftMnl;a1tPnt500r8dRgt;a1tPnt500r8dRgtMnl;a1tPnt500r12dLft;a1tPnt500r12dLftMnl;a1tPnt500r12dRgt;a1tPnt500r12dRgtMnl;a1tPnt1000r8dLft;a1tPnt1000r8dLftMnl;a1tPnt1000r8dRgt;a1tPnt1000r8dRgtMnl;a1tPnt1000r12dLft;a1tPnt1000r12dLftMnl;a1tPnt1000r12dRgt;a1tPnt1000r12dRgtMnl;a1tPnt1500rLft3d;a1tPnt1500rLft7d;a1tPnt1500rRgt3d;a1tPnt1500rRgt7d;a1tPnt2000rLft3d;a1tPnt2000rLft7d;a1tPnt2000rRgt3d;a1tPnt2000rRgt7d;a1tPnt1mStrt;a1tPnt1mStrtMnl;a1tPntM120rD090rLft;a1tPntM120rD090rLftMnl;a1tPntM120rD090rRgt;a1tPntM120rD090rRgtMnl;a1tPntM150rD120rLft;a1tPntM150rD120rLftMnl;a1tPntM150rD120rRgt;a1tPntM150rD120rRgtMnl;a1tPntM150rD090rLft;a1tPntM150rD090rLftMnl;a1tPntM150rD090rRgt;a1tPntM150rD090rRgtMnl;a1tPntM250rD120rLft;a1tPntM250rD120rLftMnl;a1tPntM250rD120rRgt;a1tPntM250rD120rRgtMnl;a1tPntM250rD150rLft;a1tPntM250rD150rLftMnl;a1tPntM250rD150rRgt;a1tPntM250rD150rRgtMnl;a1tPntM250rD090rLft;a1tPntM250rD090rLftMnl;a1tPntM250rD090rRgt;a1tPntM250rD090rRgtMnl;a1t45dyardLft;a1t45dyardLftMnl;a1t45dyardRgt;a1t45dyardRgtMnl;a1t870r4dLft;a1t870r4dLftMnl;a1t870r4dRgt;a1t870r4dRgtMnl;a1tDblSlip3d;a1tDblSlip6_3d;a1tDblSlip7_5d;a1tDblSlip10d150r;a1tHPnt1_5dLft;a1tHPnt1_5dRgt;a1tHPnt2_0dLft;a1tHPnt2_0dRgt;a1tHPnt2_5dLft;a1tHPnt2_5dRgt;a1tSglSlip6_3d;a1tSglSlip7_5d;a1tSglSlip10d150r;a1tSglSlipCrv7_5dPnt1Div;a1tSglSlipCrv7_5dPnt1DivMnl;a1tSglSlipCrv7_5dPnt2Div;a1tSglSlipCrv7_5dPnt2DivMnl;a1tSglSlipCrv7_5dPnt1;a1tSglSlipCrv7_5dPnt1Mnl;a1tSglSlipCrv7_5dPnt2;a1tSglSlipCrv7_5dPnt2Mnl;a1tYPnt3d;a1tYPnt3dMnl;a1tYPnt3dMnlDiv;a1tYPnt3dB_Div;a1tYPnt3dB;a1tYPnt3dBMnl;a1tYPnt3dBMnl_Div;a1tYPnt5d;a1tYPnt5dMnl;a1tYPnt6d;a1tYPnt6dMnl;a1tYPnt6dB_Div;a1tYPnt6dB;a1tYPnt6dBMnl;a1tYPnt6dBMnl_Div;a1tYPnt10d150rMnl;a1tYPnt10d150rMnl_Div;a1tYPnt10d;a1tYPnt10dDiv;a1tYPnt10dMnl;a1tYPnt10dMnlDiv;a1tYPnt10dMnlTun;a1tYPnt10dTun;a1tXover2_5d;a1tXover5d;a1tXover6d5m;a1tXover6dB;a1tXover6d;a1tXover7_5d;a1tXover10d5m;a1tXover10d;a1tXover11_3d;a1tXover12dB;a1tXover12d;a1tXover15d;a1tXover20dEnd;a1tXover20d;a1tXover22_6d;a1tXover25dEnd;a1tXover25d;a1tXover26d;a1tXover30dEnd;a1tXover30d;a1tXover32d;a1tXover35dEnd;a1tXover35d;a1tXover40dEnd;a1tXover40d;a1tXover45d;a1tXover50dEnd;a1tXover50d;a1tXover55dEnd;a1tXover55d;a1tXover56d;a1tXover60dEnd;a1tXover60d;a1tXover62d;a1tXover65dEnd;a1tXover65d;a1tXover70dEnd;a1tXover70d;a1tXover75dEnd;a1tXover75d;a1tXover79d;a1tXover80dEnd;a1tXover80d;a1tXover85dEnd;a1tXover85d;a1tXover90d;a1t5dTramCrv;a1t15dTramCrv;a1t30dTramCrv;a1t30dTramLft;a1t30dTramLftAuto;a1t30dTramRgt;a1t30dTramRgtAuto;a1t30dTramY;a1t30dTramYAuto;
+</div>
+<div id="aLst2" class="tData" style="display:none">
+a2t0_3mStrt;a2t0_3mStrtRndTun;a2t0_3mStrtTun;a2t1mStrt;a2t1mStrtRndTun;a2t1mStrtTun;a2t1_5mStrt;a2t2_14mStrt;a2t2_4mStrt;a2t2_5mStrt;a2t3mStrt;a2t5mStrt;a2t5mStrtRndTun;a2t5mStrtTun;a2t6mStrt;a2t10mStrt;a2t10mStrtRndTun;a2t10mStrtTun;a2t15mStrt;a2t20mStrt;a2t20mStrtRndTun;a2t20mStrtTun;a2t24_01mStrt;a2t25mStrt;a2t25_8mStrt;a2t27_4mStrt;a2t28_3mStrt;a2t28_7mStrt;a2t30mStrt;a2t35mStrt;a2t37_86mStrt;a2t40mStrt;a2t44_46mStrt;a2t45mStrt;a2t50mStrt;a2t50mStrtRndTun;a2t75mStrt;a2t90mStrt;a2t100mStrt;a2t100mStrtRndTun;a2t100mStrtTun;a2t250mStrt;a2t250mStrtRndTun;a2t250mStrtTun;a2t500mStrt;a2t500mStrtRndTun;a2t500mStrtTun;a2t250r1d;a2t250r5d;a2t250r5dRndTun;a2t250r5dTun;a2t250r10d;a2t250r10dRndTun;a2t250r10dTun;a2t250r20d;a2t250r20dRndTun;a2t250r20dTun;a2t300r1d;a2t300r5d;a2t300r5dRndTun;a2t300r10d;a2t300r10dRndTun;a2t300r20d;a2t300r20dRndTun;a2t375r1d;a2t375r5d;a2t375r10d;a2t375r20d;a2t500r1d;a2t500r5d;a2t500r5dRndTun;a2t500r5dTun;a2t500r10d;a2t500r10dRndTun;a2t500r10dTun;a2t500r20d;a2t500r20dRndTun;a2t500r20dTun;a2t750r1d;a2t750r5d;a2t750r10d;a2t750r20d;a2t1000r1d;a2t1000r5d;a2t1000r5dRndTun;a2t1000r5dTun;a2t1000r10d;a2t1000r10dRndTun;a2t1000r10dTun;a2t1000r20d;a2t1000r20dRndTun;a2t1000r20dTun;a2t1500r1d;a2t1500r5d;a2t1500r5dRndTun;a2t1500r5dTun;a2t1500r10d;a2t1500r10dRndTun;a2t1500r10dTun;a2t1500r20d;a2t1500r20dRndTun;a2t1500r20dTun;a2t2000r1d;a2t2000r5d;a2t2000r5dRndTun;a2t2000r5dTun;a2t2000r10d;a2t2000r10dRndTun;a2t2000r10dTun;a2t2000r20d;a2t2000r20dRndTun;a2t2000r20dTun;a2t3000r1d;a2t3000r5d;a2t3000r10d;a2t4000r1d;a2t4000r1dRndTun;a2t4000r5d;a2t4000r5dRndTun;a2t4000r5dTun;a2t4000r10d;a2t6000r0_5d;a2t6000r1d;a2t6000r1dRndTun;a2t6000r5d;a2t6000r5dRndTun;a2t8000r0_5d;a2t8000r1d;a2t8000r1dRndTun;a2t8000r5d;a2t8000r5dRndTun;a2t15000r0_5d;a2t15000r2_5d;a2t10LvlCrsNoGate;a2t10mLvlCrs;a2t10PedesCrs;a2tFrog3d15mDbl;a2tFrog3d15mLft;a2tFrog3d15mRgt;a2tFrog3_0dLft;a2tFrog3_0dRgt;a2tFrog3_0to7dLft;a2tFrog3_0to7dRgt;a2tFrog4_7dDbl;a2tFrog4_7dLft;a2tFrog4_7dRgt;a2tFrog4_7to6_3dLft;a2tFrog4_7to6_3dRgt;a2tFrog6d5mDbl;a2tFrog6d5mLft;a2tFrog6d5mRgt;a2tFrog7_5dDbl;a2tFrog7_5dLft;a2tFrog7_5dRgt;a2tFrog7_5dx2;a2tPnt3_0dLft;a2tPnt3_0dLftRndTun;a2tPnt3_0dLftTun;a2tPnt3_0dRgt;a2tPnt3_0dRgtRndTun;a2tPnt3_0dRgtTun;a2tPnt4_7dLft;a2tPnt4_7dLftMnl;a2tPnt4_7dLftRndTun;a2tPnt4_7dLftTun;a2tPnt4_7dRgt;a2tPnt4_7dRgtMnl;a2tPnt4_7dRgtRndTun;a2tPnt4_7dRgtTun;a2tPnt10dLftMnlTun;a2tPnt10dLftTun;a2tPnt10dRgtMnlTun;a2tPnt10dRgtTun;a2tHPnt1_5dLft;a2tHPnt1_5dRgt;a2tHPnt2_0dLft;a2tHPnt2_0dRgt;a2tHPnt2_5dLft;a2tHPnt2_5dRgt;a2tskewLft;a2tskewRgt;a2tXoverEnd;a2t5dTramCrv;a2t15dTramCrv;a2t30dTramCrv;
+</div>
+<div id="aLst3" class="tData" style="display:none">
+a3t5mStrt;a3t10mStrt;a3t15mStrt;a3t20mStrt;a3t25mStrt;a3t28_3mStrt;a3t30mStrt;a3t35mStrt;a3t40mStrt;a3t45mStrt;a3t50mStrt;a3t75mStrt;a3t90mStrt;a3t100mStrt;a3t250mStrt;a3t500mStrt;a3t250r01d;a3t250r05d;a3t250r10d;a3t250r20d;a3t300r1d;a3t300r5d;a3t300r10d;a3t300r20d;a3t500r1d;a3t500r5d;a3t500r10d;a3t500r20d;a3t1000r1d;a3t1000r5d;a3t1000r10d;a3t1000r20d;a3t1500r1d;a3t1500r5d;a3t1500r10d;a3t1500r20d;a3t2000r1d;a3t2000r5d;a3t2000r10d;a3t2000r20d;a4t5mStrt;a4t10mStrt;a4t15mStrt;a4t17_41mStrt;a4t20mStrt;a4t23_6mStrt;a4t24_01mStrt;a4t25mStrt;a4t27_4mStrt;a4t28_3mStrt;a4t28_54mStrt;a4t30mStrt;a4t35mStrt;a4t40mStrt;a4t44_46mStrt;a4t45mStrt;a4t50mStrt;a4t75mStrt;a4t90mStrt;a4t100mStrt;a4t250mStrt;a4t500mStrt;a4t250r01d;a4t250r05d;a4t250r10d;a4t250r20d;a4t300r1d;a4t300r5d;a4t300r10d;a4t300r20d;a4t500r1d;a4t500r5d;a4t500r10d;a4t500r20d;a4t750r01d;a4t750r05d;a4t750r10d;a4t750r20d;a4t1000r1d;a4t1000r5d;a4t1000r10d;a4t1000r20d;a4t1500r1d;a4t1500r5d;a4t1500r10d;a4t1500r20d;a4t2000r1d;a4t2000r5d;a4t2000r10d;a4t2000r20d;a5t5mStrt;a5t10mStrt;a5t15mStrt;a5t20mStrt;a5t25mStrt;a5t28_3mStrt;a5t30mStrt;a5t35mStrt;a5t40mStrt;a5t45mStrt;a5t50mStrt;a5t75mStrt;a5t100mStrt;a5t250mStrt;a5t500mStrt;a6t5mStrt;a6t10mStrt;a6t15mStrt;a6t20mStrt;a6t24_01mStrt;a6t25mStrt;a6t27_4mStrt;a6t28_3mStrt;a6t30mStrt;a6t35mStrt;a6t40mStrt;a6t44_46mStrt;a6t45mStrt;a6t50mStrt;a6t75mStrt;a6t100mStrt;a6t250mStrt;a6t500mStrt;a7t5mStrt;a7t10mStrt;a7t15mStrt;a7t20mStrt;a7t25mStrt;a7t28_3mStrt;a7t30mStrt;a7t35mStrt;a7t40mStrt;a7t45mStrt;a7t50mStrt;a7t75mStrt;a7t100mStrt;a7t250mStrt;a7t500mStrt;a8t5mStrt;a8t10mStrt;a8t15mStrt;a8t20mStrt;a8t24_01mStrt;a8t25mStrt;a8t27_4mStrt;a8t28_3mStrt;a8t30mStrt;a8t35mStrt;a8t40mStrt;a8t44_46mStrt;a8t45mStrt;a8t50mStrt;a8t75mStrt;a8t100mStrt;a8t250mStrt;a8t500mStrt;a9t5mStrt;a9t10mStrt;a9t15mStrt;a9t20mStrt;a9t25mStrt;a9t28_3mStrt;a9t30mStrt;a9t35mStrt;a9t40mStrt;a9t45mStrt;a9t50mStrt;a9t75mStrt;a9t100mStrt;a9t250mStrt;a9t500mStrt;a10t5mStrt;a10t10mStrt;a10t15mStrt;a10t20mStrt;a10t24_01mStrt;a10t25mStrt;a10t27_4mStrt;a10t28_3mStrt;a10t30mStrt;a10t35mStrt;a10t40mStrt;a10t44_46mStrt;a10t45mStrt;a10t50mStrt;a10t75mStrt;a10t100mStrt;a10t250mStrt;a10t500mStrt;
+</div>
+<div id="cLst" class="tData" style="display:none">
+a1t0_3mStrtConcrete;a1t1mStrtConcrete;a1t2_6mtrConcrete;a1t5mtrConcrete;a1t5mtrConcreteOld;a1t5_5mStrtConcrete;a1t10mtrConcrete;a1t16_6mStrtConcrete;a1t20mtrConcrete;a1t50mtrConcrete;a1t100mtrConcrete;a1t250mtrConcrete;a1t500mtrConcrete;a1t190r1dConcrete;a1t190r2_5dConcrete;a1t190r5dConcrete;a1t190r10dConcrete;a1t190r20dConcrete;a1t250r1dConcrete;a1t250r5dConcrete;a1t250r10dConcrete;a1t300r1dConcrete;a1t300r2dConcrete;a1t300r5dConcrete;a1t300r10dConcrete;a1t300r20dConcrete;a1t500r1dConcrete;a1t500r5dConcrete;a1t500r10dConcrete;a1t1000r1dConcrete;a1t1000r5dConcrete;a1t1000r10dConcrete;a1t1500r1dConcrete;a1t1500r5dConcrete;a1t1500r10dConcrete;a1t2000r1dConcrete;a1t2000r5dConcrete;a1t2000r10dConcrete;a1t2000r20dConcrete;a1t4000r1dConcrete;a1t4000r5dConcrete;a1t4000r10dConcrete;a1tEndPnt1_5dLftConcrete;a1tEndPnt1_5dRgtConcrete;a1tEndPnt2_0dLftConcrete;a1tEndPnt2_0dRgtConcrete;a1tEndPnt2_5dLftConcrete;a1tEndPnt2_5dRgtConcrete;a1tEndPnt3dConcrete;a1tEndPnt3_0dConcrete;a1tEndPnt4_7dConcrete;a1tEndPnt5dLftConcrete;a1tEndPnt5dRgtConcrete;a1tEndPnt6dConcrete;a1tEndPnt10dLftConcrete;a1tEndPnt10dRgtConcrete;a1tFrog1_5dLftConcrete;a1tFrog1_5dRgtConcrete;a1tFrog1_5dto2dLftConcrete;a1tFrog1_5dto2dRgtConcrete;a1tFrog2_0dLftConcrete;a1tFrog2_0dRgtConcrete;a1tFrog3_0dLftConcrete;a1tFrog3_0dRgtConcrete;a1tFrog4_7dDblConcrete;a1tFrog4_7dLftConcrete;a1tFrog4_7dRgtConcrete;a1tFrog4_7to6_3dLftConcrete;a1tFrog4_7to6_3dRgtConcrete;a1tPnt1mStrtConcrete;a1tPnt2_5dLftConcrete;a1tPnt2_5dRgtConcrete;a1tPnt3dLftConcrete;a1tPnt3dLftMnlConcrete;a1tPnt3dRgtConcrete;a1tPnt3dRgtMnlConcrete;a1tPnt3dBLftConcrete;a1tPnt3dBRgtConcrete;a1tPnt3_0dLftConcrete;a1tPnt3_0dRgtConcrete;a1tPnt4_7dLftConcrete;a1tPnt4_7dLftMnlConcrete;a1tPnt4_7dRgtConcrete;a1tPnt4_7dRgtMnlConcrete;a1tPnt5dLftConcrete;a1tPnt5dRgtConcrete;a1tPnt6dLftConcrete;a1tPnt6dRgtConcrete;a1tPnt6dBLftConcrete;a1tPnt6dBRgtConcrete;a1tPnt10dLftConcrete;a1tPnt10dRgtConcrete;a1tXover11_3dConcrete;a1tXover6dConcrete;a2t10mtrConcrete;a2t50mtrConcrete;a2t100mtrConcrete;a2t250mtrConcrete;a2t500mtrConcrete;a2t250r5dConcrete;a2t250r10dConcrete;a2t250r20dConcrete;a2t300r1dConcrete;a2t300r5dConcrete;a2t300r10dConcrete;a2t300r20dConcrete;a2t500r5dConcrete;a2t500r10dConcrete;a2t500r20dConcrete;a2t1000r5dConcrete;a2t1000r10dConcrete;a2t1500r5dConcrete;a2t1500r10dConcrete;a2t2000r5dConcrete;a2t2000r10dConcrete;a2t2000r20dConcrete;a2t3000r5dConcrete;a2t4000r5dConcrete;a2t4000r10dConcrete;a2t6000r5dConcrete;a2t8000r5dConcrete;a2t15000r2_5dConcrete;a2tFrog3d15mDblConcrete;a2tFrog3d15mLftConcrete;a2tFrog3d15mRgtConcrete;a2tFrog3_0dLftConcrete;a2tFrog3_0dRgtConcrete;a2tFrog3_0to7dLftConcrete;a2tFrog3_0to7dRgtConcrete;a2tFrog4_7dDblConcrete;a2tFrog4_7dLftConcrete;a2tFrog4_7dRgtConcrete;a2tFrog6d5mDblConcrete;a2tFrog6d5mLftConcrete;a2tFrog6d5mRgtConcrete;a2tPnt3_0dLftConcrete;a2tPnt3_0dRgtConcrete;a2tPnt4_7dLftConcrete;a2tPnt4_7dLftMnlConcrete;a2tPnt4_7dRgtConcrete;a2tPnt4_7dRgtMnlConcrete;a3t300r1dConcrete;a3t300r5dConcrete;a3t300r10dConcrete;a3t300r20dConcrete;a4t10mStrtConcrete;a4t300r1dConcrete;a4t300r5dConcrete;a4t300r10dConcrete;a4t300r20dConcrete;a4t2000r5dConcrete;
+</div>
+<div id="sLst" class="tData" style="display:none">
+s1t0_3mStrt;s1t1mStrt;s1t5mStrt;s1t5_5mStrt;s1t10mStrt;s1t15mStrt;s1t15_2mStrt;s1t20mStrt;s1t20_5mStrt;s1t35_2mStrt;s1t50mStrt;s1t100mStrt;s1t250mStrt;s1t500mStrt;s1t250r5d;s1t250r10d;s1t250r20d;s1t500r5d;s1t500r10d;s1tEndPnt3_0d;s1tEndPnt3d;s1tEndPnt3dx2;s1tEndPnt3to10d;s1tEndPnt4_7d;s1tEndPnt5dLft;s1tEndPnt5dRgt;s1tEndPnt6d;s1tEndPnt6dx2;s1tFrog3_0dLft;s1tFrog3_0dRgt;s1tFrog3dLft;s1tFrog3dRgt;s1tFrog3d15mLft;s1tFrog3d15mRgt;s1tFrog4_7dLft;s1tFrog4_7dRgt;s1tFrog4_7dDbl;s1tPnt1mStrt;s1tPnt3_0dLft;s1tPnt3_0dRgt;s1tPnt3dLft;s1tPnt3dLftMnl;s1tPnt3dRgt;s1tPnt3dRgtMnl;s1tPnt3dBLft;s1tPnt3dBLftMnl;s1tPnt3dBRgt;s1tPnt3dBRgtMnl;s1tPnt4_7dLft;s1tPnt4_7dLftMnl;s1tPnt4_7dRgt;s1tPnt4_7dRgtMnl;s1tPnt5dLft;s1tPnt5dLftMnl;s1tpnt5drgt;s1tpnt5drgtmnl;s1tPnt5dSRgt;s1tPnt5dSRgtMnl;s1tPnt6dLft;s1tPnt6dLftMnl;s1tPnt6dRgt;s1tPnt6dRgtMnl;s1tXover11_3d;s1tXover12dB;s1tXover22_6d;s1tXover6d;s1tYPnt6d;s1tYPnt6dMnl;s2t5mStrt;s2t10mStrt;s2t50mStrt;s2t100mStrt;s2t250mStrt;s2t500mStrt;s2t250r5d;s2t250r10d;s2t250r20d;s2t500r5d;s2t500r10d;s2t500r20d;s2tFrog3d15mLft;s2tFrog3d15mRgt;s2tFrog3d15mDbl;s2tPnt3_0dLft;s2tPnt3_0dRgt;s2tPnt4_7dLft;s2tPnt4_7dRgt;
+</div>
+<div id="bLst" class="tData" style="display:none">
+a1tBrdg5mStrt;a1tBrdg7_7mStrt;a1tBrdg10mStrt;a1tBrdg15mStrt;a1tBrdg20mStrt;a1tBrdg25mStrt;a1tBrdg28_2mStrt;a1tBrdg30mStrt;a1tBrdg35mStrt;a1tBrdg40mStrt;a1tBrdg45mStrt;a1tBrdg50mStrt;a1tBrdg75mStrt;a1tBrdg90mStrt;a1tBrdg100mStrt;a1tBrdg60r1d;a1tBrdg60r5d;a1tBrdg120r1d;a1tBrdg120r5d;a1tBrdg120r10d;a1tBrdg120r20d;a1tBrdg250r1d;a1tBrdg250r5d;a1tBrdg250r10d;a1tBrdg250r20d;a1tBrdg500r1d;a1tBrdg500r5d;a1tBrdg500r10d;a1tBrdgEnd;a1tBrdgPnt10dLft;a1tBrdgPnt10dRgt;a1tBrdgYPnt7d;a2tBrdg005mStrt;a2tBrdg010mStrt;a2tBrdg015mStrt;a2tBrdg020mStrt;a2tBrdg025mStrt;a2tBrdg030mStrt;a2tBrdg035mStrt;a2tBrdg040mStrt;a2tBrdg045mStrt;a2tBrdg050mStrt;a2tBrdg075mStrt;a2tBrdg090mStrt;a2tBrdg100mStrt;a2tBrdg250r5d;a2tBrdg500r5d;a2tBrdg1000r5d;a2tBrdg1500r5d;a2tBrdg2000r5d;a2tBrdgEnd;a1t100m7bridge1;a1t100m7bridge2;a1t30m7bridge1;a1t50m7bridge1;a1t50m7bridge2;a1t70m7bridge1;a1t70m7bridge2;a2t100m7bridge1;a2t100m7bridge2;a2t100m7bridge3;
+</div>
+<div id="xLst" class="tData" style="display:none">
+a1t27mturntable;a1t30mRoundhouse;a1t30mRoundhThru;a1t3waypnt10dmnl;a1t42mturntable;a1tAngle45dLft;a1tAngle45dRgt;a1tAngle90dLft;a1tAngle90dRgt;a1tdblslip10d;a1tdblslip10dend;a1tdblslip10dmnl;a1tScaleEndPnt;a1tScalePntLft;a1tScalePntLftMnl;a1tScalePntRgt;a1tScalePntRgtMnl;a1tScaleYPnt;a1tScaleYPntMnl;a1tscissorpnt10dlftmnl;a1tscissorpnt10drgtmnl;a1tsglslip10d;a1tsglslip10dend;a1tsglslip10dmnl;a1tStub3dLft;a1tStub3dLftMnl;a1tStub3dRgt;a1tStub3dRgtMnl;a1tYPnt90dMnl;a1tYStub3d;a1tYStub3dMnl;a2t75m7carfloat1;
+</div>
+<div id="grLst1" class="tData" style="display:none">
+a1t0_3mStrt;a1t0_3mStrtConcrete;a1t0_44mStrt;a1t0_8mStrt;a1t1mStrt;a1t1mStrtConcrete;a1t1_29mStrt;a1t1_2mStrt;a1t1_5mStrt;a1t2_14mStrt;a1t2_46mStrt;a1t2_4mStrt;a1t2_5mStrt;a1t2_6mtrConcrete;a1t3mStrt;a1t4_985mStrt;a1t5mStrt;a1t5mtrConcrete;a1t5_4mStrt;a1t5_5mStrt;a1t5_5mStrtConcrete;a1t7mStrt;a1t10mstrt;a1t10mtrConcrete;a1t11_59mStrt;a1t12_86mStrt;a1t13_2mStrt;a1t15mStrt;a1t15_2mStrt;a1t15_56mStrt;a1t16_6mStrt;a1t16_6mStrtConcrete;a1t17_41mStrt;a1t20mStrt;a1t20mtrConcrete;a1t20_5mStrt;a1t23_6mStrt;a1t24_01mStrt;a1t25mStrt;a1t25_8mStrt;a1t27_4mStrt;a1t28_3mStrt;a1t28_54mStrt;a1t28_7mStrt;a1t30mStrt;a1t30_95mStrt;a1t35mStrt;a1t35_2mStrt;a1t37_86mStrt;a1t38_2mStrt;a1t38_54mStrt;a1t40mStrt;a1t44_46mStrt;a1t45mStrt;a1t50mstrt;a1t50mtrConcrete;a1t52_5mStrt;a1t56_6mStrt;a1t60mStrt;a1t75mStrt;a1t90mStrt;a1t100mstrt;a1t100mtrConcrete;a1t150mStrt;a1t200mStrt;a1t250mstrt;a1t250mtrConcrete;a1t500mStrt;a1t500mtrConcrete;a1t45dYardCrvLft;a1t45dYardCrvRgt;a1t150r1d;a1t150r5d;a1t150r10d;a1t190r1d;a1t190r2_5d;a1t190r5d;a1t190r10d;a1t190r20d;a1t250r1d;a1t250r5d;a1t250r10d;a1t250r20d;a1t300r1d;a1t300r1dConcrete;a1t300r2d;a1t300r2dConcrete;a1t300r2_5d;a1t300r5d;a1t300r5dConcrete;a1t300r10d;a1t300r20d;a1t300r20dConcrete;a1t375r1d;a1t375r5d;a1t375r10d;a1t500r1d;a1t500r2d;a1t500r5d;a1t500r5dConcrete;a1t500r10d;a1t500r10dConcrete;a1t500r20d;a1t750r10d;a1t750r1d;a1t750r20d;a1t750r5d;a1t1000r1d;a1t1000r1dConcrete;a1t1000r5d;a1t1000r5dConcrete;a1t1000r10d;a1t1000r10dConcrete;a1t1000r20d;a1t1500r10d;a1t1500r1d;a1t1500r1dConcrete;a1t1500r20d;a1t1500r5d;a1t1500r5dConcrete;a1t2000r1d;a1t2000r1dConcrete;a1t2000r5d;a1t2000r5dConcrete;a1t3000r1d;a1t4000r1d;a1t4000r1dConcrete;a1t4000r5dConcrete;a1t4000r10dConcrete;a1t6000r0_5d;a1t6000r1d;a1t8000r0_5d;a1t15000r0_5d;;a1tBrdg100mStrt;a1tBrdg15mStrt;a1tBrdg30mStrt;a1tBrdg45mStrt;a1tBrdg50mStrt;a1tBuffer;a1tEndPnt10dLft;a1tEndPnt10dRgt;a1tEndPnt3d;a1tEndPnt3dx2;a1tEndPnt4_7d;a1tEndPnt4_7dConcrete;a1tEndPnt5dLft;a1tEndPnt5dLftConcrete;a1tEndPnt5dRgt;a1tEndPnt5dRgtConcrete;a1tEndPnt7_5d;a1tFrog3_0dRgt;a1tFrog3d15mLft;a1tFrog3d15mRgt;a1tFrog3d45mLft;a1tFrog3d45mRgt;a1tFrog3dLft;a1tFrog3dRgt;a1tFrog4_7dLft;a1tFrog4_7dLftConcrete;a1tFrog4_7dRgt;a1tFrog4_7dRgtConcrete;a1tFrog4_7dTo2tLft;a1tFrog4_7dTo2tRgt;a1tFrog4_7to6_3dLft;a1tFrog4_7to6_3dRgt;a1tFrog7_5dDbl;a1tFrog7_5dLft;a1tFrog7_5dRgt;a1tFrog7_5dTo2tLft;a1tFrog7_5dTo2tRgt;a1tPnt3_0dLft;a1tPnt3_0dRgt;a1t870r4dLft;a1t870r4dRgt;a1tPnt3dBLft;a1tPnt3dBRgt;a1tPnt4_7dLft;a1tPnt4_7dLftConcrete;a1tPnt4_7dRgt;a1tPnt4_7dRgtConcrete;a1tPnt5dLft;a1tPnt5dLftMnl;a1tPnt5dRgt;a1tPnt5dSLft;a1tPnt5dSRgt;a1tPnt6_3dLftSlip;a1tPnt6_3dRgtSlip;a1tPnt7_5dLft;a1tPnt7_5dLftMnl;a1tPnt7_5dLftSlip;a1tPnt7_5dLftSlipMnl;a1tPnt7_5dRgt;a1tPnt7_5dRgtMnl;a1tPnt7_5dRgtSlip;a1tPnt7_5dRgtSlipMnl;a1tPnt10dLft;a1tPnt10dLftMnl;a1tPnt10dRgt;a1tPnt10dRgtMnl;a1tPnt3w10d150rLftRgtMnl1;a1tPnt3w10d150rLftRgtMnl2;a1tPnt3w10d150rRgtLftMnl1;a1tPnt3w10d150rRgtLftMnl2;a1tPntM250rD120rLft;a1tPnt500r12dLft;a1tPnt500r8dLft;a1tPnt500r8dRgt;a1tSglSlip6_3d;a1tDblSlip6_3d;a1tDblSlip7_5d;a1t45dYardLftMnl;a1tYPnt10d;a1tYPnt10dMnl;a1tYPnt3dB;a1tYPnt3dBMnl;a1tXover12dB;a2t1mStrt;a2t3mStrt;a2t5mStrt;a2t10mstrt;a2t10mtrConcrete;a2t15mStrt;a2t20mStrt;a2t28_3mStrt;a2t30mStrt;a2t35mStrt;a2t37_86mStrt;a2t40mStrt;a2t45mStrt;a2t50mStrt;a2t50mtrConcrete;a2t75mStrt;a2t90mStrt;a2t100mstrt;a2t100mtrConcrete;a2t250mStrt;a2t250mtrConcrete;a2t500mstrt;a2t500mtrConcrete;a2t250r5d;a2t250r20d;a2t500r1d;a2t500r5d;a2t500r10d;a2t500r20d;a2t500r20dConcrete;a2t750r1d;a2t750r5d;a2t750r10d;a2t750r20d;a2t1000r1d;a2t1000r5d;a2t1000r5dConcrete;a2t1000r10d;a2t1000r10dConcrete;a2t1000r20d;a2t1500r5d;a2t1500r5dConcrete;a2t1500r10d;a2t1500r10dConcrete;a2t1500r20d;a2t2000r1d;a2t2000r5d;a2t2000r5dConcrete;a2t2000r10d;a2t2000r10dConcrete;a2t2000r20d;a2t3000r10d;a2t4000r1d;a2t4000r5dConcrete;a2t4000r10dConcrete;a2t6000r0_5d;a2tFrog3d15mLft;a2tFrog3d15mRgt;a2tFrog4_7dLft;a2tFrog4_7dRgt;a2tFrog4_7dRgtConcrete;a2tFrog7_5dDbl;a2tFrog7_5dLft;a2tFrog7_5dRgt;a2tPnt3_0dLft;a2tPnt4_7dLft;a2tPnt4_7dLftConcrete;a2tPnt4_7dRgt;a3t5mStrt;a3t20mStrt;a3t40mStrt;a3t50mStrt;a3t100mStrt;a3t250mStrt;a3t500mStrt;a3t300r10d;a3t1000r1d;a3t1000r5d;a3t1000r10d;a3t1000r20d;a3t1500r1d;a3t2000r1d;a4t45mStrt;a4t20mStrt;a4t50mStrt;a4t90mStrt;a4t100mStrt;a4t250mStrt;a4t500mstrt;a4t500r1d;a4t500r5d;a4t1000r1d;a4t1500r1d;a4t1500r5d;a4t1500r10d;a4t2000r1d;a5t75mStrt;a5t100mStrt;a5t250mStrt;a6t100mStrt;a6t250mStrt;a7t100mStrt;a7t250mStrt;a8t100mStrt;a8t500mStrt;a9t50mStrt;a9t100mStrt;a9t250mStrt;
+</div>
+<div id="dbLst" class="" style="display:none">
+a1t0_3mStrt;a1t0_3mStrtTun;a1t0_44mStrt;a1t0_8mStrt;a1t1mStrt;a1t1mStrtTun;a1t1_2mStrt;a1t1_29mStrt;a1t1_5mStrt;a1t2_14mStrt;a1t2_4mStrt;a1t2_46mStrt;a1t2_5mStrt;a1t2_6mStrt;a1t3mStrt;a1t4_985mStrt;a1t5mStrt;a1t5mStrtTun;a1t5_4mStrt;a1t5_5mStrt;a1t5_99mStrt;a1t7mStrt;a1t10mSkew;a1t10mStrt;a1t10mStrtRndTun;a1t10mStrtRndTun6m;a1t10mStrtTun;a1t10mStrtwtr;a1t11_59mStrt;a1t12_86mStrt;a1t13_2mStrt;a1t15mStrt;a1t15_2mStrt;a1t15_56mStrt;a1t16_6mStrt;a1t17_41mStrt;a1t20mStrt;a1t20mStrtRndTun6m;a1t20mStrtTun;a1t20_5mStrt;a1t23_6mStrt;a1t24mStrt;a1t24_01mStrt;a1t25mStrt;a1t25_8mStrt;a1t27_4mStrt;a1t28_3mStrt;a1t28_54mStrt;a1t28_7mStrt;a1t30mStrt;a1t30_95mStrt;a1t35mStrt;a1t35_2mStrt;a1t37_86mStrt;a1t38_2mStrt;a1t38_54mStrt;a1t40mStrt;a1t44_46mStrt;a1t45mStrt;a1t50mStrt;a1t50mStrtRndTun;a1t50mStrtRndTun6m;a1t50mStrtTun;a1t50mStrtwtr;a1t52_5mStrt;a1t56_6mStrt;a1t60mStrt;a1t75mStrt;a1t90mStrt;a1t100mStrt;a1t100mStrtRndTun;a1t100mStrtRndTun6m;a1t100mStrtTun;a1t100mStrtwtr;a1t150mStrt;a1t200mStrt;a1t250mStrt;a1t500mStrt;a1t45dyardcrvLft;a1t45dyardcrvRgt;a1t60r1d;a1t60r5d;a1t60r10d;a1t60r20d;a1t90r1d;a1t90r5d;a1t90r10d;a1t90r20d;a1t120r1d;a1t120r5d;a1t120r5dTun;a1t120r10d;a1t120r10dTun;a1t120r20d;a1t120r20dTun;a1t150r1d;a1t150r5d;a1t150r10d;a1t150r20d;a1t164r10d;a1t190r1d;a1t190r2_5d;a1t190r5d;a1t190r10d;a1t190r20d;a1t250r1d;a1t250r5d;a1t250r5dRndTun;a1t250r5dRndTun6m;a1t250r5dTun;a1t250r10d;a1t250r10dRndTun;a1t250r10dRndTun6m;a1t250r10dTun;a1t250r20d;a1t250r20dTun;a1t300r1d;a1t300r2d;a1t300r2_5d;a1t300r5d;a1t300r10d;a1t300r20d;a1t365r12d;a1t375r1d;a1t375r5d;a1t375r10d;a1t375r20d;a1t500r0_25d;a1t500r1d;a1t500r2d;a1t500r5d;a1t500r5dRndTun;a1t500r5dRndTun6m;a1t500r5dTun;a1t500r10d;a1t500r10dRndTun;a1t500r10dRndTun6m;a1t500r10dTun;a1t500r20d;a1t700r8d;a1t750r1d;a1t750r5d;a1t750r10d;a1t750r20d;a1t865r12d;a1t1000r1d;a1t1000r5d;a1t1000r5dRndTun;a1t1000r5dRndTun6m;a1t1000r5dTun;a1t1000r10d;a1t1000r10dRndTun;a1t1000r10dRndTun6m;a1t1000r10dTun;a1t1000r20d;a1t1034r7d;a1t1200r8d;a1t1500r1d;a1t1500r5d;a1t1500r5dRndTun;a1t1500r5dRndTun6m;a1t1500r5dTun;a1t1500r10d;a1t1500r10dRndTun;a1t1500r10dRndTun6m;a1t1500r10dTun;a1t1500r20d;a1t1534r7d;a1t2000r1d;a1t2000r5d;a1t2000r5dRndTun;a1t2000r5dRndTun6m;a1t2000r5dTun;a1t2000r10d;a1t2000r10dTun;a1t2000r20d;a1t2000r20dTun;a1t2588r3d;a1t3000r1d;a1t3000r5d;a1t3000r10d;a1t3088r3d;a1t4000r1d;a1t4000r5d;a1t4000r10d;a1t6000r0_5d;a1t6000r1d;a1t6000r5d;a1t8000r0_5d;a1t8000r1d;a1t8000r5d;a1t15000r0_5d;a1t15000r2_5d;a1tbuffer;a1tukbuffer;a1tusbuffer;a1tEndPnt1_5dLftConcrete;a1tEndPnt1_5dRgtConcrete;a1tEndPnt2_0dLftConcrete;a1tEndPnt2_0dRgtConcrete;a1tEndPnt2_5dLft;a1tEndPnt2_5dRgt;a1tEndPnt3dBto10d;a1tEndPnt3dx2;a1tEndPnt3d;a1tEndPnt3to10d;a1tEndPnt3_0d;a1tEndPnt4_7d;a1tEndPnt5dLft;a1tEndPnt5dLftRndTun;a1tEndPnt5dLftRndTun6m;a1tEndPnt5dLftTun;a1tEndPnt5dRgt;a1tEndPnt5dRgtRndTun;a1tEndPnt5dRgtRndTun6m;a1tEndPnt5dRgtTun;a1tEndPnt6dBto15d;a1tEndPnt6dx2;a1tEndPnt6d;a1tEndPnt6to10d;a1tEndPnt7_5d;a1tEndPnt10dLft;a1tEndPnt10dLftRndTun;a1tEndPnt10dLftRndTun6m;a1tEndPnt10dLftTun;a1tEndPnt10dRgt;a1tEndPnt10dRgtRndTun;a1tEndPnt10dRgtRndTun6m;a1tEndPnt10dRgtTun;a1tPnt2_5dLft;a1tPnt2_5dLftMnl;a1tPnt2_5dRgt;a1tPnt2_5dRgtMnl;a1tPnt5dLft;a1tPnt5dLftMnl;a1tPnt5dRgt;a1tPnt5dRgtMnl;a1tPnt10dLft;a1tPnt10dLftMnl;a1tPnt10dRgt;a1tPnt10dRgtMnl;a1t45dyardLft;a1t45dyardLftMnl;a1t45dyardRgt;a1t45dyardRgtMnl;a1t870r4dLft;a1t870r4dLftMnl;a1t870r4dRgt;a1t870r4dRgtMnl;a1tHPnt2_5dLft;a1tHPnt2_5dRgt;a1tYPnt10d;a1tYPnt10dMnl;a1tXover2_5d;a1tXover5d;a2t0_3mStrt;a2t0_3mStrtRndTun;a2t0_3mStrtTun;a2t1mStrt;a2t1mStrtRndTun;a2t1mStrtTun;a2t1_5mStrt;a2t2_14mStrt;a2t2_4mStrt;a2t2_5mStrt;a2t3mStrt;a2t5mStrt;a2t5mStrtRndTun;a2t5mStrtTun;a2t6mStrt;a2t10mStrt;a2t10mStrtRndTun;a2t10mStrtTun;a2t15mStrt;a2t20mStrt;a2t20mStrtRndTun;a2t20mStrtTun;a2t24_01mStrt;a2t25mStrt;a2t25_8mStrt;a2t27_4mStrt;a2t28_3mStrt;a2t28_7mStrt;a2t30mStrt;a2t35mStrt;a2t37_86mStrt;a2t40mStrt;a2t44_46mStrt;a2t45mStrt;a2t50mStrt;a2t50mStrtRndTun;a2t75mStrt;a2t90mStrt;a2t100mStrt;a2t100mStrtRndTun;a2t100mStrtTun;a2t250mStrt;a2t250mStrtRndTun;a2t250mStrtTun;a2t500mStrt;a2t500mStrtRndTun;a2t500mStrtTun;a2t250r1d;a2t250r5d;a2t250r5dRndTun;a2t250r5dTun;a2t250r10d;a2t250r10dRndTun;a2t250r10dTun;a2t250r20d;a2t250r20dRndTun;a2t250r20dTun;a2t300r1d;a2t300r5d;a2t300r5dRndTun;a2t300r10d;a2t300r10dRndTun;a2t300r20d;a2t300r20dRndTun;a2t375r1d;a2t375r5d;a2t375r10d;a2t375r20d;a2t500r1d;a2t500r5d;a2t500r5dRndTun;a2t500r5dTun;a2t500r10d;a2t500r10dRndTun;a2t500r10dTun;a2t500r20d;a2t500r20dRndTun;a2t500r20dTun;a2t750r1d;a2t750r5d;a2t750r10d;a2t750r20d;a2t1000r1d;a2t1000r5d;a2t1000r5dRndTun;a2t1000r5dTun;a2t1000r10d;a2t1000r10dRndTun;a2t1000r10dTun;a2t1000r20d;a2t1000r20dRndTun;a2t1000r20dTun;a2t1500r1d;a2t1500r5d;a2t1500r5dRndTun;a2t1500r5dTun;a2t1500r10d;a2t1500r10dRndTun;a2t1500r10dTun;a2t1500r20d;a2t1500r20dRndTun;a2t1500r20dTun;a2t2000r1d;a2t2000r5d;a2t2000r5dRndTun;a2t2000r5dTun;a2t2000r10d;a2t2000r10dRndTun;a2t2000r10dTun;a2t2000r20d;a2t2000r20dRndTun;a2t2000r20dTun;a2t3000r1d;a2t3000r5d;a2t3000r10d;a2t4000r1d;a2t4000r1dRndTun;a2t4000r5d;a2t4000r5dRndTun;a2t4000r5dTun;a2t4000r10d;a2t6000r0_5d;a2t6000r1d;a2t6000r1dRndTun;a2t6000r5d;a2t6000r5dRndTun;a2t8000r0_5d;a2t8000r1d;a2t8000r1dRndTun;a2t8000r5d;a2t8000r5dRndTun;a2t15000r0_5d;a2t15000r2_5d;a2t10LvlCrsNoGate;a2t10mLvlCrs;a2tskewRgt;a3t5mStrt;a3t10mStrt;a3t15mStrt;a3t20mStrt;a3t25mStrt;a3t28_3mStrt;a3t30mStrt;a3t35mStrt;a3t40mStrt;a3t45mStrt;a3t50mStrt;a3t75mStrt;a3t90mStrt;a3t100mStrt;a3t250mStrt;a3t500mStrt;a3t250r01d;a3t250r05d;a3t250r10d;a3t250r20d;a3t300r1d;a3t300r5d;a3t300r10d;a3t300r20d;a3t500r1d;a3t500r5d;a3t500r10d;a3t500r20d;a3t1000r1d;a3t1000r5d;a3t1000r10d;a3t1000r20d;a3t1500r1d;a3t1500r5d;a3t1500r10d;a3t1500r20d;a3t2000r1d;a3t2000r5d;a3t2000r10d;a3t2000r20d;a4t5mStrt;a4t10mStrt;a4t15mStrt;a4t17_41mStrt;a4t20mStrt;a4t23_6mStrt;a4t24_01mStrt;a4t25mStrt;a4t27_4mStrt;a4t28_3mStrt;a4t28_54mStrt;a4t30mStrt;a4t35mStrt;a4t40mStrt;a4t44_46mStrt;a4t45mStrt;a4t50mStrt;a4t75mStrt;a4t90mStrt;a4t100mStrt;a4t250mStrt;a4t500mStrt;a4t250r01d;a4t250r05d;a4t250r10d;a4t250r20d;a4t300r1d;a4t300r5d;a4t300r10d;a4t300r20d;a4t500r1d;a4t500r5d;a4t500r10d;a4t500r20d;a4t750r01d;a4t750r05d;a4t750r10d;a4t750r20d;a4t1000r1d;a4t1000r5d;a4t1000r10d;a4t1000r20d;a4t1500r1d;a4t1500r5d;a4t1500r10d;a4t1500r20d;a4t2000r1d;a4t2000r5d;a4t2000r10d;a4t2000r20d;a5t5mStrt;a5t10mStrt;a5t15mStrt;a5t20mStrt;a5t25mStrt;a5t28_3mStrt;a5t30mStrt;a5t35mStrt;a5t40mStrt;a5t45mStrt;a5t50mStrt;a5t75mStrt;a5t100mStrt;a5t250mStrt;a5t500mStrt;a6t5mStrt;a6t10mStrt;a6t15mStrt;a6t20mStrt;a6t24_01mStrt;a6t25mStrt;a6t27_4mStrt;a6t28_3mStrt;a6t30mStrt;a6t35mStrt;a6t40mStrt;a6t44_46mStrt;a6t45mStrt;a6t50mStrt;a6t75mStrt;a6t100mStrt;a6t250mStrt;a6t500mStrt;a7t5mStrt;a7t10mStrt;a7t15mStrt;a7t20mStrt;a7t25mStrt;a7t28_3mStrt;a7t30mStrt;a7t35mStrt;a7t40mStrt;a7t45mStrt;a7t50mStrt;a7t75mStrt;a7t100mStrt;a7t250mStrt;a7t500mStrt;a8t5mStrt;a8t10mStrt;a8t15mStrt;a8t20mStrt;a8t24_01mStrt;a8t25mStrt;a8t27_4mStrt;a8t28_3mStrt;a8t30mStrt;a8t35mStrt;a8t40mStrt;a8t44_46mStrt;a8t45mStrt;a8t50mStrt;a8t75mStrt;a8t100mStrt;a8t250mStrt;a8t500mStrt;a9t5mStrt;a9t10mStrt;a9t15mStrt;a9t20mStrt;a9t25mStrt;a9t28_3mStrt;a9t30mStrt;a9t35mStrt;a9t40mStrt;a9t45mStrt;a9t50mStrt;a9t75mStrt;a9t100mStrt;a9t250mStrt;a9t500mStrt;a10t5mStrt;a10t10mStrt;a10t15mStrt;a10t20mStrt;a10t24_01mStrt;a10t25mStrt;a10t27_4mStrt;a10t28_3mStrt;a10t30mStrt;a10t35mStrt;a10t40mStrt;a10t44_46mStrt;a10t45mStrt;a10t50mStrt;a10t75mStrt;a10t100mStrt;a10t250mStrt;a10t500mStrt;
+a1tPnt0dLftMnl;a1tPnt0dRgtMnl;a1tPnt1mStrt;a1tPnt1mStrtMnl;
+
+a1tFrog7_5dLft;a1tFrog7_5dRgt;a1tPnt5dSLft;a1tPnt5dSRgt;a1tPnt5dSLftMnl;a1tPnt5dSRgtMnl;a1tPnt7_5dLft;a1tPnt7_5dLftMnl;a1tPnt7_5dRgt;a1tPnt7_5dRgtMnl;a1tXover7_5d;a2tFrog7_5dLft;a2tFrog7_5dRgt;A1tFrog15d;A1tFrog7_5dDbl;A1tXover15d;A2tFrog7_5dDbl;
+a1tBrdg100mStrt;a1tBrdg10mStrt;a1tBrdg120r10d;a1tBrdg120r1d;a1tBrdg120r20d;a1tBrdg120r5d;a1tBrdg15mStrt;a1tBrdg20mStrt;a1tBrdg250r10d;a1tBrdg250r1d;a1tBrdg250r20d;a1tBrdg250r5d;a1tBrdg25mStrt;a1tBrdg28_2mStrt;a1tBrdg30mStrt;a1tBrdg35mStrt;a1tBrdg40mStrt;a1tBrdg45mStrt;a1tBrdg500r10d;a1tBrdg500r1d;a1tBrdg500r5d;a1tBrdg50mStrt;a1tBrdg5mStrt;a1tBrdg60r1d;a1tBrdg60r5d;a1tBrdg75mStrt;a1tBrdg7_7mStrt;a1tBrdg90mStrt;a2tBrdg005mStrt;a2tBrdg010mStrt;a2tBrdg015mStrt;a2tBrdg020mStrt;a2tBrdg025mStrt;a2tBrdg030mStrt;a2tBrdg035mStrt;a2tBrdg040mStrt;a2tBrdg045mStrt;a2tBrdg050mStrt;a2tBrdg075mStrt;a2tBrdg090mStrt;a2tBrdg1000r5d;a2tBrdg100mStrt;a2tBrdg1500r5d;a2tBrdg2000r5d;a2tBrdg250r5d;a2tBrdg500r5d;
+</div>
+<div id="nLst1" class="tData" style="display:none">
+a1tFrog4_7dLft;a1tFrog4_7dRgt;a1tPnt4_7dLft;a1tPnt4_7dLftMnl;a1tPnt4_7dRgt;a1tPnt4_7dRgtMnl;a2tFrog4_7dLft;a2tFrog4_7dRgt;a2tPnt4_7dLft;a2tPnt4_7dRgt;
+a1tFrog3d15mLft;a1tFrog3d15mRgt;a2tFrog3d15mLft;a2tFrog3d15mRgt;a1tFrog4_7to6_3dLft;a1tFrog4_7to6_3dRgt;a1tPnt3dBLft;a1tPnt3dBLftMnl;a1tPnt3dBRgt;a1tPnt3dBRgtMnl;a1tYPnt3dB;a1tYPnt3dBMnl;
+</div>
+<!-EX------------------------------------------------------------------------------------------------------------------------------
+a1t0_3mStrt;a1t0_44mStrt;a1t0_8mStrt;a1t1_29mStrt;a1t1_2mStrt;a1t1_5mStrt;a1t1000r10d;a1t1000r10dRndTun;a1t1000r10dRndTun6m;a1t1000r10dTun;a1t1000r1d;a1t1000r20d;a1t1000r5d;a1t1000r5dRndTun;a1t1000r5dRndTun6m;a1t1000r5dTun;a1t100mStrt;a1t100mStrtRndTun;a1t100mStrtRndTun6m;a1t100mStrtTun;a1t100mStrtWtr;a1t1034r7d;a1t10mSkew;a1t10mStrt;a1t10mStrtRndTun;a1t10mStrtRndTun6m;a1t10mStrtTun;a1t10mStrtWtr;a1t11_59mStrt;a1t12_86mStrt;a1t1200r8d;a1t120r10d;a1t120r1d;a1t120r20d;a1t120r5d;a1t13_2mStrt;a1t15_2mstrt;a1t15_56mStrt;a1t15000r0_5d;a1t15000r2_5d;a1t1500r10d;a1t1500r10dRndTun;a1t1500r10dRndTun6m;a1t1500r10dTun;a1t1500r1d;a1t1500r20d;a1t1500r5d;a1t1500r5dRndTun;a1t1500r5dRndTun6m;a1t1500r5dTun;a1t150mStrt;a1t150r10d;a1t150r1d;a1t150r20d;a1t150r5d;a1t1534r7d;a1t15mStrt;a1t16_6mStrt;a1t164r10d;a1t17_41mStrt;a1t190r10d;a1t190r1d;a1t190r2_5d;a1t190r20d;a1t190r5d;a1t1mstrt;a1t2_14mStrt;a1t2_46mStrt;a1t2_4mStrt;a1t2_5mStrt;a1t2_6mstrt;a1t20_5mstrt;a1t2000r10d;a1t2000r1d;a1t2000r20d;a1t2000r5d;a1t2000r5dRndTun;a1t2000r5dRndTun6m;a1t2000r5dTun;a1t200mStrt;a1t20mstrt;a1t23_6mStrt;a1t24_01mStrt;a1t24mStrt;a1t25_8mStrt;a1t250mStrt;a1t250r10d;a1t250r1d;a1t250r20d;a1t250r5d;a1t2588r3d;a1t25mStrt;a1t27_4mStrt;a1t28_3mStrt;a1t28_54mStrt;a1t28_7mStrt;a1t30_95mStrt;a1t3000r10d;a1t3000r1d;a1t3000r5d;a1t300r10d;a1t300r1d;a1t300r2_5d;a1t300r20d;a1t300r2d;a1t300r5d;a1t3088r3d;a1t30mStrt;a1t35_2mstrt;a1t35mStrt;a1t365r12d;a1t37_86mStrt;a1t375r10d;a1t375r1d;a1t375r20d;a1t375r5d;a1t38_2mStrt;a1t38_54mStrt;a1t3mStrt;a1t4_985mStrt;a1t4000r10d;a1t4000r1d;a1t4000r5d;a1t40mStrt;a1t44_46mStrt;a1t45dYardCrvLft;a1t45dYardCrvRgt;a1t45dYardLft;a1t45dYardLftMnl;a1t45dYardRgt;a1t45dYardRgtMnl;a1t45mStrt;a1t5_4mStrt;a1t5_5mstrt;a1t5_99mStrt;a1t500mStrt;a1t500r0_25d;a1t500r10d;a1t500r10dRndTun;a1t500r10dRndTun6m;a1t500r10dTun;a1t500r1d;a1t500r20d;a1t500r2d;a1t500r5d;a1t500r5dRndTun;a1t500r5dRndTun6m;a1t500r5dTun;a1t50mStrt;a1t50mStrtRndTun;a1t50mStrtRndTun6m;a1t50mStrtTun;a1t50mStrtWtr;a1t52_5mStrt;a1t56_6mStrt;a1t5mstrt;a1t6000r0_5d;a1t6000r1d;a1t6000r5d;a1t60mStrt;a1t60r10d;a1t60r1d;a1t60r20d;a1t60r5d;a1t700r8d;a1t750r10d;a1t750r1d;a1t750r20d;a1t750r5d;a1t75mStrt;a1t7mStrt;a1t8000r0_5d;a1t8000r1d;a1t8000r5d;a1t865r12d;a1t870r4dLft;a1t870r4dLftMnl;a1t870r4dRgt;a1t870r4dRgtMnl;a1t90mStrt;a1t90r10d;a1t90r1d;a1t90r20d;a1t90r5d;a1tBuffer;a1tEndPnt10dLft;a1tEndPnt10dLftRndTun;a1tEndPnt10dLftRndTun6m;a1tEndPnt10dLftTun;a1tEndPnt10dRgt;a1tEndPnt10dRgtRndTun;a1tEndPnt10dRgtRndTun6m;a1tEndPnt10dRgtTun;a1tEndPnt2_5dLft;a1tEndPnt2_5dRgt;a1tEndPnt3_0d;a1tEndPnt3d;a1tEndPnt3dBto10d;a1tEndPnt3dx2;a1tEndPnt3to10d;a1tEndPnt4_7d;a1tEndPnt5dLft;a1tEndPnt5dLftRndTun;a1tEndPnt5dLftRndTun6m;a1tEndPnt5dLftTun;a1tEndPnt5dRgt;a1tEndPnt5dRgtRndTun;a1tEndPnt5dRgtRndTun6m;a1tEndPnt5dRgtTun;a1tEndPnt6d;a1tEndPnt6dBto15d;a1tEndPnt6dx2;a1tEndPnt6to10d;a1tEndPnt7_5d;a1tPnt10dLft;a1tPnt10dLftMnl;a1tPnt10dRgt;a1tPnt10dRgtMnl;a1tPnt2_5dLft;a1tPnt2_5dLftMnl;a1tPnt2_5dRgt;a1tPnt2_5dRgtMnl;a1tHPnt2_5dLft;a1tHPnt2_5dRgt;a1tPnt5dLft;a1tPnt5dLftMnl;a1tPnt5dRgt;a1tPnt5dRgtMnl;a1tUSBuffer;a1tXover2_5d;a1tXover5d;a1tYPnt10d;a1tYPnt10dMnl;a2t0_3mStrt;a2t1_5mstrt;a2t1000r10d;a2t1000r10dTun;a2t1000r1d;a2t1000r20d;a2t1000r20dTun;a2t1000r5d;a2t1000r5dTun;a2t100mStrt;a2t100mStrtTun;a2t10LvlCrsNoGate;a2t10mLvlCrs;a2t10mStrt;a2t10mStrtTun;a2t15000r0_5d;a2t15000r2_5d;a2t1500r10d;a2t1500r10dTun;a2t1500r1d;a2t1500r20d;a2t1500r20dTun;a2t1500r5d;a2t1500r5dTun;a2t15mStrt;a2t1mstrt;a2t2_14mStrt;a2t2_4mStrt;a2t2_5mstrt;a2t2000r10d;a2t2000r10dTun;a2t2000r1d;a2t2000r20d;a2t2000r20dTun;a2t2000r5d;a2t2000r5dTun;a2t20mstrt;a2t24_01mStrt;a2t25_8mStrt;a2t250mStrt;a2t250mStrtTun;a2t250r10d;a2t250r10dTun;a2t250r1d;a2t250r20d;a2t250r20dTun;a2t250r5d;a2t25mStrt;a2t27_4mStrt;a2t28_3mStrt;a2t28_7mStrt;a2t3000r10d;a2t3000r1d;a2t3000r5d;a2t300r10d;a2t300r1d;a2t300r20d;a2t300r5d;a2t30mStrt;a2t35mStrt;a2t37_86mStrt;a2t375r10d;a2t375r1d;a2t375r20d;a2t375r5d;a2t3mStrt;a2t4000r10d;a2t4000r1d;a2t4000r5d;a2t40mStrt;a2t44_46mStrt;a2t45mStrt;a2t500mStrt;a2t500mStrtTun;a2t500r10d;a2t500r10dTun;a2t500r1d;a2t500r20d;a2t500r20dTun;a2t500r5d;a2t500r5dTun;a2t50mStrt;a2t5mstrt;a2t6000r0_5d;a2t6000r1d;a2t6000r5d;a2t6mStrt;a2t750r10d;a2t750r1d;a2t750r20d;a2t750r5d;a2t75mStrt;a2t8000r0_5d;a2t8000r1d;a2t8000r5d;a2t90mStrt;a2tskewRgt;a3t1000r10d;a3t1000r1d;a3t1000r20d;a3t1000r5d;a3t100mStrt;a3t10mStrt;a3t1500r10d;a3t1500r1d;a3t1500r20d;a3t1500r5d;a3t15mStrt;a3t2000r10d;a3t2000r1d;a3t2000r20d;a3t2000r5d;a3t20mStrt;a3t250mStrt;a3t250r01d;a3t250r05d;a3t250r10d;a3t250r20d;a3t25mStrt;a3t28_3mStrt;a3t300r10d;a3t300r1d;a3t300r20d;a3t300r5d;a3t30mStrt;a3t35mStrt;a3t40mStrt;a3t45mStrt;a3t500mStrt;a3t500r10d;a3t500r1d;a3t500r20d;a3t500r5d;a3t50mStrt;a3t5mStrt;a3t75mStrt;a3t90mStrt;a4t1000r10d;a4t1000r1d;a4t1000r20d;a4t1000r5d;a4t100mStrt;a4t10mStrt;a4t1500r10d;a4t1500r1d;a4t1500r20d;a4t1500r5d;a4t15mStrt;a4t17_41mStrt;a4t2000r10d;a4t2000r1d;a4t2000r20d;a4t2000r5d;a4t20mStrt;a4t23_6mStrt;a4t24_01mStrt;a4t250mStrt;a4t250r01d;a4t250r05d;a4t250r10d;a4t250r20d;a4t25mStrt;a4t27_4mStrt;a4t28_3mStrt;a4t28_54mStrt;a4t300r10d;a4t300r1d;a4t300r20d;a4t300r5d;a4t30mStrt;a4t35mStrt;a4t40mStrt;a4t44_46mStrt;a4t45mStrt;a4t500mStrt;a4t500r10d;a4t500r1d;a4t500r20d;a4t500r5d;a4t50mStrt;a4t5mStrt;a4t750r10d;a4t750r01d;a4t750r20d;a4t750r05d;a4t75mStrt;a4t90mStrt;a5t100mStrt;a5t10mStrt;a5t15mStrt;a5t20mStrt;a5t250mStrt;a5t25mStrt;a5t28_3mStrt;a5t30mStrt;a5t35mStrt;a5t40mStrt;a5t45mStrt;a5t500mStrt;a5t50mStrt;a5t5mStrt;a5t75mStrt;a6t100mStrt;a6t10mStrt;a6t15mStrt;a6t20mStrt;a6t24_01mStrt;a6t250mStrt;a6t25mStrt;a6t27_4mStrt;a6t28_3mStrt;a6t30mStrt;a6t35mStrt;a6t40mStrt;a6t44_46mStrt;a6t45mStrt;a6t500mStrt;a6t50mStrt;a6t5mStrt;a6t75mStrt;a7t100mStrt;a7t10mStrt;a7t15mStrt;a7t20mStrt;a7t250mStrt;a7t25mStrt;a7t28_3mStrt;a7t30mStrt;a7t35mStrt;a7t40mStrt;a7t45mStrt;a7t500mStrt;a7t50mStrt;a7t5mStrt;a7t75mStrt;a8t100mStrt;a8t10mStrt;a8t15mStrt;a8t20mStrt;a8t24_01mStrt;a8t250mStrt;a8t25mStrt;a8t27_4mStrt;a8t28_3mStrt;a8t30mStrt;a8t35mStrt;a8t40mStrt;a8t44_46mStrt;a8t45mStrt;a8t500mStrt;a8t50mStrt;a8t5mStrt;a8t75mStrt;a9t100mStrt;a9t10mStrt;a9t15mStrt;a9t20mStrt;a9t250mStrt;a9t25mStrt;a9t28_3mStrt;a9t30mStrt;a9t35mStrt;a9t40mStrt;a9t45mStrt;a9t500mStrt;a9t50mStrt;a9t5mStrt;a9t75mStrt;a10t100mStrt;a10t10mStrt;a10t15mStrt;a10t20mStrt;a10t24_01mStrt;a10t250mStrt;a10t25mStrt;a10t27_4mStrt;a10t28_3mStrt;a10t30mStrt;a10t35mStrt;a10t40mStrt;a10t44_46mStrt;a10t45mStrt;a10t500mStrt;a10t50mStrt;a10t5mStrt;a10t75mStrt;
+---------------------------------------------------------------------------------------------------------------------------------->
+<div id="de" style="display:none">
+[t00]DBTracks v2.0 Beta
+
+[t02]In der Projektphase 2 wird das DBTracks Gleisangebot schrittweise auf die Auswahl von Xtracks erweitert. <b>Zurzeit ist es noch nicht vollst&auml;ndig</b>.
+	<br>Alle Objekte haben Beta-Status und werden ggf. weiterentwickelt. Verwendung auf eigene Gefahr. R&uuml;ckmeldungen und Testberichte sind willkommen.
+[t03]Aktuelle Hinweise
+[t010]Historie
+
+[t05] Xtracks Sortiment
+[t06] Gr&ouml;&szlig;e
+[t07] Teile
+[t08] Stand
+[t09] Bemerkungen
+[t10] Einbaumethode
+
+[t110]<span class="sH">DB1</span>&#160;&#160;Gleis-Set: "Betonschwellen neu"
+[t210]<span class="sH">DB2</span>&#160;&#160;Gleis-Set: "Betonschwellen alt"
+[t310]<span class="sH">DB3</span>&#160;&#160;Gleis-Set: "Holzschwellen"
+[t410]<span class="sH">DB4</span>&#160;&#160;Gleis-Set: "Stahlschwellen"
+
+[t111]weitere DB1 Varianten ...
+[t211]weitere DB2 Varianten ...
+[t311]weitere DB3 Varianten ...
+[t411]weitere DB4 Varianten ...
+
+[t120] DB1, A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">neue Betonschwellen</span>
+[t220] DB2, A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">alte Betonschwellen</span>
+[t320] DB3, A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Holzschwellen</span>
+[t420] DB4, A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Stahlschwellen</span>
+
+[t130] DB1f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">neue Betonschwellen</span>
+[t230] DB2f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">alte Betonschwellen</span>
+[t330] DB3f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Holzschwellen</span>
+[t430] DB4f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">Stahlschwellen</span>
+
+[t131] DB1, verf&uuml;gbare Weichen und -Varianten
+[t231] DB2, verf&uuml;gbare Weichen und -Varianten
+[t331] DB3, verf&uuml;gbare Weichen und -Varianten
+[t431] DB4, verf&uuml;gbare Weichen und -Varianten
+
+[t132] DB1f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+[t232] DB2f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+[t332] DB3f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+[t432] DB4f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+
+[t133] DB1z, mit Fahrdraht und LZB-Kabel::, <i>nicht vollst&auml;ndige</i> Auswahl an Streckengleisen::
+[t233] DB2z, mit Fahrdraht und LZB-Kabel::, <i>nicht vollst&auml;ndige</i> Auswahl an Streckengleisen::
+
+[t121] DB1 Gleis-Texturen <i class="bl">(identisch mit dem Download in DBTracks v1.0)</i>
+[t221] DB2 Gleis-Texturen <i class="bl">(identisch mit dem Download in DBTracks v1.0)</i>
+[t321] DB3 Gleis-Texturen <i class="bl">(identisch mit dem Download in DBTracks v1.0)</i>
+[t421] DB4 Gleis-Texturen <i class="bl">(identisch mit dem Download in DBTracks v1.0)</i>
+
+[t140] DB10 A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+[t240] DB20, A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+[t350] DB30, A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+[t450] DB40, A-Gleise, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+
+[t141] DB10f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+[t241] DB20f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+[t351] DB30f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+[t451] DB40f, A-Gleise m. Fahrdraht, ::inkl. Weichen-Varianten _Sx und _M2:: <span class="dn">rostige Schienen</span>
+
+[t142] DB10, verf&uuml;gbare Weichen und -Varianten
+[t242] DB20, verf&uuml;gbare Weichen und -Varianten
+[t352] DB30, verf&uuml;gbare Weichen und -Varianten
+[t452] DB40, verf&uuml;gbare Weichen und -Varianten
+
+[t143] DB10f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+[t243] DB20f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+[t353] DB30f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+[t453] DB40f, verf&uuml;gbare Weichen und -Varianten m. Fahrdraht
+
+[t90] Projektstand
+[t91] <b>Bitte beachten:&#160;</b> Dieses Projekt ist kein Wunschprogramm, sondern erarbeitet in oberster Priorit&auml;t den Ausstattungsbedarf bestimmter Strecken.
+[t911]Xtracks total
+[t912]Xtracks geplant (max.)
+[t913]DBtracks zurzeit verf&uuml;gbar
+[t914]effektiv (ohne Ableitungen)
+[t915]davon sind neu fertiggestellt
+[t92] Arbeitsplan anzeigen|<span style="color:#999999">Arbeitsplan verbergen</span>
+[t93] Vorab einige Erl&auml;uterungen:<ul style="margin-bottom:8px">
+	<li>Weichen-Projekte sind hervorgehoben, um darzustellen, welche 3D-Objekte vollst&auml;ndig neu entwickelt werden m&uuml;ssen. Nachfolgende wei&szlig;e Eintr&auml;ge sind weitgehend daraus abzuleiten.</li>
+		<li>Br&uuml;ckenelemente ("7bridge") werden erst sp&auml;ter in Verbindung mit dem "Bahntrasse"-Projekt erstellt.</li>
+		<li>Elemente aus dem Bereich "Misc Section" werden nur bei begr&uuml;ndetem Bedarf erg&auml;nzt. Zuletzt, nachdem alles andere abgeschlossen ist.</li>
+		<li>Als "neu, bald verf&uuml;gbar" sind Objekte gekennzeichnet, die noch in der Testphase sind und die es noch nicht in allen Oberbau-Versionen gibt</li>
+		</ul>
+[t94] Zeichenerkl&auml;rung:
+[t940] neu, bald verf&uuml;gbar
+[t941] verf&uuml;gbar
+[t942] Weichen-Projekt
+[t943] zun&auml;chst zu bauen
+[t944] geplant zu bauen
+[t945] nicht geplant	
+
+</div><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="en" style="display:none">
+[t00]DBTracks v2.0 Beta
+
+[t02]In phase 2 the DBTracks track selection will be expanded to Xtracks compatibility. <b>Currently it is not yet complete</b>.
+	<br>All objects have beta status and are subject of further improvement. Use it on you own risk. Any feedback and test reports are welcome.
+[t03]Latest News
+[t010]History
+
+[t05] Xtracks Selection
+[t06] Size
+[t07] Pcs
+[t08] Created
+[t09] Remarks
+[t10] Inst.method
+
+[t110]<span class="sH">DB1</span>&#160;&#160;track set: new concrete ties
+[t210]<span class="sH">DB2</span>&#160;&#160;track set: old concrete ties
+[t310]<span class="sH">DB3</span>&#160;&#160;track set: wooden ties
+[t410]<span class="sH">DB4</span>&#160;&#160;track set: steel ties
+
+[t111]more DB1 downloads ...
+[t211]more DB2 downloads ...
+[t311]more DB3 downloads ...
+[t411]more DB4 downloads ...
+
+[t120] DB1, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">new concrete ties</span>
+[t220] DB2, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">old concrete ties</span>
+[t320] DB3, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">wooden ties</span>
+[t420] DB4, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">steel ties</span>
+
+[t130] DB1f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">new concrete ties</span>
+[t230] DB2f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">old concrete ties</span>
+[t330] DB3f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">wooden ties</span>
+[t430] DB4f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">steel ties</span>
+
+[t131] DB1, available switches and variants
+[t231] DB2, available switches and variants
+[t331] DB3, available switches and variants
+[t431] DB4, available switches and variants
+
+[t132] DB1f, available switches and variants with OHW
+[t232] DB2f, available switches and variants with OHW
+[t332] DB3f, available switches and variants with OHW
+[t432] DB4f, available switches and variants with OHW
+
+[t133] DB1z, with catenary and LZB cable (cab signalling system)::, main tracks only::
+[t233] DB2z, with catenary and LZB cable (cab signalling system)::, main tracks only::
+
+[t121] DB1 track textures <i class="bl">(the same download as in DBTracks v1.0)</i>
+[t221] DB2 track textures <i class="bl">(the same download as in DBTracks v1.0)</i>
+[t321] DB3 track textures <i class="bl">(the same download as in DBTracks v1.0)</i>
+[t421] DB4 track textures <i class="bl">(the same download as in DBTracks v1.0)</i>
+
+[t140] DB10, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+[t240] DB20, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+[t350] DB30, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+[t450] DB40, all 'A' tracks, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+
+[t141] DB10f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+[t241] DB20f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+[t351] DB30f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+[t451] DB40f, all 'A' tracks with OHW, ::incl. switch versions _Sx and _M2:: <span class="dn">rusty rails</span>
+
+[t142] DB10, available switches and variants
+[t242] DB20, available switches and variants
+[t352] DB30, available switches and variants
+[t452] DB40, available switches and variants
+
+[t143] DB10f, available switches and variants with OHW
+[t243] DB20f, available switches and variants with OHW
+[t353] DB30f, available switches and variants with OHW
+[t453] DB40f, available switches and variants with OHW
+
+[t90] Project status
+[t91] <b>Please note:&#160;</b> This project will not follow a wish list, but the equipment required to meet specific routes.
+[t911]Xtracks total
+[t912]Xtracks planned (max.)
+[t913]DBtracks available
+[t914]effective (no derivatives)
+[t915]of which are new
+[t92] Show work plan|<span style="color:#999999">Hide work plan</span>
+[t93] First, some explanations:<ul style="margin-bottom:8px">
+	<li>Switch projects are highlighted to show which 3D objects must be developed from scratch. Subsequent white fields are largely derived from it.</li>
+ 	<li>Bridge elements ("7bridge") will be created later in connection with the "DB Bahntrasse" project.</li>
+ 	<li>Elements from the "Misc section" are added only if they&#39;ll be really demanded and more than once. Finally, after everything else is completed.</li>
+ 	<li>Objects marked "new, available" are still subject of beta tests and not yet available in all track ballast versions</li>
+ 	</ul>
+[t94] Legend:
+[t940] new, available soon
+[t941] available
+[t942] switch project
+[t943] to build first
+[t944] planned to build
+[t945] not planned
+
+</div><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="news_de" style="display:none">
+
+[04.12.2013]<li>Gleisst&uuml;ck *_A1tFrog7_5dDbl* korrigiert</li>
+[23.10.2013]<li>Eine Xtracks-Auswahl an LZB-Gleisen (1t+2t) ist jetzt verf&uuml;gbar (DB*zx.rar). Es gibt noch keine Tunnel</li>
+[23.09.2013]<li><span class="hl2">DB*A1tPnt5dSLft*</span> Dateinamen korrigiert (DB*x_Pnts.rar)</li>
+[26.08.2013]<li>Aktuell <span class="hl2">verf&uuml;gbare Weichen</span>, 'Frogs' und Kreuzungen freigegeben (DB*x_Pnts.rar)</li>
+[16.06.2013]<li><span class="hl2">alle DBx</span>: Tun-SD korrigiert, Standardweichen aktualisiert</li>
+[30.01.2013]<li><span class="hl2">DB40x</span>: Texturfehler korrigiert</li>
+[27.01.2013]<li>Versionen mit rostigen Gleisen wurden ver&uuml;ffentlicht (<span class="hl2">DB10</span>,<span class="hl2">DB20</span>,<span class="hl2">DB30</span>,<span class="hl2">DB40</span>)</li>
+			<li>Neue Gleise fertiggestellt (aber noch nicht verf&uuml;gbar): Br&uuml;ckengleise (*Brdg*)</li>
+[10.12.2012]<li>Als erste Xtracks-Weiche ist die Pnt7.5d (auf Anfrage) verf&uuml;gbar.</li>
+[03.08.2012]<li>Gleispakete mit Oberleitung und Gleispakete mit rostigen Schienen sind verf&uuml;gbar.</li>
+[02.02.2012]<li>Erste Gleispakete f&uuml;r A-Gleise ohne Oberleitung sind verf&uuml;gbar.</li>
+</div><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="news_en" style="display:none">
+
+[04.12.2013]<li>Track section *_A1tFrog7_5dDbl* corrected</li>
+[23.10.2013]<li>An Xtracks selection of mainline track with German LZB cable is now available (DB*zx.rar). Tunnels are not yet available</li>
+[23.09.2013]<li><span class="hl2">DB*A1tPnt5dSLft*</span> file names corrected (DB*x_Pnts.rar)</li>
+[26.08.2013]<li>Currently <span class="hl2">available switches</span>, 'frogs' and crossovers released (DB*x_Pnts.rar)</li>
+[16.06.2013]<li><span class="hl2">all DBx</span>: correction of tun SD files, revision of standard points</li>
+[30.01.2013]<li><span class="hl2">DB40x</span>: correction of texture assignment</li>
+[27.01.2013]<li>Versions with rusty rails are available now</li>
+			<li>New sections completed (but not yet available): Bridge rails (*Brdg*)</li>
+[10.12.2012]<li>The first Xtracks turnout is Pnt7.5d (available on request)</li>
+[03.08.2012]<li>Track packages with overhead wiring and packages with rusty rails are available</li>
+[02.02.2012]<li>First track packages will are available</li>
+</div><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="d2Ldr" style="display:none"></div><textarea name="tFld" cols="50" rows="50" style="display:none"></textarea></div></body></html>

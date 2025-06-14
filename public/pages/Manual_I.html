@@ -1,0 +1,276 @@
+<html><head><title>DBTracks - Installation Manual</title>
+<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name=”description” content="Installation instructions for DBTracks and USTracks by Norbert Rieger." />
+<meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
+<meta name=”robots” content="index,follow" />
+<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
+<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+ nD=new Date(2012,5,3); dlM=nD.toLocaleDateString(); //-->
+</script></head><!-- pics: 110604,111107-->
+<body scroll="NO" onload="init()">
+
+<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
+
+<table id="mtab" cellspacing="0" cellpadding="0" style="display:block">
+	<tr><td id="t01" style="padding:10px 12px 15px 12px"></td></tr>
+    <tr style="background-image:none"><td style="padding:4px 0;border:none;line-height:1px;color:#dddddd">&#160;</td></tr>
+	<tr><td id="t02" style="padding:10px 12px 15px 12px"></td></tr>
+    <tr style="background-image:none"><td style="padding:4px 0;border:none;line-height:1px;color:#dddddd">&#160;</td></tr>
+	<tr><td id="t03" style="padding:10px 12px 15px 12px"></td></tr>
+    <tr style="background-image:none"><td style="padding:4px 2px;border:none;color:#dddddd" id="cpr">&#160;</td></tr>
+</table>
+
+<div id="de" style="display:none"><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+[t00]Anleitung zum Einbau
+[t01]<h4 class="hl" style="margin-top:0">Wer kann DBTracks verwenden?</h4>
+	<p>Der Einbau von DBTracks ist nichts f&uuml;r Anf&auml;nger.
+	<br><i>DBTracks kann im Prinzip jeder verwenden, der nicht irgendjemand fragen muss, wie man so etwas macht.</i>
+	<br><b>Die Benutzung von DBTracks geschieht auf eigene Gefahr.</b>
+	<br>N&uuml;tzliche Hinweise gibt es im <a href="http://www.tssf.eu/forum/index.php?topic=1931.0" target="_blank">Tiefbau-Thread im TSSF-Forum</a>, dort k&ouml;nnen auch Fragen gestellt werden.
+	</p>
+
+[t02]<h4 class="hl" style="margin-top:0"><span class="lnk" style="float:right;font-size:9pt" onclick="dWin('docs/DBTracks_Installation_de.pdf','PDF')"><img src="pages/images/ico/pdf.png" style="margin-right:6px">Download PDF</span>
+	Wie kann man normale Gleise durch DBTracks ersetzen?</h4>
+	<p>Zurzeit stehen als DBTracks f&uuml;nf Varianten der Gleise der MSTS-Grundausstattung zur Verf&uuml;gung.</p>
+	<table id="obt" cellspacing="0" cellpadding="0" style="margin:2px 0">
+	<tr><td><li>DB1 - Oberbau W </li></ul></td><td>-&#160; Betonschwellen neu</td></tr>
+	<tr><td><li>DB2 - Oberbau W     </li></td><td>-&#160; Betonschwellen alt</td></tr>
+	<tr><td><li>DB3 - Oberbau K     </li></td><td>-&#160; Holzschwellen</td></tr>
+	<tr><td><li>DB4 - Oberbau KS    </li></td><td>-&#160; Stahlschwellen</td></tr>
+	<tr><td><li>DB5 - Oberbau S15   </li></td><td>-&#160; Y-Stahlschwellen</td></tr></table>
+	<p>Verschiedene Oberbau-Versionen k&ouml;nnen nebeneinander verwendet werden. Der Austausch wird durch ge&auml;nderte Dateinamen bewirkt.<br>
+	Auf diese Weise ergeben sich keine &Auml;nderungen in der Schienendatenbank. Alle bestehenden Spielaufgaben sind weiter funktionsf&auml;hig.</p>
+	<table id="steps" cellspacing="0" cellpadding="0" style="margin:18px 0 0 0">
+	<tr><td class="bN" style="padding-top:0"><div class="bN">1</div></td><td>
+	<ol class="anl" style="margin-top:0">
+	<li><i>Bitte daran denken, die vorhandenen Daten <b>jetzt</b> zu sichern !</i></li>
+		<li>Herunterladen der gew&uuml;nschten Gleispakete hier <span class="lnk" onclick="lPg(2)">von dieser Seite</span>.</li>
+		<li>Anlegen eines neuen Unterverzeichnisses GLOBAL/SHAPES/<b>DB</b>.<br>(Ich empfehle, die DBtracks in diesem separaten Unterverzeichnis abzulegen.
+			Durch die vielen Varianten werden sich dort leicht mehrere tausend Dateien ansammeln. Andere Gleispakete wie XTracks, NewRoads, ScaleRail etc., die &uuml;blicherweise direkt im Ordner SHAPES liegen, z&auml;hlen ebenfalls tausende Dateien.
+			Es ist auf diese Weise einfacher, die DBTracks-Dateien zu verwalten.)</li>
+		<li>Entpacken der Gleispakete in GLOBAL/SHAPES/DB, entpacken der Texturen ins TEXTURES-Verzeichnis im Streckenordner.</li>
+		<li>Dekomprimieren aller .W-Dateien im Unterverzeichnis WORLD im Streckenordner (mit <a href="http://www.rstools.info/route_riter.html" target="_blank">Route_Riter</a> oder <a href="http://www.nklj.se/xtracks/documents/download.htm" target="_blank">Zipper</a>)</li>
+		<li>Laden aller .W-Dateien in einen Texteditor, der viele Dateien gleichzeitig &ouml;ffnen und bearbeiten kann (<a href="http://www.notetab.com/" target="_blank">Notetab Light</a>, <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a>)</li>
+		<li>Anwenden der "Suchen und Ersetzen"-Funktion ('Find and Replace') (hier gezeigt in Notetab Light)</li>
+	</ol>
+	<div style="width:100%;margin:4px 0 10px 0"><img src="pages/images/mnl/mnl4_nt01.png" style="float:left;margin:0 10px 0 0">
+		<p>Anmerkung: '<b>DB3_</b>' ist nur ein Beispiel. Andere DBTracks-Dateinamen beginnen z.B. mit '<b>DB1_</b>' oder '<b>DB2f_</b>'.
+		Alle DBTracks-Dateinamen haben Prefixe dieser Art dem original Dateinamen vorangestellt.
+	</p><p>
+		Wiederholen dieser "Suchen und Ersetzen"-Aktion f&uuml;r <span style="font-weight:bold; color:#008000;white-space:nowrap">FileName ( a2t, ...a3t, ...a4t</span>
+	</p><p>
+		Diese Ma&szlig;nahme ist wichtig, um das Suchmuster eindeutig zu halten und nicht aus Versehen andere Dateinamen zu bearbeiten, die mit '<b>a</b>' beginnen.</p>
+	</div><br style="clear:left">
+	<div class="bBox"><b>Eine Empfehlung zu den <i>Pfad-Trennzeichen</i> im MSTS:</b>
+		<p style="margin-top:10px">Generell sollte der einfache Schr&auml;gstrich <b class="bd">/</b> als Pfad-Trennzeichen verwendet werden. Es ist die einzige Schreibweise, die keine Anf&uuml;hrungszeichen ben&ouml;tigt (wenn keine Leer- oder Sonderzeichen vorkommen).
+		Sie wird auch korrekt in Route_Riter erkannt.
+		</p><p>
+		Die Verwendung eines doppelten R&uuml;ckstrichs (Backslash) <b class="bd">\\</b> funktioniert prinzipiell im MSTS, allerdings verarbeitete die Komprimierungs&shy;funktion in &Auml;lteren Route_Riter-Versionen diese Zeichenfolge nicht korrekt.
+		Anf&uuml;hrungszeichen sind verpflichtend f&uuml;r diese Schreibweise.
+		</p><p>
+		Der einfache R&uuml;ckstrich (Backslash) <b class="bd">\</b> funktioniert im MSTS niemals korrekt, damit wird das nachfolgende Zeichen unterdr&uuml;ckt (maskiert).</p>
+	</div><br>
+	<div class="bBox"><b>Eine Anmerkung zu <i>Notetab Light</i> ... und warum ich dieses Programm bevorzuge:</b>
+	<p style="margin-top:10px">Notetab Light hat eine sehr leistungsf&auml;hige Anwendungsm&ouml;glichkeit "regul&auml;rer Ausdr&uuml;cke" (Regular Expressions).
+	Inzwischen habe ich eine lange Liste an "Suchen und Ersetzen"-Formeln f&uuml;r die Arbeit mit DBTracks. Hier ist ein Beispiel:
+		</p><p style="margin-top:10px"><img src="pages/images/mnl/mnl4_nt02.png" style="float:left;margin:0 15px 10px 0">
+		Es bewirkt dasselbe wie oben beschrieben, aber f&uuml;r a1t, a2t, etc. <i>in einem Arbeitsschritt</i>.
+		</p><p style="margin-top:10px">
+		Ich pers&ouml;nlich finde es sicherer, die Bearbeitung aller Dateien sichtbar pr&uuml;fen zu k&ouml;nnen - im Gegensatz zur verdecken Bearbeitung in ganzen Verzeichnissen (Notepad++).</p>
+		Das ist aber meine pers&ouml;nliche Pr&auml;ferenz. Jeder Anwender mag meine Bearbeitungsempfehlungen im Editor seiner Wahl anwenden.</p>
+	</div>
+	</td></tr>
+	<tr><td class="bN"><div class="bN">2</div></td><td>
+	<p>Nun sollten die "Dynamischen Schienen" mit dem Programm Dynatrax in die entsprechenden DBTracks-Profile umgewandelt werden.<br>Alles weitere dazu findet sich in der <span class="lnk" onclick="lPg(8)"><b>Anleitung f&uuml;r Dynatrax</b></span>.
+	Die Installation und die Anwendung ist dort beschrieben, au&szlig;erdem gibt es dort das aktuelle DBTracks-Bauprofil zum herunterladen.</p>
+	</td></tr>
+	<tr><td class="bN"><div class="bN">3</div></td><td>
+	<p>Nach dem &ouml;ffnen der bearbeiteten Strecke im Streckeneditor wird man feststellen, dass die Gleisk&ouml;rper teilweise in den Untergrund eingesunken sind.<br>
+	Die kommt daher, weil die DBTracks-Gleise ein vorbildgerecht geformtes Schotterbett haben und im Modell h&ouml;her sind als die MSTS Standardgleise.
+	Die H&ouml;he der Schienenoberkante kann nicht ver&auml;ndert werden, weil sie zur Lauffl&auml;che der R&auml;der der Z&ouml;ge passen muss.
+	</p><p>
+	Um diesen Mangel auszugleichen, hat es sich als n&uuml;tzlich erwiesen, alle Gleise (und Stra&szlig;en und zugeh&ouml;rige Objekte) <b>um 15 cm</b> anzuheben. Das reicht aus, um alle Gleise aus dem Boden zu heben.
+	Im gro&szlig;en MSTS-Werkzeug-Programm "Route_Riter" ist das Werkzeug "TSUtils" enthalten, das mit einer speziellen Funktion diese Aufgabe &uuml;bernahmen kann.
+	</p><p>
+	Die (nach meiner Meinung) einfachste Methode, diese Funktion auszuf&uuml;hren ist die Anfertigung einer (wiederverwendbaren) .BAT-Datei.</p>
+	<div class="bBox" style="width:780px;margin:10px 0 0 0;padding:8px 16px;cursor:pointer;" onclick="tWin(this,'TSUtil -mveobj')"><span style="font-family:courier new">
+		@echo off
+		<br>REM Pfad zum TSUtils-Ordner anpassen:
+		<br>REM ---------------------------------
+		<br>
+		<br><b>CD /D</b> <b style="color:990000">"C:\MSTS_Tools\Route_Riter\TSUtil"</i></b>
+		<br>
+		<br>REM ---------------------------------
+		<br>REM Pfad zum Streckenordner anpassen:
+		<br>REM ---------------------------------
+		<br>
+		<br><b>SET ROUTE=</b><b style="color:990000">"C:\MSTS\ROUTES\MyROUTE"</b>
+		<br><b>SET LOGFILE=</b><b style="color:990000">"C:\WORK\_mveobj.log"</b>
+		<br>
+		<br>REM ---------------------------------
+		<br>java -Xmx1024m TSUtil -l%LOGFILE% mveobj -t -w %ROUTE% 0 +0.15 0
+		<br>ECHO ----------------------------------------
+		<br>PAUSE
+	</span></div><small>(In die Box klicken, um den Inhalt zu kopieren)</small>
+	<p style="margin-top:10px">Pfade m&uuml;ssen in Anf&uuml;hrungszeichen gesetzt werden, wenn Leer- oder Sonderzeichen darin vorkommen (Anf&uuml;hrungszeichen sind niemals falsch).
+	</p><p>
+	Zur Anwendung kopiert man den Text aus dieser Box, f&uuml;gt sie in ein Texteditor-Fenster ein und speichert eine .BAT-Datei auf der Festplatte ab. Zum Ausf&uuml;hren muss man diese .BAT-Datei doppelt anklicken.
+	Mit korrekt eingetragenen Pfadangaben kann diese Datei aus einem beliebigen Verzeichnis auf der Festplatte (z.B. im Arbeitsverzeichnis) ausgef&uuml;hrt werden.
+	Auch die Protokolldatei (LOGFILE) sollte ins Arbeitsverzeichnis adressiert werden, damit sie ggf. zur Fehlersuche verwendet werden kann.
+	</p><p>
+	F&uuml;r einen fehlerfreien Ablauf ist unbedingt eine aktuelle Version of <b>Java</b> (Runtime) und <b>TSUtil</b> erforderlich.
+	Dies kann sichergestellt werden, indem die neueste Version von <a href="http://www.rstools.info/route_riter.html" target="_blank"><b>Route_Riter</b></a> installiert wird.</p>
+	</td></tr>
+	<tr><td class="bN"><div class="bN">4</div></td><td>
+	<p>Ein weiterer ungew&ouml;hnlicher Schritt ist die &Uuml;berpr&uuml;fung, ob die Weichenantriebe richtig platziert sind.
+	Bei einigen Kombination kann es vorkommen, dass bei aufeinanderfolgenden (Pnt10d-)Weichen der Weichenantrieb im abzweigenden Gleis zu finden ist.
+	<img src="pages/images/mnl/mnl4_nt03.jpg" style="float:left;margin:10px 10px 0 0"></p><p style="margin-top:10px">
+	Die Beschreibung dieser Weiche muss nun in der zugeh&ouml;rigen WORLD-Datei gefunden werden (z.B. &Uuml;ber die Koordinaten im Eigenschafts-Fenster).
+	</p><p style="margin-top:10px">
+	Dann f&uuml;gt man dem Dateinamen der Weiche (z.B. &#160;<b class="cg">DB3_a1tPnt10dLft.s</b>&#160;) am Ende das Suffix '<b class="cr">_M2</b>' an.
+	</p><p style="margin-top:10px">
+	Damit wird dann eine Weiche &#160;<b class="cg">DB3_a1tPnt10dLft<span class="cr">_M2</span>.s</b>&#160; mit Antrieb auf der anderen Seite geladen.</p>
+	</td></tr>
+	<tr><td class="bN" style="padding-bottom:0"><div class="bN">5</div></td><td style="padding-bottom:0">
+	<p>Es gibt einige weitere Weichenvarianten, z.b. f&uuml;r Versionen ohne Laternen und Handhebel kann das Suffix '<b class="cr">_Sx</b>' angeh&auml;ngt werden.</p>
+	</td></tr></table>
+
+[t03]<h4 class="hl" style="margin-top:0">Was muss beachtet werden, wenn eine mit DBTracks ausgestattete Freeware-Strecke ver&ouml;ffentlicht werden soll?</h4>
+	<p>Bei Ver&ouml;ffentlichung als Freeware ist <b>keine ausdr&uuml;ckliche Genehmigung</b> erforderlich.<br>
+	Gem&auml;&szlig; den <span class="lnk" onclick="document.getElementById('toU').click()">Nutzungsbedingungen</span> muss die Herkunft der verwendeten Materialien in geeigneter Weise erkl&auml;rt sein.<br>
+	Folgender Text sollte in der Streckenbeschreibung ("ReadMe", "LiesMich" o.&auml.) stehen:<br>
+	<div class="bBox" style="margin-top:4px;padding:8px 16px;cursor:pointer;" onclick="tWin(this,'DBTracks Publishing Reference')"><span style="font-family:courier new">
+		Diese Strecke enth&auml;lt DBTracks Gleise und Ausstattung von <a href="http://dbtracks.com" target="_blank">DBTracks.com</a><br>
+		DBTracks Texturen basieren zum Teil auf Bildvorlagen von <a href="http://cgtextures.com" target="_blank">CGTextures.com</a></span>
+	</div>
+	</p>
+
+
+</div><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div id="en" style="display:none">
+[t00]Installation Instructions
+[t01]<h4 class="hl" style="margin-top:0">Who can use DBTracks?</h4>
+     <p>To work with DBTracks is not recommended for beginners.
+     <br><i>DBTracks can in principle be used by anyone who does not have to ask how it's done.</i>
+     <br><b>The use of DBTracks is at everyone's own risk.</b>
+     Useful information is available in the <a href="http://www.trainsim.com/vbts/forum.php" target="_blank">TrainSim.com forums</a> (search for 'dbtracks').
+     <br>There are already some threads about US projects and experienced users who can help.
+     </p>
+
+[t02]<h4 class="hl" style="margin-top:0"><span class="lnk" style="float:right;font-size:9pt" onclick="dWin('docs/DBTracks_Installation_en.pdf','PDF')"><img src="pages/images/ico/pdf.png" style="margin-right:6px">Download PDF</span>
+     How can I replace standard track with DBTracks?</h4>
+     <p>Currently DBTracks provides replacements for MSTS' original track selection in five versions:</p>
+     <table id="obt" cellspacing="0" cellpadding="0" style="margin:2px 0">
+     <tr><td><li>DB1 - Track ballast, type "W"     </li></td><td>-&#160; New concrete ties</td></tr>
+     <tr><td><li>DB2 - Track ballast, type "W"     </li></td><td>-&#160; Old concrete ties</td></tr>
+     <tr><td><li>DB3 - Track ballast, type "K"     </li></td><td>-&#160; Wooden ties</td></tr>
+     <tr><td><li>DB4 - Track ballast, type "KS"    </li></td><td>-&#160; Steel ties</td></tr>
+     <tr><td><li>DB5 - Track ballast, type "S15"   </li></td><td>-&#160; Y-steel ties</td></tr></table>
+     <p>Different versions can be applied side by side. The replacement is triggered by the assignment of a different file name.<br>
+     With this kind of substitution there are no changes made to the track database. All existing activities will remain functional.</p>
+     <table id="steps" cellspacing="0" cellpadding="0" style="margin:18px 0 0 0">
+     <tr><td class="bN" style="padding-top:0"><div class="bN">1</div></td><td>
+     <ol class="anl" style="margin-top:0">
+        <li><i>Don't forget to backup your data <b>now</b> !</i></li>
+     	<li>Download the track sets and textures you want to have from <span class="lnk" onclick="lPg(2)">here</span></li>
+     	<li>Create a new subfolder GLOBAL/SHAPES/<b>DB</b>.<br>(I recommend this to have DBtracks files separated from others.
+     		It&#39;s file count will exceed several thousand easily. Other add-ons like XTracks, NewRoads, ScaleRail etc. have also several thousand files and may possibly reside in your SHAPES folder, too.
+     		This way it's easier to maintain DBTracks by having it in a separate folder from scratch.)</li>
+     	<li>Extract the tracks into GLOBAL/SHAPES/DB, extract the textures into your route's TEXTURES folder</li>
+     	<li>Decompress all .W files in your route's WORLD folder (with <a href="http://www.rstools.info/route_riter.html" target="_blank">Route_Riter</a> or <a href="http://www.nklj.se/xtracks/documents/download.htm" target="_blank">Zipper</a>)</li>
+     	<li>Load all .W files in a text editor which is able to open and edit many files at the same time (<a href="http://www.notetab.com/" target="_blank">Notetab Light</a>, <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a>)</li>
+     	<li>Use the 'Find and Replace' function (shown in Notetab Light)</li>
+     </ol>
+     <div style="width:100%;margin:4px 0 10 0"><img src="pages/images/mnl/mnl4_nt01.png" style="float:left;margin:0 15px 10px 0">
+     	<p>Note: '<b>DB3_</b>' is just an example. You can use other DBTracks identifiers like '<b>DB1_</b>' or '<b>DB2f_</b>' here.
+     	All DBTracks use these kind of prefixes in combination with the original filenames.
+     	</p><p>
+		Repeat 'Find and Replace' for <br><span style="font-weight:bold; color:#008000;white-space:nowrap">FileName ( a2t, ...a3t, ...a4t</span>
+		</p><p>
+		This prodecure is important to make sure, your seach pattern is unique and will not affect harmless static objects beginning with&#160;'<b>a</b>'.</p>
+		</div><br style="clear:left">
+     <div class="bBox"><b>A hint about <i>Path Separators</i> in MSTS:</b>
+      	<p style="margin-top:10">Always use a single slash <b class="bd">/</b> as path seperator. It is the only notation that does not require quotes (if there are no white spaces or special characters).
+      	This notation will be recognized correctly by RouteRiter.
+     	</p><p>
+      	Using a double backslash <b class="bd">\\</b> is generally working in MSTS. However, compression tools in older Route_Riter versions did not process this string correctly. Quotes are always mandatory for this notation.
+     	</p><p>
+      	The single <b class="bd">\</b> doesn't work correctly at all. It will make itself disappear, including the following character.</p>
+      </div><br>
+     <div class="bBox"><b>A note about <i>Notetab Light</i> and why I prefer it:</b>
+     	<p style="margin-top:10">Notetab Light has a very powerful functionality with "regular expressions". I have a long list of formulas working with these search & replace options. Here is an example:
+     	</p><p style="margin-top:10"><img src="pages/images/mnl/mnl4_nt02.png" style="float:left;margin:0 15px 10px 0">
+   		It does the same like shown above, but for a1t, a2t, etc. <i>in one single step</i>.
+   		</p><p style="margin-top:10">
+   		I personally like it to have all files visible in the program window and can have a look at each part of operation instead of a blind editing of a list of files in a directory (Notepad++).</p>
+   		</p><p style="margin-top:10">
+   		However this is my personal preference.<br>I&#39;m sure everyone will be able to adopt my intructions into his/her favorite editor's functionality.</p>
+		</div>
+     </td></tr>
+     <tr><td class="bN"><div class="bN">2</div></td><td>
+       <p>Now you will need to convert dynamic tracks to your chosen DBTracks profile.<br>Please follow the instructions in the <span class="lnk" onclick="lPg(8)"><b>Dynatrax Manual</b></span>.
+       The setup and operation of Dynatrax is well described and you will find the required track profile to download at the top of the page.</p>
+     </td></tr>
+     <tr><td class="bN"><div class="bN">3</div></td><td>
+       <p>When you open your route in the route editor you may find that in some areas tracks look like they are sunken into the ground.<br>
+       This is because both the rails and the ballast shape is (prototypical) higher than MSTS standard track. And the height of the rail tops cannot be altered because it has to meet the running surface of the wheels of the trains.<br>
+       For this inconvenience I found a method to raise tracks and roads for 15 centimeters, which is enought to lift the tracks out of the ground. Included in Route_Riter you can find the TSUtils toolset.
+       </p><p>
+       For me, it is always the easiest way to use this toolset by writing a (mostly reusable) .BAT file</p>
+     <div class="bBox" style="width:780px;margin:10px 0 0 0;padding:8px 16px;cursor:pointer" onclick="tWin(this,'TSUtil -mveobj')"><span style="font-family:courier new">
+     	@echo off
+     	<br>REM set drive and path to the TSUtils directory
+     	<br>REM ---------------------------------
+     	<br>
+     	<br><b>CD /D</b> <b style="color:990000">"C:\MSTS_Tools\Route_Riter\TSUtil"</i></b>
+     	<br>
+     	<br>REM ---------------------------------
+     	<br>REM set path to the Routes folder:
+     	<br>REM ---------------------------------
+     	<br>
+     	<br><b>SET ROUTE=</b><b style="color:990000">"C:\MSTS\ROUTES\MyROUTE"</b>
+     	<br><b>SET LOGFILE=</b><b style="color:990000">"C:\WORK\_mveobj.log"</b>
+     	<br>
+     	<br>REM ---------------------------------
+     	<br>java -Xmx1024m TSUtil -l%LOGFILE% mveobj -t -w %ROUTE% 0 +0.15 0
+     	<br>ECHO ----------------------------------------
+     	<br>PAUSE
+     </span></div><small>(to copy the text, click in the box)</small>
+     <p style="margin-top:10px">A path which contains white spaces or special characters, must be enclosed in quotes (Quotes are never wrong).
+     </p><p>
+     Copy the text out of the box, edit the paths marked in red color to your needs and save the whole text as .BAT file. To execute just doubleclick it.
+     With correct path entries this batch file will run from whereever you save it on your harddisc (e.g. your working directory).
+     Also, the log file should be addressed to the working directory so that it can eventually be used for troubleshooting.
+     </p><p>
+     Please make sure you have an up-to-date version of <b>Java</b> and <b>TSUtil</b>. This can be ensured by updating <a href="http://www.rstools.info/route_riter.html" target="_blank"><b>Route_Riter</b></a>.</p>
+     </td></tr>
+     <tr><td class="bN"><div class="bN">4</div></td><td>
+     <p>The next step will be to find out if there are switches which need to have a variant in place.
+ 	 In some combinations the switchstand of a Pnt10d switch will be found misplaced in the flanking track.
+	 <img src="pages/images/mnl/mnl4_nt03.jpg" style="float:left;margin:10px 10px 0 0"></p><p style="margin-top:10px">
+	 The description of this switch must now be found in the corresponding WORLD file (e.g. the coordinates in the Properties window).
+	 </p><p style="margin-top:10px">
+	 Search for the filename (e.g.) <b class="cg">DB3_a1tPnt10dLft.s</b> and append the identifier '<b class="cr">_M2</b>'.
+	 </p><p style="margin-top:10px">
+	 Now it should read <b class="cg">DB3_a1tPnt10dLft<span class="cr">_M2</span>.s</b></p>
+     </td></tr>
+     <tr><td class="bN" style="padding-bottom:0"><div class="bN">5</div></td><td style="padding-bottom:0">
+	 <p style="margin-bottom:0">There are other switch variants available, e.g. to make it more suitable for routes in non-German countries.
+	 <br>
+	 You can use <b>switch stands without lanterns and hand levers</b>, if you add '<b class="cr">_Sx</b>' at the end of the filename.</p>
+	 </td></tr></table>
+
+[t03]<h4 class="hl" style="margin-top:0">What must be considered when a freeware route with DBTracks is to be published?</h4>
+     <p>If published as freeware there is <b>no explicit permission</b> needed.<br>
+     In accordance with the <span class="lnk" onclick="document.getElementById('toU').click()">Terms of Use</span>, the origin of the materials used must be declared in an appropriate manner.<br>
+     The following text should be included the route's description files ("Install...", "Readme...", "Manual..." or similar)<br>
+     <div class="bBox" style="margin-top:4px;padding:8px 16px;cursor:pointer;" onclick="tWin(this,'DBTracks Publishing Reference')"><span style="font-family:courier new">
+     This route contains DBTracks tracks and equipment from <a href="http://dbtracks.com" target="_blank">DBTracks.com</a><br>
+     Some DBTracks textures have been created with images from <a href="http://cgtextures.com" target="_blank">CGTextures.com</a></span>
+     </div>
+     <p>
+
+</div><!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+</div></body></html>

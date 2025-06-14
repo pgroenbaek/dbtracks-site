@@ -1,0 +1,210 @@
+<html><head><title>DBTracks - Manual for Dynatrax</title>
+<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name=”description” content="Manual for using the Dynatrax program with the DBTracks and USTracks .dpp profiles by Norbert Rieger." />
+<meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
+<meta name=”robots” content="index,follow" />
+<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
+<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+	var dbDate = []; dL=['./dl_files/zub/nr_db01b.rar',
+	'http://www.microsoft.com/downloads/details.aspx?FamilyID=262d25e3-f589-4842-8157-034d1e7cf3a3&displaylang=en',
+	'http://www.microsoft.com/downloads/en/details.aspx?FamilyID=A8F5654F-088E-40B2-BBDB-A83353618B38',
+	'http://thehotfixshare.net/board/index.php?autocom=downloads&showfile=11788',
+	'http://www.microsoft.com/downloads/details.aspx?FamilyID=8ec6fb8a-29eb-49cf-9dbc-1a0dc2273ff9&displaylang=en',
+	'./dl_files/zub/Dynatrax_v0.62.rar',
+	'./dl_files/zub/zlib.rar'];
+	function getD() { dpp = tSt.document.getElementById('dpp').innerHTML.split('['); dpp.shift();
+		for(i=0;i<dpp.length;i++) dbDate[i] = [dpp[i].split(']')[0],dpp[i].split(']')[1]];
+		pxt = '<table id="tLst" cellspacing="0" cellpadding="0" style="width:900px"><colgroup><col width="15%"><col width="73%"><col width="1%"><col width="12%"></colgroup>'
+			+ '<tr class="bH"><th colspan=6 style="border-right-width:0;border-bottom-width:0;padding-bottom:0">DBtracks Profiles - Downloads</th></tr>'
+			+ '<tr class="nb" id="label"><th style="border-left:1px solid #999999">&#160;</th><th id="t012">&#160;</th><th style="width:1px">&#160;</th><th id="t013">&#160;</th></tr>';
+		for(i=0;i<dbDate.length;i++) pxt+= '<tr><td id="zub">'+ dbDate[i][0] +'.rar</td><td id="t12'+ i +'" style="border-right:none">>&#160;</td><td style="border-left:none">&#160;</td><td style="padding-right:20px">'+ dbDate[i][1] +'</td></tr>';
+		document.getElementById('profiles').innerHTML = pxt +'<tr class="empty"><td colspan=4>&#160;</td></tr></tbody></table>';
+		for(i=0;i<aLng.length;i++) if( aLng[i] ) if( tSt.document.getElementById('news_'+aLng[i]) && document.getElementById('news_'+aLng[i]) ) document.getElementById('news_'+aLng[i]).innerHTML = tSt.document.getElementById('news_'+aLng[i]).innerHTML;
+	}
+	nD=new Date(2013,6,24); dlM=nD.toLocaleDateString(); //-->
+</script><style>.d0 { display:none } .d1 { display:inline }</style></head>
+<body scroll="NO" onload="init()">
+
+<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
+
+<table id="mtab" cellspacing="0" cellpadding="0" style="top:63px">
+    <tr><td style="padding-bottom:0"><div id="t01" style="margin:0;cursor:default;"></div></td></tr>
+    <tr><td><h4 class="hl" style="margin:0"><span style="float:right;color:#999999;font:8pt normal Arial"><span id="t010" onclick="tShw(this.id,1)" style="position:relative;top:-1px;padding-left:2px"></span></span><span id="t011" style="margin-left:4px"></span></h4></td></tr>
+	<tr><td style="padding:0 12px 12px 12px" id="nLst"></td></tr>
+    <tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd">&#160;</td></tr>
+    <tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd" id="profiles"></td></tr>
+    <tr style="background:transparent"><td style="padding:12px 0 4px 0"><img style="margin-right:4px" src="pages/images/ico/pf0.png"><span id="t02" onclick="tShw(this.id)" class="dLnk"></span></td></tr>
+    <tr id="ft02" style="display:none;background:transparent"><td class="c1" id="t03" style="padding-top:6px;cursor:default"></td></tr>
+    <tr style="background:transparent"><td style="padding:4px 0"><img style="margin-right:4px" src="pages/images/ico/pf0.png"><span id="t04" onclick="tShw(this.id)" class="dLnk"></span></td></tr>
+    <tr id="ft04" style="display:none;background:transparent"><td class="c1" id="t05" style="padding-top:6px;cursor:default"></td></tr>
+    <tr style="background:transparent"><td style="padding:4px 0;border:none;color:#dddddd"><img src="pages/images/mnl/mnl3_dtx_db.png" style="margin:0" onclick="cPic(this,24)"></td></tr>
+
+    <tr style="background:transparent"><td style="padding:10px 0 4px 0"><img style="margin-right:4px" src="pages/images/ico/pf0.png"><span id="t06" onclick="tShw(this.id);window.scrollBy(0,2000);" class="dLnk"></span></td></tr>
+    <tr id="ft06" style="display:none;background:transparent"><td class="c1" id="t07" style="padding-top:6px;cursor:default"></td></tr>
+    <tr style="background:transparent"><td style="padding:4px 0 4px 0"><img style="margin-right:4px" src="pages/images/ico/pf1.png"><span id="t08" onclick="tShw(this.id);window.scrollBy(0,2000);" class="dLnk"></span></td></tr>
+    <tr id="ft08" style="display:table-row;background:transparent"><td class="c1" id="t09" style="padding-top:6px;cursor:default"></td></tr>
+
+    <tr style="background-image:none"><td style="padding:4px 2px;border:none;color:#dddddd" id="cpr">&nbsp;</td></tr>
+</table>
+<!----------------------------------------------------------------------------------------------------------------------->
+<div id="de" style="display:none">
+[t00]Anleitung f&uuml;r Dynatrax (und DBTracks)
+[t01]<I class="bd">"Dynamische Schienen"</I> im MSTS werden nach einem programminternen Bauplan erzeugt, der den Standardschienen entspricht.
+	Die Detaillierung und die Sichtbarkeitstufen sind f&uuml;r alle Objektgr&ouml;&szlig;en einheitlich und fest vorgegeben.<p>
+	Dies ist eine kurze Beschreibung, wie <I class="bd">dynamische Schienen</I> in statische Gleisobjekte konvertiert werden k&ouml;nnen, die anderen Bauformen bzw. speziellen Gleissystemen wie <b>DBTracks</b> entsprechen.
+[t010]Historie
+[t011]Aktuelle Hinweise
+[t012]Beschreibung
+[t013]Stand
+[t120]<b>Basispaket f&uuml;r alle DBTracks Profile</b> (muss immer vorhanden sein)
+[t121]<b>Erweiterungspaket</b> f&uuml;r S-Bahn Hamburg (nr_db01b muss vorhanden sein)
+[t02]Installation &nbsp; <span id="msg" class="d1">( zum Lesen bitte klicken )</span>
+[t03]<div style="line-height:.2em">&nbsp;</div>Folgende <b>Programme, Updates und Fixes</b> m&uuml;ssen in dieser Reihenfolge installiert werden (falls erforderlich):
+	<table cellspacing="0" cellpadding="0" class="zub" style="border-top:1px solid #cccccc; margin:8px 0"><colgroup><col width="2%"><col width="2%"><col width="96%"></colgroup>
+	<tr><td><b>1.</b></td><td><button id="dL1">Download</button></td>
+		<td><I class="bd">Microsoft .NET framework 1.1</i> ist erforderlich zur Ausf&uuml;hrung von Dynatrax.<br>
+			<small>(Version 1.1 ist unabh&auml;ngig und nicht in neueren Versionen enthalten)</small><br>
+			Hier ist eine Liste mit Updates und Fixes. Damit sollte es dann auch m&ouml;glich sein, .NET 1.1 unter Windows 7 64 Bit zu betreiben:.</td></tr>
+	<tr><td><b>2.</b></td><td><button id="dL2">Download</button></td>
+		<td><I class="bd">Microsoft .NET Framework 1.1 Service Pack 1</i> - <small>(Win7 32b verlangte hiernach schon keine weiteren Updates)</small></td></tr>
+	<tr><td><b>3.</b></td><td><button id="dL3">Download</button></td>
+		<td><I class="bd">Hotfix NDP1.1sp1-KB891865-X86.exe</i></td></tr>
+	<tr><td><b>4.</b></td><td><button id="dL4">Download</button></td>
+		<td><I class="bd">Hotfix NDP1.1sp1-KB886903-X86.exe</i> - <small>(auf meinem System war dieses Update nicht erforderlich)</small></td></tr>
+	<tr><td><b>5.</b></td><td><button id="dL5">Download</button></td>
+		<td><I class="bd">Dynatrax</i> <b>Programm, Update und Profile:</b><br>
+			Zun&auml;chst muss das Grundprogramm <I class="bd">tsf_dynatrax_v0.52_setup.exe</i> installiert werden.<br>
+			Die ZIP-datei beinhaltet zus&auml;tzlich die Programmdatei <b>Dynatrax_v0.62.exe</b> und einen Ordner <b>'profiles'</b>, der .dpp-Dateien enth&auml;lt.
+			Beides muss in den <b>Dynatrax-Programmordner</b> kopiert werden.</td></tr>
+	<tr><td><b>6.</b></td><td><button id="dL6">Download</button></td>
+		<td>M&ouml;glicherweise wird bei der Auswahl einer Strecke eine fehlende <I class="bd">zLib.dll</I> gemeldet. Die Datei kann im Programmordner abgelegt werden. </td></tr>
+	</table>
+	Im Programmordner findet man nun die Programmdateien <b>'Dynatrax_v0.62.exe'</b> und die <b>'Dynatrax.exe'</b> (Version 0.52).<br>
+	Profil-Dateien m&uuml;ssen im Unterordner <b>'profiles'</b> im Dynatrax Programmordner abgelegt sein.<ul style="padding:4px 0">
+	<li><I class="bd">'.dpp'</I>-Dateien k&ouml;nnen nur mit der "Dynatrax_v0.62.exe" angezeigt und verarbeitet werden.<br>
+		<small>Das Dateiformat ist bin&auml;r und kann nicht editiert werden. Um ein v0.62 Profil zu kompilieren, ist eine lizenzierte Version von Dynatrax erforderlich.
+		Lizenzen sind gegenw&auml;rtig nicht erh&auml;ltlich, weil der Programmautor nicht (mehr) erreichbar ist.</small></li>
+	<li><I class="bd">'.profile'</I>-Dateien werden mit Dynatrax Version 0.52 (Dynatrax.exe) verarbeitet.<br>
+		<small>Dieses Profil hat einfaches Textformat und kann selbst erstellt oder editiert werden. Allerdings hat v0.52 wesentlich geringere Funktionalit&auml;t.</small></li></ul>
+	Die Dateiendung der Profildatei, die zur Anwendung kommen soll, entscheidet, mit welcher Programmdatei gearbeitet werden muss.<br>DBTracks ben&ouml;tigen immer die <b>'Dynatrax_v0.62.exe'</b><p>
+[t04]Erste Schritte mit Dynatrax &nbsp; <span id="msg" class="d1">( zum Lesen bitte klicken )</span>
+[t05]<div style="line-height:.4em;background-color:transparent">&nbsp;</div>
+	Konvertierung von "Dynamischen Schienen" (Dyntrack) in statische Gleisobjekte:<ul>
+	<li>Einstellungen bei Dynatrax: Wenn keine <I class="bd">MSTS Installations</i> im ersten Auswahlfeld angezeigt werden, muss ein MSTS-Programmverzeichnis &uuml;ber den <I class="bd">'Add'</i>-Knopf gesucht und hinzugef&uuml;gt werden.</li>
+	<li>Die Strecke, die bearbeitet werden soll, wird im <I class="bd">'Route'</i>-Auswahlfeld eingestellt. Das Programm beginnt danach sofort, die World-Dateien nach <i class="bld">Dyntracks</i> zu durchsuchen.
+		Am unteren Fensterrand sieht man dazu eine Fortschrittsanzeige.</li>
+	<li>Die Dynatrax-Profildatei, die zur Anwendung kommen soll, wird unter <I class="bd">'Package'</i> ausgew&auml;hlt.<br>Aus diesem Paket muss nun ein <I class="bd">'Track Profile'</i> ausgew&auml;hlt werden.</li>
+	<li>Einen oder mehrere (Strg+Klick) 'Shape'-Eintr&auml;ge in der <I class="bd">'Dynamic Track Status'</i>-Liste ausw&auml;hlen und <I class="bd">'Convert'</i> dr&uuml;cken.</li></ul>
+[t06]Arbeiten mit verschiedenen Profilen &nbsp; <span id="msg" class="d1">( zum Lesen bitte klicken )</span>
+[t07]<ul class="anl" style="margin-top:0">
+	<li>Wenn es mehr als ein 'Dyntrack' in der World-Datei gibt und nur eines davon konvertiert werden soll, muss im Streckeneditor die Position des Gleisst&uuml;cks - und anschlie&szlig;end in der World-Datei die <I class="bld">UiD</I> ermittelt werden.
+		<table cellspacing="0" cellpadding="0" style="margin:0"><tr><td style="width:1%;padding:0 5px 0 0"><I class="bd" style="padding:0">Tipp:</I></td>
+		<td style="padding:0">In der Gleisplan-Ansicht von <span class="lnk" onclick="lPg(11);window.scrollTo(0,0);">"Dynatrax v1.0 beta"</span> sieht man die <I class="bld">UiD</I> in der Statusleiste, wenn man ein Gleis mit dem Mauszeiger ber&uuml;hrt.
+		<br>Um die Dateizuordnungen <i class="bl">normaler</i> Gleisst&uuml;cke auszutauschen, ist die "Alias"-Funktion von "Dynatrax v1.0 beta" eine gro&szlig;e Hilfe.</td></tr></table></li>
+	<li>Wenn ein bereits konvertiertes Gleisst&uuml;ck mit einem anderen 'Track Profile' umgewandelt werden soll und man dessen <I class="bld">UiD</I> ermittelt hat, markiert man den betreffenden Eintrag,
+		w&auml;hlt ein anderes 'Track Profile' und dr&uuml;ckt den Knopf <I class="bd">'Rebuild'</i>.</li>
+	<li>Wenn man die "dynamische Schiene" wieder herstellen will (z.B. um die Eigenschaften zu &auml;ndern), markiert man den betreffenden Eintrag und dr&uuml;ckt den Knopf <I class="bd">'Restore'</i>.</li></ul>"
+
+[t08]Arbeiten mit 'DBTracks' Profilen
+[t09]<div style="line-height:.4em">&nbsp;</div>
+	Profil-Sets wie 'NR DB Track Basic' enthalten eine Menge sogenannter <I class="bd">'Track profiles'</I>.
+	Das sind Formvorlagen, die die verschiedenen Varianten der DBTracks, bzw. verschiedene Qualit&auml;tsstufen davon erzeugen k&ouml;nnen.
+	Hierbei gilt es ein paar Dinge zu bachten:<ul>
+	<li>'Track profile'-Eintr&auml;ge beginnend mit <I class="bd">'(q200)'</I>
+		oder <I class="bd">'(q150)'</I> erh&ouml;hen die Strukturqualit&auml;t des Gleisobjekts auf die angegebene Prozentzahl. Das kann bei engen Kurven notwendig sein.</li>
+	<li>'Track profile'-Eintr&auml;ge beginnend mit <I class="bd">'(q75)' </I>
+		oder <I class="bd">'(q50)'</I> verringern die Strukturqualit&auml;t des Gleisobjekts auf die angegebene Prozentzahl. Damit reduziert sich die Anzahl der Polygone, so dass auch sehr gro&szlig;e Objekte im MSTS geladen werden k&ouml;nnen.</li>
+	<li>'Track profile'-Eintr&auml;ge beginnend mit <I class="bd">'(s...)'</I>
+		k&ouml;nnen den Schwellenabstand verl&auml;ngern oder verk&uuml;rzen, um ein Gleisst&uuml;ck nicht inmitten einer Schwelle enden zu lassen.</li></ul>
+	<h4 style="width:100%">Hinweise zur Anwendung:</h4>
+	<p>	Wenn die Dateigr&ouml;&szlig;e eines umgewandelte Dyntrack 500K &uuml;bersteigt (siehe Abbildung), kann es sein, dass das Gleisst&uuml;ck im MSTS nicht geladen werden kann. Dann empfiehlt sich ein 'Rebuild' mit dem <I class="bd">'(q75)'</I> Profil.
+		In extremeren F&auml;llen kann das <I class="bd">'(q50)'</I> Profil helfen, um Objekte mit noch passender Polygonzahl zu erzeugen. Diese verringerte Qualit&auml;t ist aber bei Kurven deutlich erkennbar.
+	<p> Um die Integrit&auml;t dieser gro&szlig;en Dateien zu pr&uuml;fen, empfiehlt es sich, im (gleichzeitig ge&ouml;ffneten) Streckeneditor in die entsprechenden Planquadrate zu springen. Nicht ladbare Gleisst&uuml;cke w&uuml;rden dann sofort gemeldet.
+	<p> <img class="rt" src="pages/images/mnl/mnl3_dtx2.png"><br><h4>Wie kann man sehen, was ein Profil erschaffen wird?</h4>
+		<div style="margin:4px 0">Das Program bietet die M&ouml;glichkeit, eine Beispieldatei zum ausgew&ouml;hlten 'Track profile' auszugeben. Im Men&uuml; <I class="bd">'Packages'</i> gibt es die Optionen:</div>
+		&bull; Create <b>Sample Straight</b> Using Selected Profile (F8) - baut eine gerade Form: 20mStrt<br>
+		&bull; Create <b>Sample Curve</b> Using Selected Profile (F9) - baut eine gebogene Form: 250r5d<br><div style="line-height:.4em">&nbsp;</div>
+		Die Datei <I class="bd">sample.s</i> findet man im Dynatrax-Programmordner. Sie wird bei jedem Aufruf dieses Men&uuml;-Befehls neu angelegt, bzw. ohne Nachfrage &uuml;berschrieben.
+		
+</div><!----------------------------------------------------------------------------------------------------------------------->
+<div id="en" style="display:none">
+[t00]Manual for Dynatrax (and DBTracks)
+[t01]<I class="bd">"Dynamic Tracks"</I> are created with an internal blue print, following the specifications of standard track.
+	Details and LODs are uniformly fixed for all sizes of objects and cannot be edited.<p>
+	This is a short description, how MSTS <I class="bd">Dynamic Tracks</I> can be converted into static track objects.
+	This is required by special track systems like <b>DBTracks</b>, which shape objects are different to MSTS standard tracks.
+[t010]History
+[t011]Latest News
+[t012]Description
+[t013]Version from
+[t120]<b>Basic package for all DBTracks profiles</b> (must always be present)
+[t121]<b>Expansion package</b> for S-Bahn Hamburg (nr_db01b must be present)
+[t02]Setup Requirements &nbsp; <span id="msg" class="d1">( please click to open )</span>
+[t03]<div style="line-height:.2em">&nbsp;</div>The following <b>programs, updates and fixes</b> must be installed in this sequence (if necessary):
+	<table cellspacing="0" cellpadding="0" class="zub" style="border-top:1px solid #cccccc; margin:8px 0"><colgroup><col width="2%"><col width="2%"><col width="96%"></colgroup>
+	<tr><td><b>1.</b></td><td><button id="dL1">Download</button></td>
+		<td><I class="bd">Microsoft .NET framework 1.1</i> is required to run Dynatrax.<br>
+			<small>(Version 1.1 is not included in newer versions and must be available independently)</small><br>
+			Here is a list of required updates and fixes. With this it should be possible to run .NET 1.1 even under Windows 7 64 bit.</td></tr>
+	<tr><td><b>2.</b></td><td><button id="dL2">Download</button></td>
+		<td><I class="bd">Microsoft .NET Framework 1.1 Service Pack 1</i> - <small>(Win7 32b was happy now and didn't require more)</small></td></tr>
+	<tr><td><b>3.</b></td><td><button id="dL3">Download</button></td>
+		<td><I class="bd">Hotfix NDP1.1sp1-KB891865-X86.exe</i></td></tr>
+	<tr><td><b>4.</b></td><td><button id="dL4">Download</button></td>
+		<td><I class="bd">Hotfix NDP1.1sp1-KB886903-X86.exe</i> - <small>(on my system this update was not required)</small></td></tr>
+	<tr><td><b>5.</b></td><td><button id="dL5">Download</button></td>
+		<td><I class="bd">Dynatrax</i> <b>program, update und profiles</b><br>
+		At first you have to run the setup <I class="bd">tsf_dynatrax_v0.52_setup.exe</i>.<br>
+	    In addition the zip file containes the executable <b>Dynatrax_v0.62.exe</b> and a folder <b>'profiles'</b> with .dpp files.
+		Both the executable and the folder must be copied to the <I class="bd">Dynatrax program folder</i>.</td></tr>
+	<tr><td><b>6.</b></td><td><button id="dL6">Download</button></td>
+		<td>When choosing a route for editing it might be that a message pops up, complaining about a missing <I class="bd">zLib.dll</I>. This file can be dropped in the program folder.</td></tr>
+	</table>
+	In the program folder we have two executables now: <b>'Dynatrax_v0.62.exe'</b> and <b>'Dynatrax.exe'</b> (Version 0.52).<br>
+	Profile files must be available in the subfolder <b>'profiles'</b>.<ul style="padding:4px 0">
+	<li>Files with <I class="bd">.dpp</i> extensions can be processed with <b>'Dynatrax_v0.62.exe'</b> only.<br>
+		<small>The format is binary and can not be edited by the user. To compile a v0.62 profile, a licenced version of Dynatrax is required.
+		Licences are currently not available for purchasing because the author is not accessible (anymore).</small></li>
+	<li>Files with <I class="bd">.profile</i> extensions can be processed with <b>'Dynatrax.exe'</b> (v0.52) only.<br>
+		<small>The format is plain text and can be created or edited by the user. However, the version 0.52 has significiant less functionality.</small></li></ul>
+	Therefore the choice which program version has to be started depends on the extension of the existing profile package to be used. DBTracks require always <b>'Dynatrax_v0.62.exe'</b>.<p>
+[t04]First Steps With Dynatrax &nbsp; <span id="msg" class="d1">( please click to open )</span>
+[t05]<div style="line-height:.4em">&nbsp;</div>
+	Convert dynamic track (dyntrack) to a static track shape:<ul>
+	<li>Settings in Dynatrax: If there are no <I class="bd">MSTS Installations</i> shown in the first select box, search and add your MSTS folder by pressing the <I class="bd">'Add'</i> button.</li>
+	<li>Choose the route you want to edit in the <I class="bd">'Route'</i> select box. The program will start locating the contained <i class="bld">Dyntracks</i> automatically. A progress bar is shown at the bottom of the window.</li>
+	<li>Choose the Dynatrax profile package file that you want to use in the <I class="bd">'Package'</i> select box.<br>Now you can select the <I class="bd">'Track Profile'</i> you want to use next in the box below.</li>
+	<li>Pick and mark 'Shape' entries (add more with ctrl+click) in the <I class="bd">'Dynamic Track Status'</i> list and press the <I class="bd">'Convert'</i> button.</li></ul>
+[t06]Working With Different Profiles &nbsp; <span id="msg" class="d1">( please click to open )</span>
+[t07]<ul class="anl" style="margin-top:0">
+	<li>If there is more than one dynamic track in your world file and you want to convert only one of them, search for the <I class="bld">UiD</I> in the world file and check the position in Route Editor.
+		<table cellspacing="0" cellpadding="0" style="margin:0"><tr><td style="width:1%;padding:0 5px 0 0;white-space:nowrap"><I class="bd" style="padding:0">Handy hint:</I></td>
+		<td style="padding:0">The track plan view of <span class="lnk" onclick="lPg(11);window.scrollTo(0,0);">"Dynatrax v1.0 beta"</span> will show the <I class="bld">UiD</I> in the status bar, if you point with the mouse on a track section.
+		<br>To replace file names of <i class="bl">normal</i> track sections, the "Alias" function of "Dynatrax v1.0 beta" is a great facilitation.</td></tr></table></li>
+	<li>If you want to alter the track profile and you have found the <I class="bld">UiD</I>, mark the regarding entry, choose another track profile and press <I class="bd">'Rebuild'</i>.</li>
+	<li>If you want to have the dynamic track back (e.g. to edit the properties), mark the regarding entry and press the <I class="bd">'Restore'</i> button.</li></ul>
+[t08]Working With 'DBTracks' Profiles
+[t09]<div style="line-height:.4em">&nbsp;</div>
+	Profile packages like 'NR DB Track Basic' contain a lot of different <I class="bd">'Track profiles'</I>. These are blueprints not only for diffent types of DBTacks but also for different qualities.
+	There are some things to remark:<ul>
+	<li>'Track profile' names starting with <I class="bd">'(q200)'</I> or <I class="bd">'(q150)'</I> increase the mesh structure quality by the specified percentage. This may be necessary for sharp curves.</li>
+	<li>'Track profile' names starting with <I class="bd">'(q75)'</I> or <I class="bd">'(q50)'</I> decrease the mesh structure quality by the specified percentage. This results in less polygons in order to match the MSTS restrictions.</li>
+	<li>'Track profile' names starting with <I class="bd">'(s...)'</I> can adjust the distance of sleepers in order (to try) to avoid a track shape with a truncated sleeper.</li></ul>
+	<h4>A hint for quick reference:</h4>
+	<p>	If a converted track has a file size greater than 500K it is possible that the track section can not be loaded. You may rebuild it with the <I class="bd">'(q75)'</I> profile.
+		Even larger files can be converted with the <I class="bd">'(q50)'</I> profile to create objects with acceptable polygon count. However the reduced quality is clearly evident, especially on bends.
+	<p>	To check the integrity of this large files it is recommended to use the route editor. Jumping to a tile number will indicate an oversized object immediately.
+	<p> <img class="rt" src="pages/images/mnl/mnl3_dtx2.png"><br><h4>Want to check what a profile will do?</h4>
+		<div style="margin:4px 0">If you want to have a look at what the program will create after choosing a 'Track profile', open the menu <I class="bd">'Packages'</i> and try out the options:</div>
+		&bull; Create <b>Sample Straight</b> Using Selected Profile (F8) - creates a 20mStrt <br>
+		&bull; Create <b>Sample Curve</b> Using Selected Profile (F9) - creates a 250r5d<br><div style="line-height:.4em">&nbsp;</div>
+		The sample file <I class="bd">sample.s</i> can be found in the Dynatrax program folder. It will be created or overwritten without request each time the menu command is executed.
+
+</div><!----------------------------------------------------------------------------------------------------------------------->
+<div id="news_de" style="display:none"></div>
+<div id="news_en" style="display:none"></div>
+<!----------------------------------------------------------------------------------------------------------------------->
+</div><div style="display:none"><iframe name="tSt" scrolling="no" frameborder="0" src="Manual_D_News.html" width="1px" height="1px" onload="getD()"></iframe>
+</div></body></html>
