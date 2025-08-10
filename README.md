@@ -1,6 +1,6 @@
 # dbtracks-site
 
-Reconstruction of Norbert Riegers's DBTracks website based on what was available on the wayback machine. 
+Reconstruction of Norbert Rieger's DBTracks website based on what was available on the wayback machine. 
 
 ## Building and running the site locally
 

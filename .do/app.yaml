@@ -1,8 +1,0 @@
-name: dbtrackscom
-services:
-- environment_slug: node-js
-  github:
-    branch: master
-    deploy_on_push: true
-    repo: pgroenbaek/dbtracks-site
-  name: dbtrackscom

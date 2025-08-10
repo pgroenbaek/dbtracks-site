@@ -1,8 +1,0 @@
-spec:
-  name: dbtrackscom
-  services:
-  - environment_slug: node-js
-    git:
-      branch: master
-      repo_clone_url: https://github.com/pgroenbaek/dbtracks-site.git
-    name: dbtrackscom
