@@ -34,3 +34,19 @@ docker run -p 8080:8080 dbtracks-site:latest
 ```
 
 The site can now be accessed at http://localhost:8080
+
+
+## Deploying to Cloudflare Pages
+
+First, install and authenticate the Cloudflare Wrangler CLI:
+
+```bash
+npm install -g wrangler
+wrangler login
+```
+
+Next, run the deployment script defined in `package.json`:
+
+```
+npm run deploy
+```
