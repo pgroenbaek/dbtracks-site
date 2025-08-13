@@ -1,6 +1,8 @@
 # dbtracks-site
 
-Reconstruction of Norbert Rieger's DBTracks website based on what was available on the wayback machine. 
+Reconstruction of Norbert Rieger's DBTracks website based on what was available on the wayback machine.
+
+The site is currently hosted at [dbtracks.com](https://dbtracks.com), with [dbtracks.pages.dev](https://dbtracks.pages.dev) as a fallback.
 
 ## Building and running the site locally
 
