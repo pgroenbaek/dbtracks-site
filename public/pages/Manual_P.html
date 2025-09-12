@@ -4,8 +4,8 @@
 <meta name=”description” content="Manual for how shapes can take-over the position and direction of a track or road section by Norbert Rieger." />
 <meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
 <meta name=”robots” content="index,follow" />
-<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
-<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+<link rel="stylesheet" href="/pages/scripts/mtfb.css"><link rel="shortcut icon" href="/DBTracks.ico" />
+<script type="text/javascript" src="/pages/scripts/dtlang.js"></script><script type="text/javascript"><!--
  var pics=[];
  pics['de']=['mnl2_ma0','mnl1_mp1d','mnl1_mp2','mnl1_mp3','mnl1_mp4d','mnl1_mp5'];
  pics['en']=[pics['de'][0],'mnl1_mp1e',pics['de'][2],pics['de'][3],'mnl1_mp4e',pics['de'][5]];
@@ -14,7 +14,7 @@
 </script></head>
 <body scroll="NO" onload="init()">
 
-<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<img src="/pages/images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
 <h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
 
 <table cellspacing="0" cellpadding="0" id="mtab" class="mnl">
@@ -79,7 +79,7 @@
 [t21]Warum gibt es keine Rechtsb&uuml;gen?
 [t23]Wo kann ich weitere Unterst&uuml;tzung erhalten?
 [t01]In dieser Anleitung soll erkl&auml;rt werden, wie Trassenelemente in Lage und Ausrichtung an den Gleisverlauf angepasst werden k&ouml;nnen. Voraussetzung hierbei ist, dass sich der Pivotpunkt der statischen Bauteile am Pivotpunkt des Gleisobjekts orientiert und eine dement&shy;sprechend passende H&ouml;he und Lageausrichtung hat. Ideal ist eine zum Gleisst&uuml;ck passende Dimension.
-[t02]Das nachfolgende Beispiel zeigt den Einbau eines Bahndamms aus dem Paket <a href="pages/Bahntrasse1.html"><b>NR_Bahntrasse_1</b></a>. Das Paket enth&auml;lt verschiedene Arten von Kunstbauten f&uuml;r Bahntrassen (Br&uuml;cken, Bahnd&auml;mme, Rampen und St&uuml;tzmauern) f&uuml;r ein- bis viergleisige Strecke, die in Abmessung und Namensgebung leicht den jeweiligen ("A"-)Gleist&uuml;cken aus <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a> zugeordnet werden k&ouml;nnen.
+[t02]Das nachfolgende Beispiel zeigt den Einbau eines Bahndamms aus dem Paket <a href="/pages/Bahntrasse1.html"><b>NR_Bahntrasse_1</b></a>. Das Paket enth&auml;lt verschiedene Arten von Kunstbauten f&uuml;r Bahntrassen (Br&uuml;cken, Bahnd&auml;mme, Rampen und St&uuml;tzmauern) f&uuml;r ein- bis viergleisige Strecke, die in Abmessung und Namensgebung leicht den jeweiligen ("A"-)Gleist&uuml;cken aus <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a> zugeordnet werden k&ouml;nnen.
 [t04]Zu jedem Gleisst&uuml;ck, das einen B&uuml;schungsk&ouml;rper erhalten soll, wird ein B&uuml;schungsobjekt mit den gleichen Ma&szlig;en im Dateinamen an beliebiger Stelle im selben Planquadrat platziert.
 [t05]Alle B&uuml;schungsobjekte werden nun der <i>Detailstufe 1</i> zugeordnet und als <i>Terrainobjekt</i> definiert. Die Gleisst&uuml;cke, die einen B&uuml;schungsk&ouml;rper erhalten sollen, werden ebenfalls der Detailstufe 1 zugeordnet.
 [t06]Nun wird die Strecke gespeichert (Es gen&uuml;gt, <i>&Auml;nderungen an der Au&szlig;enweltplatzierung</i> zu speichern)
@@ -92,7 +92,7 @@
 [t15]Um das Ergebnis im Streckeneditor betrachten zu k&ouml;nnen, muss die Strecke <b><i>nicht</i></b> neu geladen werden.<br>Es reicht aus, im Kamerafenster <i>einen weiten Sprung</i> zu unternehmen - z.B. um 1000 Quadrate. Anschlie&szlig;end springt man wieder zur&uuml;ck - und die .W-Datei wurde neu geladen.
 [t16]Jetzt befinden sich die B&uuml;schungen exakt am Gleisk&ouml;rper.
 [t19]Gleisobjekte k&ouml;nnen keine <i>dynamischen Schatten</i> anzeigen. Das ist nur statischen Objekten m&ouml;glich. Daher ist diese Bauart z.B. f&uuml;r Br&uuml;cken die bessere Variante.
-[t20]Gleisobjekte k&ouml;nnen keine <i>Terrainobjekt</i>-Eigenschaft annehmen. Das f&uuml;hrt zu einem unklaren &Uuml;bergang in die Terrainoberfl&auml;che.<br>Diesen Nachteil kann man aber m&ouml;glicherweise - z.B. bei Bahndammb&uuml;schungen - vernachl&auml;ssigen, daher gibt es im Paket <a href="pages/Bahntrasse2.html">NR_Bahntrasse_2</a> entsprechende Objekte, die den Gleisk&ouml;rper mit beinhalten. Die Einbaumethode ist unterschiedlich, deshalb gibt es daf&uuml;r eine eigene Einbauanleitung.
+[t20]Gleisobjekte k&ouml;nnen keine <i>Terrainobjekt</i>-Eigenschaft annehmen. Das f&uuml;hrt zu einem unklaren &Uuml;bergang in die Terrainoberfl&auml;che.<br>Diesen Nachteil kann man aber m&ouml;glicherweise - z.B. bei Bahndammb&uuml;schungen - vernachl&auml;ssigen, daher gibt es im Paket <a href="/pages/Bahntrasse2.html">NR_Bahntrasse_2</a> entsprechende Objekte, die den Gleisk&ouml;rper mit beinhalten. Die Einbaumethode ist unterschiedlich, deshalb gibt es daf&uuml;r eine eigene Einbauanleitung.
 [t22]Wie bei den Gleisen wird bei der Positions&uuml;bernahme der Pivot des Shapes an das gegen&uuml;berliegende Ende verlegt. Bei einem manuellen Einbau muss der Bogen in umgekehrter Richtung eingesetzt werden.
 [t24]F&uuml;r weitergehende Fragen stehe ich gern im <a href="http://www.tssf.eu/forum/index.php?topic=1931.0" target="_blank">TSSF-Forum</a> zur Verf&uuml;gung (Anmeldung erforderlich).
 </div>
@@ -107,7 +107,7 @@
 [t21]Where are the right hand curves?
 [t23]Where can I get more assistance?
 [t01]This manual is intended to explain how path elements can take-over the position and direction of a track or road section. Provided that the pivot point and the direction of the static object fits in with the track section, it would be best to have a selection of static objects with equivalent dimensions as common track sections.
-[t02]The following example shows the construction of an embankment, available from the archive <a href="pages/Bahntrasse1.html"><b>NR_Bahntrasse_1</b></a>. The package provides various types of path elements, exactly matching the dimensions of <i>A1t*-A4t*</i> tracks available in <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>. The file names of the static objects can be easily related to the corresponding track sections.
+[t02]The following example shows the construction of an embankment, available from the archive <a href="/pages/Bahntrasse1.html"><b>NR_Bahntrasse_1</b></a>. The package provides various types of path elements, exactly matching the dimensions of <i>A1t*-A4t*</i> tracks available in <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>. The file names of the static objects can be easily related to the corresponding track sections.
 [t04]Place an embankment object with a file name indicating identical dimensions for each track section somewhere nearby. Make sure that you drop it in the same tile as the track section (check the borders by pressing F7).
 [t05]Mark all embankment objects as <i>Detail level 1</i> and define it as <i>Terrain object</i>. These settings are available in the <i>Properties</i> dialog window (F6) of a <i>selected</i> item. All tracks sections that have been designated for getting an embankment, should be marked as <i>Detail level 1</i>, too.
 [t06]Save the route now (it may be sufficient to save <i>world placement changes</i>). Remember the tile identification (tile x) and (tile z) out of the <i>Camera</i> window.
@@ -120,9 +120,9 @@
 [t15]To see the changes in Route Editor it is <b><i>not</i></b> necessary to reload the route.<br>Simply do a <i>broad jump</i> - e.g. decrease one of the tile&#39;s numbers by 1000 and click on <i>jump</i>. Then increase the number to the original value and click on <i>jump</i> again. Now you will find the world file reloaded.
 [t16]Now the embankment fits together with the track.
 [t19]Objects defined as track sections cannot cast <i>dynamic shadows</i> which is a property of static objects only. Therefore it is the best choice to use static objects as described here, at least for bridges.
-[t20]Track sections cannot be defined as <i>terrain objects</i>. This may cause an erratic contour where the object reaches into ground. However, this fact may be disregarded for all embankments. So watch out for the second version of this package <a href="pages/Bahntrasse2.html">NR_Bahntrasse_2</a> which will include tracks. The usage of this objects will be slightly different, so it has its own manual.
+[t20]Track sections cannot be defined as <i>terrain objects</i>. This may cause an erratic contour where the object reaches into ground. However, this fact may be disregarded for all embankments. So watch out for the second version of this package <a href="/pages/Bahntrasse2.html">NR_Bahntrasse_2</a> which will include tracks. The usage of this objects will be slightly different, so it has its own manual.
 [t22]Just like track sections seem to be mirrored by pressing 'T', the pivot of the path element will be moved to the other end. If you decide to place such a curved object manually, you have to work in the opposite direction.
-[t24]If you have questions, comments or suggestions, please contact the author &nbsp; <a href="mailto:info%40DBTracks.com?subject=Position%20Adjustment"><img src="pages/images/mad/ml30.png" style="position:relative;top:3px"></a>
+[t24]If you have questions, comments or suggestions, please contact the author &nbsp; <a href="mailto:info%40DBTracks.com?subject=Position%20Adjustment"><img src="/pages/images/mad/ml30.png" style="position:relative;top:3px"></a>
 </div>
 <!----------------------------------------------------------------------------------------------------------------------->
 <div id="fr" style="display:none">
@@ -135,7 +135,7 @@
 	[t21]Pourquoi y a t-il des courbes orient&eacute;es vers la droite?
 	[t23]Ou puis-je trouver une aide suppl&eacute;mentaire?
 	[t01]Ce manuel d&eacute;crit comment des &eacute;l&eacute;ments de chemin peuvent permettre de g&eacute;rer la position et la direction d&#39;une section de voie ou d&#39;une route. Sous r&eacute;serve que le point pivot et la direction de l&#39;objet statique correspondent &agrave; ceux de la section de voie, il est pr&eacute;f&eacute;rable d&#39;avoir une s&eacute;lection d&#39;objets statiques avec des dimensions &eacute;quivalentes &agrave; celles des sections de voie commune.
-	[t02]L&#39;exemple suivant illustre la pose d&#39;un talus, disponible dans l&#39;archive <a href="pages/Bahntrasse1.html"><b>NR_Bahntrasse_1</b></a>. Ce pack contient diff&eacute;rents types d&#39;&eacute;l&eacute;ments de chemin, qui correspondent exactement aux dimensions des voies <i>A1t*-A4t*</i> disponibles dans <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>. Les noms de fichier des objets statiques peuvent &ecirc;tre ais&eacute;ment mis en correspondance avec ceux des sections de voies.
+	[t02]L&#39;exemple suivant illustre la pose d&#39;un talus, disponible dans l&#39;archive <a href="/pages/Bahntrasse1.html"><b>NR_Bahntrasse_1</b></a>. Ce pack contient diff&eacute;rents types d&#39;&eacute;l&eacute;ments de chemin, qui correspondent exactement aux dimensions des voies <i>A1t*-A4t*</i> disponibles dans <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>. Les noms de fichier des objets statiques peuvent &ecirc;tre ais&eacute;ment mis en correspondance avec ceux des sections de voies.
 	[t04]Pour chaque objet de voie &agrave; modifier, placez un objet de talus portant un nom de fichier indiquant les m&ecirc;mes dimensions que l&#39;objet d&#39;origine. Assurez vous que vous l&#39;ins&eacute;rez bien dans la m&ecirc;me tuile (Tiles) que la section de voie d&#39;origine (v&eacute;rifiez les bords en pressant F7).
 	[t05]Marquez tous les objets de talus comme appartenant au niveau de d&eacute;tail 1 <i>(Detail level 1)</i> et comme &eacute;tant des objets de terrain <i>(Terrain object)</i>. Ces param&egrave;tres sont disponibles dans le panneau de dialogue Propri&eacute;t&eacute;s <i>(Properties)</i> de chaque objet s&eacute;lectionn&eacute;, que l&#39;on affiche avec la touche F6. Toutes les sections de voies d&eacute;sign&eacute;es pour recevoir un talus doivent &eacute;galement &eacute;tre marqu&eacute;es comme appartenant au niveau de d&eacute;tail 1 <i>(Detail level 1)</i>.
 	[t06]Sauvegardez la route (en fait, il est suffisant de sauvegarder les modifications de placement du monde <i>(world placement changes</i>). Notez l&#39;identifiant de la tuile (Tile X) et (Tile Z) visibles dans la fen&ecirc;tre <i>Cam&eacute;ra</i>.
@@ -150,9 +150,9 @@
 			<li>de revenir ensuite &agrave; la parcelle initiale en restaurant son identifiant en ajoutant 1000, puis en cliquant &agrave; nouveau sur Sauter <I>(Jump)</I>.</ol>L&#39;environnement complet est alors recharg&eacute;.</li></ol>
 	[t16]Le talus est d&eacute;sormais adapt&eacute; &agrave; la voie.
 	[t19]Les objets d&eacute;finis comme sections de voies ne supportent pas les <I>ombres dynamiques</I>, qui ne s&#39;appliquent qu&#39;&agrave; aux objets statiques. Il est donc plus judicieux d&#39;utiliser de tels objets statiques, du moins pour ce qui concerne les ponts.
-	[t20]Les sections de voie ne peuvent pas &eacute;tre d&eacute;finies comme <I>objets de terrain</I>. Cela peut engendrer des contours erratiques &agrave; l&#39;endroit o&ugrave; l&#39;objet rencontre le terrain. Cependant, cela n&#39;est pas vrai pour les talus. Il est donc possible d&#39;utiliser le contenu de la seconde version de ce pack <a href="pages/Bahntrasse2.html">NR_Bahntrasse_2</a>, qui contient ces voies. L&#39;usage de ces objets est l&eacute;g&egrave;rement diff&eacute;rent, et fait l&#39;objet d&#39;un manuel sp&eacute;cifique.
+	[t20]Les sections de voie ne peuvent pas &eacute;tre d&eacute;finies comme <I>objets de terrain</I>. Cela peut engendrer des contours erratiques &agrave; l&#39;endroit o&ugrave; l&#39;objet rencontre le terrain. Cependant, cela n&#39;est pas vrai pour les talus. Il est donc possible d&#39;utiliser le contenu de la seconde version de ce pack <a href="/pages/Bahntrasse2.html">NR_Bahntrasse_2</a>, qui contient ces voies. L&#39;usage de ces objets est l&eacute;g&egrave;rement diff&eacute;rent, et fait l&#39;objet d&#39;un manuel sp&eacute;cifique.
 	[t22]Comme les sections de voie apparaissent en miroir avec la touche "T", le point pivot se trouve d&eacute;port&eacute; &agrave; l&#39;autre extr&eacute;mit&eacute;. Si vous d&eacute;cidez de placer manuellement une telle courbe, il faut alors travailler en inversant la direction.
-	[t24]En cas de question, il est possible de contacter l&#39;auteur de ces objets: &nbsp; <a href="mailto:info%40DBTracks.com?subject=Position%20Adjustment"><img src="pages/images/mad/ml30.png" style="position:relative;top:3px"></a>	
+	[t24]En cas de question, il est possible de contacter l&#39;auteur de ces objets: &nbsp; <a href="mailto:info%40DBTracks.com?subject=Position%20Adjustment"><img src="/pages/images/mad/ml30.png" style="position:relative;top:3px"></a>	
 </div>
 <!----------------------------------------------------------------------------------------------------------------------->
 </div></body></html>

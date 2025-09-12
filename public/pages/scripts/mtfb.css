@@ -1,4 +1,4 @@
-    body   { color:#000000;padding:15px 20px;margin:0px;background:#333333 url(../images/ico/backgr.jpg) fixed;overflow:auto;cursor:default;font-family:Arial,Helvetica,Tahoma;/*height:1500px*/ }
+    body   { color:#000000;padding:15px 20px;margin:0px;background:#333333 url(/pages/images/ico/backgr.jpg) fixed;overflow:auto;cursor:default;font-family:Arial,Helvetica,Tahoma;/*height:1500px*/ }
     #cntnt { margin:0;padding:0;width:100%;height:100% } #tNav  { position:/*fixed*/absolute;top:9px;left:988px;z-index:2 } #tNav table {/*width:300px;*/ } #tNav table td { padding:0 3px;color:#444444;cursor:pointer;white-space:nowrap }
     #cLog  { position:/*fixed*/absolute;top:289px;left:988px; } #cLog img { margin:0; } #cLog table { position:absolute;top:18px;height:600px;width:300px;overflow:auto }
     #cLog div, #cLog td { padding:0 3px;color:#999999;white-space:nowrap;text-align:left } #cLog div { color:#999999;font-size:9pt;padding-bottom:0px;font-weight:bold;border-bottom:1px solid #666666;cursor:pointer }
@@ -31,9 +31,9 @@
     td, th { font-family:Arial,Helvetica,Tahoma; font-size:10pt; text-align:left; vertical-align:top; padding:8px 12px; cursor:default; }
     td.nw, td.nwr, .nw { white-space:nowrap } td.nwr { text-align:right;white-space:nowrap }
     table#mtab { width:900px;position:absolute;top:63px;left:20px;border:none;margin-bottom:10px;display:none }
-    table#mtab tr, table#mtab td.c1, table#tLst { background-image:url(../images/tback904.png);background-repeat:repeat-y;background-color:transparent; }
+    table#mtab tr, table#mtab td.c1, table#tLst { background-image:url(/pages/images/tback904.png);background-repeat:repeat-y;background-color:transparent; }
     table#mtab.c2 tr, table.hp td { background-image:none; } table.hp td { padding:0;padding-right:10px;vertical-align:top; }
-    table#mtab.c2 td.short { background:url(../images/tback751.png) repeat-y; width:751px; padding-bottom:15px }
+    table#mtab.c2 td.short { background:url(/pages/images/tback751.png) repeat-y; width:751px; padding-bottom:15px }
     table#mtab td p { text-align:justify;margin:6px 0 }
     table#mtab td.rows { border:1px solid #aaaaaa;border-top-color:#ffffff;border-left-width:0;border-right-width:0; }
     table#mtab td.trsp,.trsp h3,.trsp h4 { color:#dddddd;padding-left:0 }
@@ -57,9 +57,9 @@
     ul     { margin:0 0 0 16px; padding:0; } ul.lnk { margin:0 0 0 17px; padding:0 }
     ol     { margin:2px 0 8px 24px; list-style-type:decimal; }
     li     { margin:0 } ol li { margin:.3em 0; } table#mtab ol li { margin:0; }
-    li.lnk,li.lnk2 { list-style-image:url(../images/ico/arrow.png);margin:0;padding:0;position:relative;/*top:-1px;*/vertical-align:top }
-    li.pdf,li.pdf2 { list-style-image:url(../images/ico/pdf.png);  margin:0;padding:0;position:relative;/*top:-0px;*/vertical-align:top }
-    span.lnk li.dld, span.lnk2 li.dld { list-style-image:url(../images/ico/dld.png);margin:0;padding:0;vertical-align:top }
+    li.lnk,li.lnk2 { list-style-image:url(/pages/images/ico/arrow.png);margin:0;padding:0;position:relative;/*top:-1px;*/vertical-align:top }
+    li.pdf,li.pdf2 { list-style-image:url(/pages/images/ico/pdf.png);  margin:0;padding:0;position:relative;/*top:-0px;*/vertical-align:top }
+    span.lnk li.dld, span.lnk2 li.dld { list-style-image:url(/pages/images/ico/dld.png);margin:0;padding:0;vertical-align:top }
     li.lnk b,li.pdf b,li.lnk span { margin-left:6px; } li.lnk2 b,li.pdf2 b,li.lnk2 span { margin-left:6px }
     ul.anl { margin:3px 0 8px 16px } ul.anl li { margin:6px 0 0 0; } ul.anl li ul li { list-style-type:square;margin:0; }
     ul.ftr { margin-top:210px;color:#774422; } ul.ftr li { margin:10px 0 0 16px; } ul.ftr h4 { font-size:1.4em; margin-bottom:2px } ul.ftr span { color:#000000; font-size:1em; }

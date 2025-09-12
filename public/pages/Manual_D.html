@@ -4,8 +4,8 @@
 <meta name=”description” content="Manual for using the Dynatrax program with the DBTracks and USTracks .dpp profiles by Norbert Rieger." />
 <meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
 <meta name=”robots” content="index,follow" />
-<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
-<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+<link rel="stylesheet" href="/pages/scripts/mtfb.css"><link rel="shortcut icon" href="/DBTracks.ico" />
+<script type="text/javascript" src="/pages/scripts/dtlang.js"></script><script type="text/javascript"><!--
 	var dbDate = []; dL=['./dl_files/zub/nr_db01b.rar',
 	'http://www.microsoft.com/downloads/details.aspx?FamilyID=262d25e3-f589-4842-8157-034d1e7cf3a3&displaylang=en',
 	'http://www.microsoft.com/downloads/en/details.aspx?FamilyID=A8F5654F-088E-40B2-BBDB-A83353618B38',
@@ -26,7 +26,7 @@
 </script><style>.d0 { display:none } .d1 { display:inline }</style></head>
 <body scroll="NO" onload="init()">
 
-<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<img src="/pages/images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
 <h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
 
 <table id="mtab" cellspacing="0" cellpadding="0" style="top:63px">
@@ -35,15 +35,15 @@
 	<tr><td style="padding:0 12px 12px 12px" id="nLst"></td></tr>
     <tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd">&#160;</td></tr>
     <tr style="background-image:none"><td style="padding:0;border:none;color:#dddddd" id="profiles"></td></tr>
-    <tr style="background:transparent"><td style="padding:12px 0 4px 0"><img style="margin-right:4px" src="pages/images/ico/pf0.png"><span id="t02" onclick="tShw(this.id)" class="dLnk"></span></td></tr>
+    <tr style="background:transparent"><td style="padding:12px 0 4px 0"><img style="margin-right:4px" src="/pages/images/ico/pf0.png"><span id="t02" onclick="tShw(this.id)" class="dLnk"></span></td></tr>
     <tr id="ft02" style="display:none;background:transparent"><td class="c1" id="t03" style="padding-top:6px;cursor:default"></td></tr>
-    <tr style="background:transparent"><td style="padding:4px 0"><img style="margin-right:4px" src="pages/images/ico/pf0.png"><span id="t04" onclick="tShw(this.id)" class="dLnk"></span></td></tr>
+    <tr style="background:transparent"><td style="padding:4px 0"><img style="margin-right:4px" src="/pages/images/ico/pf0.png"><span id="t04" onclick="tShw(this.id)" class="dLnk"></span></td></tr>
     <tr id="ft04" style="display:none;background:transparent"><td class="c1" id="t05" style="padding-top:6px;cursor:default"></td></tr>
-    <tr style="background:transparent"><td style="padding:4px 0;border:none;color:#dddddd"><img src="pages/images/mnl/mnl3_dtx_db.png" style="margin:0" onclick="cPic(this,24)"></td></tr>
+    <tr style="background:transparent"><td style="padding:4px 0;border:none;color:#dddddd"><img src="/pages/images/mnl/mnl3_dtx_db.png" style="margin:0" onclick="cPic(this,24)"></td></tr>
 
-    <tr style="background:transparent"><td style="padding:10px 0 4px 0"><img style="margin-right:4px" src="pages/images/ico/pf0.png"><span id="t06" onclick="tShw(this.id);window.scrollBy(0,2000);" class="dLnk"></span></td></tr>
+    <tr style="background:transparent"><td style="padding:10px 0 4px 0"><img style="margin-right:4px" src="/pages/images/ico/pf0.png"><span id="t06" onclick="tShw(this.id);window.scrollBy(0,2000);" class="dLnk"></span></td></tr>
     <tr id="ft06" style="display:none;background:transparent"><td class="c1" id="t07" style="padding-top:6px;cursor:default"></td></tr>
-    <tr style="background:transparent"><td style="padding:4px 0 4px 0"><img style="margin-right:4px" src="pages/images/ico/pf1.png"><span id="t08" onclick="tShw(this.id);window.scrollBy(0,2000);" class="dLnk"></span></td></tr>
+    <tr style="background:transparent"><td style="padding:4px 0 4px 0"><img style="margin-right:4px" src="/pages/images/ico/pf1.png"><span id="t08" onclick="tShw(this.id);window.scrollBy(0,2000);" class="dLnk"></span></td></tr>
     <tr id="ft08" style="display:table-row;background:transparent"><td class="c1" id="t09" style="padding-top:6px;cursor:default"></td></tr>
 
     <tr style="background-image:none"><td style="padding:4px 2px;border:none;color:#dddddd" id="cpr">&nbsp;</td></tr>
@@ -122,7 +122,7 @@
 	<p>	Wenn die Dateigr&ouml;&szlig;e eines umgewandelte Dyntrack 500K &uuml;bersteigt (siehe Abbildung), kann es sein, dass das Gleisst&uuml;ck im MSTS nicht geladen werden kann. Dann empfiehlt sich ein 'Rebuild' mit dem <I class="bd">'(q75)'</I> Profil.
 		In extremeren F&auml;llen kann das <I class="bd">'(q50)'</I> Profil helfen, um Objekte mit noch passender Polygonzahl zu erzeugen. Diese verringerte Qualit&auml;t ist aber bei Kurven deutlich erkennbar.
 	<p> Um die Integrit&auml;t dieser gro&szlig;en Dateien zu pr&uuml;fen, empfiehlt es sich, im (gleichzeitig ge&ouml;ffneten) Streckeneditor in die entsprechenden Planquadrate zu springen. Nicht ladbare Gleisst&uuml;cke w&uuml;rden dann sofort gemeldet.
-	<p> <img class="rt" src="pages/images/mnl/mnl3_dtx2.png"><br><h4>Wie kann man sehen, was ein Profil erschaffen wird?</h4>
+	<p> <img class="rt" src="/pages/images/mnl/mnl3_dtx2.png"><br><h4>Wie kann man sehen, was ein Profil erschaffen wird?</h4>
 		<div style="margin:4px 0">Das Program bietet die M&ouml;glichkeit, eine Beispieldatei zum ausgew&ouml;hlten 'Track profile' auszugeben. Im Men&uuml; <I class="bd">'Packages'</i> gibt es die Optionen:</div>
 		&bull; Create <b>Sample Straight</b> Using Selected Profile (F8) - baut eine gerade Form: 20mStrt<br>
 		&bull; Create <b>Sample Curve</b> Using Selected Profile (F9) - baut eine gebogene Form: 250r5d<br><div style="line-height:.4em">&nbsp;</div>
@@ -196,7 +196,7 @@
 	<p>	If a converted track has a file size greater than 500K it is possible that the track section can not be loaded. You may rebuild it with the <I class="bd">'(q75)'</I> profile.
 		Even larger files can be converted with the <I class="bd">'(q50)'</I> profile to create objects with acceptable polygon count. However the reduced quality is clearly evident, especially on bends.
 	<p>	To check the integrity of this large files it is recommended to use the route editor. Jumping to a tile number will indicate an oversized object immediately.
-	<p> <img class="rt" src="pages/images/mnl/mnl3_dtx2.png"><br><h4>Want to check what a profile will do?</h4>
+	<p> <img class="rt" src="/pages/images/mnl/mnl3_dtx2.png"><br><h4>Want to check what a profile will do?</h4>
 		<div style="margin:4px 0">If you want to have a look at what the program will create after choosing a 'Track profile', open the menu <I class="bd">'Packages'</i> and try out the options:</div>
 		&bull; Create <b>Sample Straight</b> Using Selected Profile (F8) - creates a 20mStrt <br>
 		&bull; Create <b>Sample Curve</b> Using Selected Profile (F9) - creates a 250r5d<br><div style="line-height:.4em">&nbsp;</div>
@@ -206,5 +206,5 @@
 <div id="news_de" style="display:none"></div>
 <div id="news_en" style="display:none"></div>
 <!----------------------------------------------------------------------------------------------------------------------->
-</div><div style="display:none"><iframe name="tSt" scrolling="no" frameborder="0" src="Manual_D_News.html" width="1px" height="1px" onload="getD()"></iframe>
+</div><div style="display:none"><iframe name="tSt" scrolling="no" frameborder="0" src="/pages/Manual_D_News.html" width="1px" height="1px" onload="getD()"></iframe>
 </div></body></html>
