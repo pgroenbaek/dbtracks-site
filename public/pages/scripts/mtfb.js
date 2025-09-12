@@ -46,7 +46,7 @@ pImgIco = pImg + 'ico/';
 picP = ['def', , 'dbt', , , 'bab', , , , , 'dbt'];
 newB = ['NEW', 'NEU'];
 tNv = [2, 10, 12, 9, 8, 6, 7, 3, 4, 5];
-dLP = [0, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 15, 16, 17, 18]; // lng: SystemLocale; lang: gew&auml;hlte Sprache, sLng: Verf&uuml;gbare Sprache.
+dLP = [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 17, 18]; // lng: SystemLocale; lang: gew&auml;hlte Sprache, sLng: Verf&uuml;gbare Sprache.
 //-------------------------------------------------------------------------------------------------
 if (lsP.length && String(tNp.join('|')).indexOf(lsP[0]) < 0) ld2s(lsP[0]);
 else if (!nP) prep();
