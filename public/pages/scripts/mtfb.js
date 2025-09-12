@@ -1030,54 +1030,6 @@ window.onpopstate = function(event) {
     }
 };
 
-// function lPg(nNr, b) {
-//     if (!document.getElementById('tFr')) {
-//         var div = document.createElement('div');
-//         div.id = 'tFr';
-//         document.body.appendChild(div);
-//     }
-//     if (isNaN(nNr) && !isNaN(tNp[nNr])) nNr = tNp[nNr];
-//     if (nNr == tNr && !b) return;
-//     else tNr = nNr;
-//     cRun = 0;
-//     if (dP || !nNr) {
-//         if (!location.protocol.search(/file:$/)) {
-//             pg = '';
-//             if (dP) pg += '../';
-//             pg += 'index.html';
-//         } else pg = '/';
-//         if (tNr) pg += '?' + tNp[tNr][1];
-//         window.location.replace(pg)
-//     } else {
-//         if (!parent.frames.length && location.pathname.length > 1) {
-//             var lastSlash = location.pathname.lastIndexOf('/') + 1;
-//             var lastDot = location.pathname.lastIndexOf('.');
-//             if (lastDot < lastSlash) lastDot = location.pathname.length;
-//             dN = location.pathname.substring(lastSlash, lastDot);
-//         }
-//         dN = tNp[tNr][0];
-//         np = '';
-//         if (tNr > 0) np = '/pages/';
-//         np += dN + '.html';
-//         if (tNr && !prp && lsP[0].search(/\.zip$|\.rar$/) > 0) location.replace('/?' + tNp[tNr][1]); //alert('np: '+np+'\nlPg('+nNr+','+b+')')
-//         if (tNr < tNp.length)
-//             if (tNr != 13) {
-//                 if (!b) lP[lP.length] = tNr;
-//                 np += '?' + lang;
-//                 if (!document.getElementById('tFr').innerHTML) tFrm(np);
-//                 else tPg.location.replace(np);
-//             }
-//         else {
-//             if (lsP.length) np += '?' + lsP[0];
-//             if (window.location.hash) np += window.location.hash;
-//             document.body.style.padding = 0;
-//             document.body.innerHTML = '<iframe frameborder="0" src="' + np + '" style="width:100%;height:100%"></iframe>';
-//         } else {
-//             nwin = window.open(np, '', 'top=0');
-//         } //alert('np: '+np);
-//     }
-// }
-
 function tPload(tP) {
     if (!tP || tPg.document.getElementById('c_de') && !document.getElementById('cLog').innerHTML) chgLog();
     else {
