@@ -4,8 +4,8 @@
 <meta name=”description” content="Manual for substituting default tracks with DBTracks or USTracks by Norbert Rieger." />
 <meta name=”keywords” content="dbtracks,ustracks,norbert,rieger,dynatrax,profiles,msts,tracks,open,rails,stf,autobahn,bab,train,simulator,microsoft,tiefbau" />
 <meta name=”robots” content="index,follow" />
-<link rel="stylesheet" href="scripts/mtfb.css"><link rel="shortcut icon" href="DBTracks.ico" />
-<script type="text/javascript" src="scripts/dtlang.js"></script><script type="text/javascript"><!--
+<link rel="stylesheet" href="/pages/scripts/mtfb.css"><link rel="shortcut icon" href="/DBTracks.ico" />
+<script type="text/javascript" src="/pages/scripts/dtlang.js"></script><script type="text/javascript"><!--
  var pics=[];
  pics['de']=['mnl2_ma0','mnl2_ma1d','mnl1_mp2','mnl2_ma3','mnl1_mp4d','mnl1_mp5'];
  pics['en']=[pics['de'][0],'mnl2_ma1e',pics['de'][2],pics['de'][3],'mnl1_mp4e',pics['de'][5]];
@@ -14,7 +14,7 @@
 </script></head>
 <body scroll="NO" onload="init()">
 
-<img src="images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
+<img src="/pages/images/dbtracks.png" style="position:absolute;top:3px;left:20px;z-index:1" onclick="lPg(0)">
 <h2 id="t00" style="top:69px"><noscript>JAVASCRIPT is required<br>JAVASCRIPT ist erforderlich</noscript></h2><div id="tNav"></div><div id="cntnt">
 
 <table cellspacing="0" cellpadding="0" id="mtab" class="mnl">
@@ -71,7 +71,7 @@
 [t00]Gleisobjekt-Austausch im MSTS-Streckeneditor
 [t01]In dieser Anleitung soll erkl&auml;rt werden, wie Gleisobjekte durch andere (Gleis-)Objekte ausgetauscht werden k&ouml;nnen.
 	Dies k&ouml;nnen Gleisobjekte mit modifizierter Texturzuweisung sein oder aber auch Gleiselemente mit direkt integrierten Kunstbauten wie Bahnd&auml;mmen oder St&uuml;tzmauern.
-[t02]Das nachfolgende Beispiel zeigt den Einbau eines Bahndamms aus dem Paket <a href="pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
+[t02]Das nachfolgende Beispiel zeigt den Einbau eines Bahndamms aus dem Paket <a href="/pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
 	Das Paket enth&auml;lt verschiedene Arten von Kunstbauten f&uuml;r Bahntrassen (Bahnd&auml;mme, Rampen und St&uuml;tzmauern) inklusive der Gleisk&ouml;rper f&uuml;r ein- bis viergleisige Strecke,
 	die in Abmessung und Namensgebung leicht den jeweiligen ("A"-)Gleist&uuml;cken aus <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a> zugeordnet werden k&ouml;nnen.
 [t03]Teil 1 - im Streckeneditor:
@@ -114,7 +114,7 @@
 [t00]Track Shape Substitution in MSTS Route Editor
 [t01]This manual is intended to explain how track sections can be replaced with other shape objects (including track).
     This can be a modification of an original track shape with another texture assignment or a track shape combined with a path element like an embankment or retaining wall.
-[t02]The following example shows the the substitution of standard track with a track piece attached on an embankment, available from the archive <a href="pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
+[t02]The following example shows the the substitution of standard track with a track piece attached on an embankment, available from the archive <a href="/pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
     The package provides track sections combined with various types of path elements (embankments, ramps and retaining walls), exactly matching the dimensions of <i>A1t*-A4t*</i> tracks available in <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>.
 [t03]Part 1 - Route Editor:
 [t04]Place an embankment object with a file name indicating identical dimensions for each track section somewhere nearby. Make sure that you drop it in the same tile as the track section (check the borders by pressing F7).
@@ -149,14 +149,14 @@
 [t20]Why are there no bridge objects combined with track as a track section?
 [t21]Objects defined as track sections cannot cast <i>dynamic shadows</i> which is a property of static objects only. Therefore it is the best choice to use static objects as described here, at least for bridges.
 [t22]Where can I get more assistance?
-[t23]If you have questions, comments or suggestions, please send me an email &nbsp; <a href="mailto:info%40DBTracks.com?subject=Track%20Substitution"><img src="pages/images/mad/ml30.png" style="position:relative;top:3px"></a>
+[t23]If you have questions, comments or suggestions, please send me an email &nbsp; <a href="mailto:info%40DBTracks.com?subject=Track%20Substitution"><img src="/pages/images/mad/ml30.png" style="position:relative;top:3px"></a>
 </div>
 <!----------------------------------------------------------------------------------------------------------------------->
 <div id="fr" style="display:none">
 [t00]Substitution des formes de voies dans les routes MSTS
 [t01]Ce manuel d&eacute;crit comment les sections de voie peuvent &ecirc;tre remplac&eacute;es par d&#39;autres objets de forme (y compris des objets de voie).
 	A une voie, on pourra ainsi en substituer une autre portant une texture diff&eacute;rente, ou encore combin&eacute;e &agrave; &eacute;l&eacute;ment de d&eacute;cor, tel un talus ou un mur de sout&eacute;nement.
-[t02]L&#39;exemple suivant illustre le remplacement d&#39;&eacute;l&eacute;ments de voie standard par des &eacute;l&eacute;ments similaires associ&eacute;s avec un talus. Cet &eacute;l&eacute;ment est disponible dans l&#39;archive <a href="pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
+[t02]L&#39;exemple suivant illustre le remplacement d&#39;&eacute;l&eacute;ments de voie standard par des &eacute;l&eacute;ments similaires associ&eacute;s avec un talus. Cet &eacute;l&eacute;ment est disponible dans l&#39;archive <a href="/pages/Bahntrasse2.html"><b>NR_Bahntrasse_2</b></a>.
 	Ce pack propose des sections de voie combin&eacute;es avec divers type de plateformes (talus, rampes, murs de sout&eacute;nement), correspondant exactement aux dimensions des voies <I>A1t*-A4t*</I> disponibles dans <a href="http://www.nklj.se/xtracks" target="_blank">XTracks 3.20</a>.
 [t03]Part 1 - &Eacute;diteur de route:
 [t04]Pour chaque objet de voie &agrave; modifier, placez un objet de talus portant un nom de fichier indiquant les m&ecirc;mes dimensions que l&#39;objet d&#39;origine. Assurez vous que vous l&#39;ins&eacute;rez bien dans la m&ecirc;me tuile (Tiles) que la section de voie d&#39;origine (v&eacute;rifiez les bords en pressant F7).
@@ -195,7 +195,7 @@
 [t20]Pourquoi il n&#39;ya pas d&#39;objets de pont combin&eacute; avec piste comme une section de voie?
 [t21]Les objets d&eacute;finis comme sections de voies ne supportent pas les <I>ombres dynamiques</I>, qui ne s&#39;appliquent qu&#39;aux objets statiques. Il est donc plus judicieux d&#39;utiliser de tels objets statiques, du moins pour ce qui concerne les ponts.
 [t22]O&ugrave; puis-je obtenir plus d&#39;aide?
-[t23]En cas de question, il est possible de contacter l&#39;auteur de ces objets: &nbsp; <a href="mailto:info%40DBTracks.com?subject=Track%20Substitution"><img src="pages/images/mad/ml30.png" style="position:relative;top:3px"></a>	
+[t23]En cas de question, il est possible de contacter l&#39;auteur de ces objets: &nbsp; <a href="mailto:info%40DBTracks.com?subject=Track%20Substitution"><img src="/pages/images/mad/ml30.png" style="position:relative;top:3px"></a>	
 </div>
 <!----------------------------------------------------------------------------------------------------------------------->
 </body></html>

@@ -26,11 +26,11 @@ tNp = [
     ['Manual_Dtx1', 'Dtx1'],
     ['USTracks10b', 'USTracks'],
     ['XTracks', 'XTracks'],
-    ['DownloadAccessories', 'Download Accessories'],
-    ['DownloadBAB', 'Download BAB'],
-    ['DownloadDBTracks', 'Download DBTracks'],
-    ['DownloadDBTracks2', 'Download DBTracks v2.0b'],
-    ['DownloadUSTracks', 'Download USTracks']
+    ['DownloadAccessories', 'DownloadAccessories'],
+    ['DownloadBAB', 'DownloadBAB'],
+    ['DownloadDBTracks', 'DownloadDBTracks'],
+    ['DownloadDBTracks2', 'DownloadDBTracks2'],
+    ['DownloadUSTracks', 'DownloadUSTracks']
 ];
 tNpL = tNp.length;
 ebM = ['direct', 'addREF', 'addGANTRY'];
@@ -46,7 +46,7 @@ pImgIco = pImg + 'ico/';
 picP = ['def', , 'dbt', , , 'bab', , , , , 'dbt'];
 newB = ['NEW', 'NEU'];
 tNv = [2, 10, 12, 9, 8, 6, 7, 3, 4, 5];
-dLP = [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, ]; // lng: SystemLocale; lang: gew&auml;hlte Sprache, sLng: Verf&uuml;gbare Sprache.
+dLP = [0, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 15, 16, 17, 18]; // lng: SystemLocale; lang: gew&auml;hlte Sprache, sLng: Verf&uuml;gbare Sprache.
 //-------------------------------------------------------------------------------------------------
 if (lsP.length && String(tNp.join('|')).indexOf(lsP[0]) < 0) ld2s(lsP[0]);
 else if (!nP) prep();
@@ -76,10 +76,12 @@ function prep() {
         else lsP.hl[lsP.hl.length] = lsP[i];
     } // t0(tg)=klappt Zielgruppe auf, s0(sc)=scrollt, g0(sg)=klappt nur Zielgruppe auf, alle anderen zu, h0(ht)=hebt nur in dieser Gruppe hervor
 } //alert('prep nP: '+nP+'\ndN: '+dN);
+
 if (location.hostname.search(/dbtracks\.de/i) >= 0 && !lS && !nP) nP = 2;
-else if (dN != 'default' && !isNaN(tNp[dN]) && String(dLP.join('|')).indexOf(nP + '|') < 0)
+else if (dN != 'default' && !isNaN(tNp[dN]) && !dLP.includes(nP))
     if (!location.protocol.search(/file/)) location.href = location.href.substring(0, location.href.lastIndexOf('\/')).replace(/pages/, 'default\.html') + '?' + tNp[tNp[dN]][1];
     else nP = tNp[dN];
+
 //-------------------------------------------------------------------------------------------------
 function init() {
     if (lsP[0] && tNpL == tNp.length && !nP) tNpV();
@@ -972,10 +974,18 @@ function xBtn(p, s) {
 }
 
 function lPg(nNr, b) {
+    if (!document.getElementById('tFr')) {
+        var div = document.createElement('div');
+        div.id = 'tFr';
+        document.body.appendChild(div);
+    }
     if (isNaN(nNr) && !isNaN(tNp[nNr])) nNr = tNp[nNr];
     if (nNr == tNr && !b) return;
     else tNr = nNr;
     cRun = 0;
+    if (history.pushState && tNr) {
+        history.pushState({ page: tNr }, tNp[tNr][1], '/?' + tNp[tNr][1]);
+    }
     if (dP || !nNr) {
         if (!location.protocol.search(/file:$/)) {
             pg = '';
@@ -985,9 +995,15 @@ function lPg(nNr, b) {
         if (tNr) pg += '?' + tNp[tNr][1];
         window.location.replace(pg)
     } else {
+        if (!parent.frames.length && location.pathname.length > 1) {
+            var lastSlash = location.pathname.lastIndexOf('/') + 1;
+            var lastDot = location.pathname.lastIndexOf('.');
+            if (lastDot < lastSlash) lastDot = location.pathname.length;
+            dN = location.pathname.substring(lastSlash, lastDot);
+        }
         dN = tNp[tNr][0];
         np = '';
-        if (tNr > 0) np = 'pages/';
+        if (tNr > 0 && dN.indexOf('/pages/') !== 0) np = '/pages/';
         np += dN + '.html';
         if (tNr && !prp && lsP[0].search(/\.zip$|\.rar$/) > 0) location.replace('/?' + tNp[tNr][1]); //alert('np: '+np+'\nlPg('+nNr+','+b+')')
         if (tNr < tNp.length)
@@ -1007,6 +1023,12 @@ function lPg(nNr, b) {
         } //alert('np: '+np);
     }
 }
+
+window.onpopstate = function(event) {
+    if (event.state && typeof event.state.page !== 'undefined') {
+        lPg(event.state.page, true);
+    }
+};
 
 function tPload(tP) {
     if (!tP || tPg.document.getElementById('c_de') && !document.getElementById('cLog').innerHTML) chgLog();
@@ -1095,7 +1117,7 @@ function spLnk(l, t, c, d) {
 function ld2s(nf) {
     var stag = document.createElement('script');
     stag.setAttribute('type', 'text/javascript');
-    stag.setAttribute('src', 'pages/scripts/' + nf + '.js');
+    stag.setAttribute('src', '/pages/scripts/' + nf + '.js');
     document.getElementsByTagName('head')[0].appendChild(stag);
 }
 
